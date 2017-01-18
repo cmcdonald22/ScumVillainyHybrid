@@ -91,11 +91,11 @@ input.sheet-sheet-typeselector + span {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 input.sheet-sheet-typeselector:hover + span{
-    color: red !important;
+    color: #96182d !important;
 }
 input.sheet-sheet-typeselector,
 input.sheet-sheet-typeselector + span {
@@ -780,7 +780,7 @@ input.sheet-sheet-claim-claimed5 {left: 665px;}
     background: url(https://i.imgur.com/DCcJ8p2.jpg);
     background-size: 240px;
     background-repeat: no-repeat;
-    font-family: "Times New Roman", Times, serif;
+    font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
     min-height: 85px;
 }
  
@@ -790,7 +790,7 @@ input.sheet-sheet-claim-claimed5 {left: 665px;}
   line-height: 1.6em;
   font-size: 1.2em;
   text-align: left;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
   font-variant: small-caps;
   width: 180px;
 }
@@ -799,19 +799,19 @@ input.sheet-sheet-claim-claimed5 {left: 665px;}
   color: black;
   font-size: 1.5em;
   font-style: bold;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
 }
  
 .sheet-sheet-rolltemplate-bitd td {
   padding-left: 5px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
 }
 
 .sheet-sheet-rolltemplate-bitd .sheet-sheet-result {
   font-size: 3em;
   vertical-align: center;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
 }
 
 
@@ -891,7 +891,7 @@ width:50%;
     display: inline-block;
     color: #7f8184;
     text-transform: uppercase;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     width: 65%;
     font-size: 274%;
     letter-spacing: -2px;
@@ -909,7 +909,7 @@ width:50%;
     border-radius: 0;
     box-shadow: none;
     box-sizing: border-box;
-    display: inline-block;  font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    display: inline-block;  font-family: "Arial Black", Gadget, sans-serif;
     font-size: 100%;
    
     letter-spacing: -2px;
@@ -929,7 +929,7 @@ width:50%;
     display: inline-block;
     width: 35%;
     text-transform: uppercase;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     letter-spacing: 1px;
     font-size: 66%;
     line-height: 154%;
@@ -952,7 +952,7 @@ width:50%;
     display: inline-block;
     font-size: 119%;
     line-height: 145%;
-    font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     font-weight: 800;
     color: rgb(127, 129, 132);
     text-transform: uppercase;
@@ -972,7 +972,7 @@ width:50%;
     margin-bottom: 4px;
     padding: 3px 0px 0px 0px;
         color: #c43c35;
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: Tahoma, Geneva, sans-serif;
     font-size: 109%;
     width: 100%;
     height: auto;
@@ -983,7 +983,7 @@ width:50%;
     width:95% !important;
 }
 .sheet-simple_input label{
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: Tahoma, Geneva, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 71%;
@@ -1010,7 +1010,7 @@ width:50%;
     width: 74px;
     height: 12px;
     vertical-align: top;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 74%;
@@ -1398,7 +1398,7 @@ input.sheet-trauma-check + span {
     position: relative;
     top: -3px;
            left: 2px;
-    font-family: Georgia, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 input.sheet-trauma-check + span::after{
        content: "—";
@@ -1493,7 +1493,7 @@ input.sheet-trauma-check[type="radio"]{
     width: 100%;
     height: 12px;
     vertical-align: top;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 74%;
@@ -1520,7 +1520,7 @@ input.sheet-trauma-check[type="radio"]{
     position: relative;
     top: -9px;
      right: 3px;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
     font-size: 88%;
@@ -1534,7 +1534,7 @@ input.sheet-trauma-check[type="radio"]{
     background-color:#d6d8d9;
     border:none;
     height: 20px;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
     font-size: 85%;
@@ -1543,7 +1543,7 @@ input.sheet-trauma-check[type="radio"]{
     line-height: 0px;
 }
 .sheet-specialarmorcaption{
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-style:italic;
     color:#808183;
     
@@ -1561,10 +1561,10 @@ input.sheet-trauma-check[type="radio"]{
     border-bottom: 1px solid #8c8c8c;
     border-right: 1px solid #8c8c8c;
     overflow: hidden;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
-    font-size: 73%;
+    font-size: 70%;
     letter-spacing: 0px;
     font-weight: 800;
     line-height: 0px;
@@ -1576,7 +1576,7 @@ input.sheet-trauma-check[type="radio"]{
     box-sizing: border-box;
     border-top: 1px solid #8c8c8c;
     overflow: hidden;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: #717275;
     text-transform: uppercase;
     font-size: 73%;
@@ -1627,7 +1627,7 @@ input.sheet-trauma-check[type="radio"]{
 	position: absolute;
     width: 10px;
 	height: 10px;
-	   background-color:red;
+	   background-color:#2f6196;
 }
 
 .sheet-coinbox label:hover::after {
@@ -1666,10 +1666,10 @@ input.sheet-coinbox2[type="radio"] + span::before,input.sheet-coinbox2[type="che
         width: 9px;
 	height: 9px;
     display:inline-block;
-	 margin: 0px 6px 0px 0px;
+	 margin: 0px 4px 0px 0px;
     content:"";
 	position: relative;
-   	   background-color:red;
+   	   background-color:#2f6196;
     border:1px solid black;
     	cursor: pointer;
     padding:0;
@@ -1689,7 +1689,7 @@ input.sheet-coinbox2[type="radio"]:checked ~ input.sheet-coinbox2[type="radio"] 
 }
 input.sheet-coinbox2[type="radio"]:checked + span::before,input.sheet-coinbox2[type="checkbox"]:checked + span::before{
    
-    background-color:red;
+    background-color:#2f6196;
 
 }
 
@@ -1707,17 +1707,17 @@ input.sheet-coinbox2[type="radio"]:checked + span::before,input.sheet-coinbox2[t
      width: 8px;
 height: 8px;
 top: 0px;
-left: -1px;
+right: -5px;
     background-color:white;
 }
 .sheet-loadcheckholder input.sheet-coinbox2[type="checkbox"]:checked + span::before {
-    background-color:red;
+    background-color:#2f6196;
 }
 .sheet-loadcheckholder input.sheet-coinbox2[type="checkbox"] {
      width: 12px;
     height: 12px;
-    left: 5px;
-    top: 3px;
+    left: 17px;
+    top: 4px;
     z-index: 10;
 }
 
@@ -1902,7 +1902,7 @@ input.sheet-stashbox3.sheet-coinbox2zero[type="radio"] + span::before,input.shee
 .sheet-harmdetails1{
     background-color: #d6d8d9;
     width: 4%;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
     font-size: 100%;
@@ -1938,7 +1938,7 @@ div.sheet-harmcolumn1 div:nth-child(3)  div:nth-child(3),div.sheet-harmrow.sheet
 .sheet-harmdetails3{
     background-color: #d6d8d9;
     width: 20%;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: #575859;
     text-transform: uppercase;
     text-align: center;
@@ -1961,7 +1961,7 @@ div.sheet-harmcolumn1 div:nth-child(3) div.sheet-harmdetails3{
     margin:0;
     padding:8px;
     background-color:#d6d8d9;
-      font-family: Georgia,Times,"Times New Roman",serif;
+      font-family: Helvetica, Arial, sans-serif;
     font-style:italic;
     color:black;
     
@@ -1974,7 +1974,7 @@ div.sheet-harmcolumn1 div:nth-child(3) div.sheet-harmdetails3{
     margin-top: 6px;
 }
 .sheet-recoveryblurb span{
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
     text-align: center;
@@ -2002,7 +2002,7 @@ div.sheet-harmcolumn1 div:nth-child(3) div.sheet-harmdetails3{
     box-shadow: none;
     border: none;
     padding: 0;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
     text-align: left;
@@ -2149,7 +2149,19 @@ input.sheet-longoption  + span{text-transform:lowercase;}
  background-image:url("http://i.imgur.com/Y1Vd6bo.png");
 }
 
-
+.sheet-specialdropdown{
+	background-color: #b3b4b6;
+    width: 100%;
+    height: 20px;
+    vertical-align: top;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-size: 88%;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 0px;
+}
 .sheet-specialheader{
     
     box-sizing: border-box;
@@ -2159,13 +2171,12 @@ input.sheet-longoption  + span{text-transform:lowercase;}
     width: 100%;
     height: 20px;
     vertical-align: top;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
     font-size: 74%;
     letter-spacing: 1px;
-    padding-left: 5px;
-    padding-top: 11px;
+
     font-weight: 600;
     line-height: 0px;
 }
@@ -2190,7 +2201,7 @@ input.sheet-longoption  + span{text-transform:lowercase;}
         border-bottom: none;
     display: inline-block;
     width: 25%;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
        font-variant: small-caps;
     font-size: 100%;
@@ -2210,7 +2221,7 @@ input.sheet-longoption  + span{text-transform:lowercase;}
     border: none;
     line-height: 122%;
     background-color: rgb(214, 216, 217);
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /* SPECIAL ABILITY TICKBOXES */
@@ -2253,14 +2264,13 @@ input.sheet-longoption  + span{text-transform:lowercase;}
     margin: 0px 0px 0px 2px;
     width: 10px;
 	height: 10px;
-	   background-color:red;
         border-radius: 30px;
 }
 
 
 .sheet-attributedot input, .sheet-attributedot input + span:before {
         border-radius: 50px !important;
-   background-color:#c6c7c9;
+   background-color: transparent;
     border:none;
        
 }
@@ -2285,7 +2295,7 @@ input.sheet-itemcheckbox + span::before, input.sheet-itemcheckbox:checked + span
 }
 
 input.sheet-itemcheckbox:checked + span::before, .sheet-regularitems input.sheet-itemcheckbox:checked + span::before{
-    background-color:red !important;
+    background-color:#2f6196 !important;
 }
 .sheet-abilitycheck input[type="checkbox"]:hover + span::before,input.sheet-itemcheckbox:hover + span::before  {
 	filter: alpha(opacity=30);
@@ -2293,7 +2303,7 @@ input.sheet-itemcheckbox:checked + span::before, .sheet-regularitems input.sheet
 }
 
 .sheet-abilitycheck input[type="checkbox"]:checked ~ input[type=text],input.sheet-itemcheckbox:checked ~ input[type=text]{
-  color:red;
+  color:#2f6196;
 }
 
 .charsheet button.repcontrol_edit,.charsheet button.repcontrol_add{
@@ -2311,7 +2321,7 @@ input.sheet-itemcheckbox:checked + span::before, .sheet-regularitems input.sheet
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif !important;
+    font-family: "Arial Black", Gadget, sans-serif; !important;
        font-variant: small-caps !important;
     font-size: 100% !important;
     font-weight: 800 !important;
@@ -2332,7 +2342,7 @@ div.itemcontrol{
     width:30%;
     background-color:black;
     color:white;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;;
     text-transform: uppercase;
     font-size: 74%;
     letter-spacing: 2px;
@@ -2350,7 +2360,7 @@ div.itemcontrol{
     padding-right: 0px;
     background-color:black;
     color:white;
-        font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+        font-family: "Arial Black", Gadget, sans-serif;;
     text-transform: uppercase;
     font-size: 74%;
     letter-spacing: 2px;
@@ -2382,7 +2392,7 @@ div.itemcontrol{
     margin-bottom: 1em;
     padding-left: 1.5em;
     position: relative;
-         font-family: Georgia,Times,"Times New Roman",serif;
+         font-family: Helvetica, Arial, sans-serif;
     font-style: italic;
     color: black;
     font-size: 95%;
@@ -2409,7 +2419,7 @@ div.itemcontrol{
 }
 .sheet-markxpdesc input{
          border-bottom: none;
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-style: italic;
     color: black;
     font-size: 95%;
@@ -2424,7 +2434,7 @@ div.itemcontrol{
     background-color: black;
     box-sizing: border-box;
     vertical-align: top;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 107%;
@@ -2444,7 +2454,7 @@ div.itemcontrol{
     padding-left: 6px;
     padding-top: 5px;
     line-height:0px;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
     font-size: 74%;
@@ -2464,7 +2474,7 @@ div.itemcontrol{
     text-transform: uppercase !important;
     letter-spacing: 0px !important;
     text-shadow: none !important;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 92% !important;
     font-weight: 800;
     line-height: 9px;
@@ -2478,7 +2488,7 @@ div.itemcontrol{
     
 }
 .charsheet button.sheet-attributebtn:hover{
-        color:#ff4747 !important
+        color:#2f6196 !important
 
 }
 .charsheet button.sheet-attributebtn:before{
@@ -2502,7 +2512,7 @@ height: 22px;
 .sheet-firstdotholder{
     display:inline-block;
     border-right:1px solid black;
-    padding:4px;
+    padding:2px;
     
     margin-right: 6px;
       padding-right: 9px;
@@ -2533,7 +2543,7 @@ height: 22px;
 	position: absolute;
     width: 10px;
 	height: 10px;
-	   background-color:red;
+	   background-color:#2f6196;
                 border-radius: 50px;
         top: 0px;
     left: 0px;
@@ -2546,12 +2556,12 @@ height: 22px;
 
 .sheet-stashbox.sheet-attributedot:last-child label:after {
       border:none;
-    background-color:red;
+    background-color:#2f6196;
                 border-radius: 50px;
     
 }
 .sheet-rollbtn{
-       font-family: Georgia,Times,"Times New Roman",serif;
+       font-family: Helvetica, Arial, sans-serif;
     letter-spacing: 1px !important;
     font-weight: 600 !important;
     line-height: 13px;
@@ -2576,16 +2586,16 @@ height: 22px;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif !important;
+    font-family: "Arial Black", Gadget, sans-serif; !important;
     font-size: 97% !important;
     content: ''!important;
     position: absolute;
-        top: 273px;
-    left: 405px;
+        top: 313px;
+    left: 400px;
     font-weight: 600!important;
     background-color: white !important;
     font-variant: normal !important;
-    padding: 4px !important;
+    padding: 2px !important;
     text-transform:none !important;
 }
 .sheet-fortunebtn{
@@ -2611,15 +2621,15 @@ height: 22px;
 .sheet-rolltemplate-bitd .sheet-rolltableholder{
       margin-left: -45px;
     margin-right: -1px;
-    background-image:url(http://i.imgur.com/tGbnc6O.gif);
+    background-image:url(http://i.imgur.com/RV279bj.png);
     width:299px;
     height:258px;
     font-variant-numeric: lining-nums;  
 }
 .sheet-rolltemplate-bitd .sheet-rolltablename{
     
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
-    color: #e74a10;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #96182d;
     text-transform: uppercase;
     font-size: 103%;
     letter-spacing: 1px;
@@ -2628,12 +2638,13 @@ padding-left: 32px;
     line-height: 0px;
         height: 20px;
     padding-top: 32px;
+	text-shadow: 0px 0px 6px black;
     
 }
 .sheet-rolltemplate-bitd .sheet-rolltablerolls{
     
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
-    color: #e74a10;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #96182d;
     text-transform: uppercase;
     font-size: 103%;
     letter-spacing: 1px;
@@ -2641,9 +2652,11 @@ padding-left: 32px;
     font-weight: 800;
     line-height: 0px;
     font-style: italic;
+	text-shadow: 0px 0px 6px black;
 }
 .sheet-rolltemplate-bitd .sheet-rolltabletitle{
      padding-left: 30px;
+	 padding-right:30px;
     padding-top: 22px;
 }
 .sheet-rolltemplate-bitd .sheet-rolltabledice{
@@ -2652,7 +2665,7 @@ padding-left: 32px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 137%;
@@ -2665,7 +2678,7 @@ padding-left: 32px;
     display: inline-block;
     width: 49%;
     box-sizing: border-box;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 82%;
@@ -2712,20 +2725,20 @@ border: 0px solid white !important;
 .sheet-rolltemplate-bitd2 .sheet-rolltableholder{
       margin-left: -45px;
     margin-right: -1px;
-    background-image:url(http://i.imgur.com/0aMMISi.jpg);
+    background-image:url(http://i.imgur.com/aSsBAl0.jpg);
     width:299px;
     height:258px;
     font-variant-numeric: lining-nums;  
 }
 .sheet-rolltemplate-bitd2 .sheet-rolltablename{
     
-       font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+       font-family: "Arial Black", Gadget, sans-serif;
     color: #8da8bb;
     text-transform: uppercase;
     font-size: 91%;
     letter-spacing: 0px;
     padding-left: 30px;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 0px;
     height: 20px;
     padding-top: 32px;
@@ -2733,7 +2746,7 @@ border: 0px solid white !important;
 }
 .sheet-rolltemplate-bitd2 .sheet-rolltablerolls{
     
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: #8da8bb;
     text-transform: uppercase;
     font-size: 91%;
@@ -2755,7 +2768,7 @@ border: 0px solid white !important;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
-        font-family: Georgia,Times,"Times New Roman",serif;
+        font-family: Helvetica, Arial, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 137%;
@@ -2790,7 +2803,7 @@ border: 0px solid white !important;
            position: relative;
     top: 4px;
     font-size: 103%;
-    font-family:serif;
+    font-family:sans-serif;
     text-shadow: 0px 0px 6px rgb(9, 199, 208);
     color: #ffffff;
 }
@@ -2809,7 +2822,7 @@ border: 0px solid white !important;
     color: #d8e4ef;
 }
 .sheet-rolltemplate-bitd2 .sheet-resistinstructions{
-       font-family: Georgia,Times,"Times New Roman",serif;
+       font-family: Helvetica, Arial, sans-serif;
         padding: 15px 56px 0px 27px;
     color: #d3dde4;
     font-weight: 200;
@@ -2834,7 +2847,7 @@ border: 0px solid white !important;
     font-variant-numeric: lining-nums;  
 }
 .sheet-rolltemplate-bitd3 .sheet-rolltablename{
-      font-family: serif;
+      font-family: sans-serif;
     color: #ffffff;
     text-transform: none;
     font-size: 110%;
@@ -2847,7 +2860,7 @@ border: 0px solid white !important;
     
 }
 .sheet-rolltemplate-bitd3 .sheet-rolltablerolls{
-        font-family: serif;
+        font-family: sans-serif;
     color: #ffffff;
     text-transform: none;
     font-size: 110%;
@@ -2871,7 +2884,7 @@ border: 0px solid white !important;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
-        font-family: Georgia,Times,"Times New Roman",serif;
+        font-family: Helvetica, Arial, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 137%;
@@ -2903,7 +2916,7 @@ border: 0px solid white !important;
            position: relative;
     top: 4px;
     font-size: 103%;
-    font-family:serif;
+    font-family:sans-serif;
     text-shadow: 0px 0px 6px rgb(9, 199, 208);
     color: #ffffff;
 }
@@ -2922,7 +2935,7 @@ border: 0px solid white !important;
     color: #d8e4ef;
 }
 .sheet-rolltemplate-bitd3 .sheet-resistinstructions{
-       font-family: Georgia,Times,"Times New Roman",serif;
+       font-family: Helvetica, Arial, sans-serif;
         padding: 15px 56px 0px 27px;
     color: #c9c9c9;
     font-weight: 200;
@@ -2951,7 +2964,7 @@ border: 0px solid white !important;
 }
 .sheet-rolltemplate-bitd4 .sheet-rolltablename{
     
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: #303032;
     text-transform: uppercase;
     font-size: 103%;
@@ -2965,7 +2978,7 @@ padding-left: 32px;
 }
 .sheet-rolltemplate-bitd4 .sheet-rolltablerolls{
     
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: #303032;
     text-transform: uppercase;
     font-size: 103%;
@@ -2985,7 +2998,7 @@ padding-left: 32px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: #303032;
     text-transform: uppercase;
     font-size: 137%;
@@ -2998,7 +3011,7 @@ padding-left: 32px;
     display: inline-block;
     width: 49%;
     box-sizing: border-box;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 82%;
@@ -3050,7 +3063,7 @@ border: 0px solid white !important;
     padding-bottom: 30px;
     color: #1e1e1e;
     Padding-left: 29px;
-    font-family: Georgia, serif;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -3065,7 +3078,7 @@ border: 0px solid white !important;
 .sheet-bonusdieheader{
     width:100%;
     box-sizing:border-box;
-    font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+    font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
     font-size: 88%;
@@ -3073,19 +3086,18 @@ border: 0px solid white !important;
     font-weight: 800;
     line-height: 22px;
 }
-.sheet-bonusdie1{
-    box-sizing:border-box;
+.sheet-bonusdie1push{
+     box-sizing:border-box;
     width:10%;
-	height:inherit;
     background-color:black;
     color:white;
         display: inline-block;
         padding: 11px 4px 4px 4px;
+		height: 45px;
         font-weight: 800;
-        vertical-align:top;
-    
+        vertical-align:center;
 }
-.sheet-bonusdie2{
+.sheet-bonusdie2push{
         display: inline-block;
     vertical-align:top;
     background-color:#d6d8d9;
@@ -3093,10 +3105,88 @@ border: 0px solid white !important;
     width:90%;
     color: black;
     padding:5px;
+	height: 45px;
     font-size: 80%;
     line-height: 122%;
-    font-family: Georgia,Times,"Times New Roman",serif;
-	margin-bottom:5px;
+    font-family: Helvetica, Arial, sans-serif;
+	margin-bottom:3px;
+}
+.sheet-bonusdie1assist{
+    box-sizing:border-box;
+    width:10%;
+    background-color:black;
+    color:white;
+        display: inline-block;
+        padding: 3px 4px 4px 4px;
+		height:33px;
+        font-weight: 800;
+        vertical-align:center;
+    
+}
+.sheet-bonusdie2assist{
+        display: inline-block;
+    vertical-align:top;
+    background-color:#d6d8d9;
+    box-sizing:border-box;
+    width:90%;
+    color: black;
+    padding:5px;
+	height:33px;
+    font-size: 80%;
+    line-height: 122%;
+    font-family: Helvetica, Arial, sans-serif;
+	margin-bottom:3px;
+}
+.sheet-bonusdie1gambits{
+    box-sizing:border-box;
+    width:10%;
+    background-color:black;
+    color:white;
+        display: inline-block;
+        padding: 3px 4px 4px 4px;
+		height:22px;
+        font-weight: 800;
+        vertical-align:center;
+    
+}
+.sheet-bonusdie2gambits{
+        display: inline-block;
+    vertical-align:top;
+    background-color:#d6d8d9;
+    box-sizing:border-box;
+    width:90%;
+    color: black;
+    padding:5px;
+	height:22px;
+    font-size: 80%;
+    line-height: 122%;
+    font-family: Helvetica, Arial, sans-serif;
+	margin-bottom:3px;
+}
+.sheet-bonusdie1gambitexpo{
+    box-sizing:border-box;
+    width:10%;
+    background-color:black;
+    color:white;
+        display: inline-block;
+        padding: 35px 4px 4px 4px;
+		height: 82px;
+        font-weight: 800;
+        vertical-align:center;
+    
+}
+.sheet-bonusdie2gambitexpo{
+        display: inline-block;
+    vertical-align:top;
+    background-color:#d6d8d9;
+    box-sizing:border-box;
+    width:90%;
+    color: black;
+    padding:5px;
+	height:82px;
+    font-size: 80%;
+    line-height: 122%;
+    font-family: Helvetica, Arial, sans-serif;
 }
 .sheet-smallcaps{
     text-transform:uppercase;
@@ -3113,7 +3203,7 @@ border: 0px solid white !important;
     border: none;
     line-height: 122%;
     background-color: rgb(214, 216, 217);
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: Helvetica, Arial, sans-serif;
         font-variant: normal;
     font-weight: 400;
     padding-top: 0px;
@@ -3123,6 +3213,37 @@ border: 0px solid white !important;
         width: 137px;
     padding-left: 0px;
 }
+
+/* Action Dots */
+
+
+input.sheet-attributecheck2 + span::before{
+    margin: 0px 0px 0px -1px !important;
+    border-radius: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-style: solid !important;
+    border-width: 10px 15px 10px 0 !important;
+    border-color: transparent transparent transparent #cfd3d6 !important;
+    /* top: -3px !important; */
+}
+
+input.sheet-actiondot + span::before {
+         border-width: 5px 0px 5px 10px !important;
+    border-color: transparent #ffffff transparent transparent;
+    /* top: -3px !important; */
+}
+
+input.sheet-actiondot:checked + span::before {
+     border-color: transparent transparent transparent #2f6196!important;
+}
+input.sheet-actiondot:checked ~ input[type=text]{
+    color:#2f6196 !important;
+}
+
+
+
+
 /* FRIEND CHECKS */
 
 input.sheet-friendcheck2 + span::before{
@@ -3148,17 +3269,17 @@ input.sheet-friendup + span::before {
     top: -3px !important;
 }
 input.sheet-frienddown:checked + span::before {
-     border-color: #000000 transparent transparent transparent !important;
+     border-color: #96182d transparent transparent transparent !important;
 }
 input.sheet-friendup:checked + span::before {
-     border-color: transparent transparent red transparent !important;
+     border-color: transparent transparent #2f6196 transparent !important;
 }
 input.sheet-friendup:checked ~ input[type=text]{
-    color:red !important;
+    color:#2f6196 !important;
 }
 
 input.sheet-frienddown:checked ~ input[type=text]{
-    color:black !important;
+    color:#96182d !important;
 }
 
 
@@ -3215,7 +3336,7 @@ label.sheet-friendcheckdown{
     width:100%;
     box-sizing:border-box;
     border-top:2px solid black;
-      font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif;
+      font-family: "Arial Black", Gadget, sans-serif;
     color: black;
     text-transform: uppercase;
     font-size: 88%;
@@ -3252,7 +3373,7 @@ label.sheet-friendcheckdown{
     }
 .sheet-loadcheckholder{
     display:inline-block;
-        font-family: serif;
+        font-family: sans-serif;
     text-transform: lowercase;
     font-style: italic;
     font-size: 109%;
@@ -3266,7 +3387,7 @@ label.sheet-friendcheckdown{
 
 
 
-.sheet-italics{         font-family: Georgia,Times,"Times New Roman",serif;
+.sheet-italics{         font-family:  Helvetica, Arial, sans-serif;
       text-transform: lowercase;
     font-style: italic;
     font-size: 106%;
@@ -3292,7 +3413,7 @@ label.sheet-friendcheckdown{
     padding: 3px 0px 3px 0px;
         font-weight: 400;
     font-variant: normal;
-     font-family: Georgia,Times,"Times New Roman",serif;
+     font-family: Helvetica, Arial, sans-serif;
     font-size: 83%;
         box-shadow: none;
     background-color: rgba(255, 255, 255, 0);
@@ -3351,7 +3472,7 @@ label.sheet-friendcheckdown{
     background-color: white !important;
     margin-top: 12px;
     font-size: 91% !important;
-    font-family: serif !important;
+    font-family: sans-serif !important;
     font-variant: normal !important;
     padding: 4px !important;
 }
@@ -3364,10 +3485,10 @@ label.sheet-friendcheckdown{
     background-color:#d6d8d9;
     font-size: 89%;
     line-height: 122%;
-    font-family: Georgia,Times,"Times New Roman",serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-variant: normal;
     font-weight: 400;
-   
+	border-left:5px solid black;
 }
 .sheet-boldspan{
     font-weight:800;
@@ -3381,7 +3502,7 @@ label.sheet-friendcheckdown{
         font-weight:800;
 }
 .sheet-planningdesc{
-     font-family: Georgia,Times,"Times New Roman",serif;
+     font-family: Helvetica, Arial, sans-serif;
     color: black;
     font-size: 95%;
     line-height: 127%;
@@ -3401,7 +3522,7 @@ label.sheet-friendcheckdown{
     margin-left: 10px;
     margin-right: 10px;
     box-sizing: border-box;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Lucida Console", cursive;
     color: #c43c35;
     font-size: 155%;
     padding: 0px;
