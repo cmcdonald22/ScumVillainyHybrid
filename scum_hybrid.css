@@ -1,4 +1,9 @@
 /* Header Formatting */
+/* Colors
+96182d - red
+e34a3a soft red
+2f6196 - blue
+102536  ##02579a #81ebfb */
 .sheet-sheet-gametitleimg {float: left; }
 .sheet-sheet-alignright {
     text-align: right;
@@ -6,6 +11,11 @@
     position: relative;
     top: -11px;
     font-size: 12px;
+}
+/* Test Color Stuff */
+.sheet-sheet-type-character  {
+	background-image: url("http://i.imgur.com/gQwsrDL.png");
+	color:#83eeff;
 }
 .sheet-sheet-typeselector {}
 .sheet-sheet-aligncenter {text-align: center;}
@@ -95,7 +105,7 @@ input.sheet-sheet-typeselector + span {
     font-weight: 600;
 }
 input.sheet-sheet-typeselector:hover + span{
-    color: #96182d !important;
+    color: #e34a3a !important;
 }
 input.sheet-sheet-typeselector,
 input.sheet-sheet-typeselector + span {
@@ -126,19 +136,18 @@ input.sheet-sheet-trauma-check + span {
   border: solid thin #a7a7a7;
   text-align: center;
   display: inline-block;
-
   background: white;
-  color: #000000;
-
+  color: #81ebfb;
+  text-shadow: 0 0 3px white;
   width: 80px;
   height: 20px;
   line-height: 22px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 input.sheet-sheet-trauma-check:checked + span {
-  color: #ff0000;
+  color: #530a15;
 }
 
 .sheet-sheet-trauma-container {
@@ -199,7 +208,7 @@ input.sheet-sheet-contact-friend-info
 
 input[type=checkbox].sheet-sheet-check:checked + span,
 input[type=checkbox].sheet-sheet-check-first:checked + span {
-  background: black;
+  background: #02579a;
 }
 
 input.sheet-sheet-armor:before, input.sheet-sheet-cohort-armor:before , input.sheet-sheet-coin:before,
@@ -209,7 +218,7 @@ input.sheet-sheet-item:before, input.sheet-sheet-carry:before,
 input.sheet-sheet-turf:before, input.sheet-sheet-rep:before, input.sheet-sheet-clock:before {
   content: "";
   display: inline-block;
-  background: #ffffff;
+  background: #102536;
   width: 15px;
   height: 15px;
 }
@@ -355,9 +364,12 @@ h5 {
   width: 424px;
 }
 
-label.sheet-sheet-armor, input.sheet-sheet-spec, label.sheet-sheet-coin,
+input.sheet-sheet-spec, label.sheet-sheet-coin,
 label.sheet-sheet-stash {
   margin-left: 35px;
+}
+label.sheet-sheet-armor {
+	margin-left:10px;
 }
 
 label.sheet-sheet-heavy {
@@ -796,7 +808,7 @@ input.sheet-sheet-claim-claimed5 {left: 665px;}
 }
  
 .sheet-sheet-rolltemplate-bitd .sheet-sheet-subheader {
-  color: black;
+  color: #83eeff;
   font-size: 1.5em;
   font-style: bold;
   font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
@@ -884,14 +896,14 @@ width:50%;
 .sheet-playbooktitle{
     height:50px;
     width:100%;
-    background-color:#d6d8d9;
+    background:none;
 }
 .sheet-title{
     vertical-align: top;
     display: inline-block;
     color: #7f8184;
     text-transform: uppercase;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     width: 65%;
     font-size: 274%;
     letter-spacing: -2px;
@@ -909,13 +921,14 @@ width:50%;
     border-radius: 0;
     box-shadow: none;
     box-sizing: border-box;
-    display: inline-block;  font-family: "Arial Black", Gadget, sans-serif;
+    display: inline-block;  
+	font-family: Tahoma, Gadget, sans-serif;
     font-size: 100%;
-   
+    text-shadow: 0 0 3px white;
     letter-spacing: -2px;
     line-height: 50px !important;
     font-weight: 800;
-    color: black;
+    color: #81ebfb;
     text-transform: uppercase;
     top: -11px;
     position: relative;
@@ -924,19 +937,20 @@ width:50%;
     
     
 }
+/* A Brief Description of Playbook */
 .sheet-desc{
     vertical-align: middle;
     display: inline-block;
     width: 35%;
     text-transform: uppercase;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     letter-spacing: 1px;
     font-size: 66%;
     line-height: 154%;
     font-weight: 800;
     box-sizing: border-box;
     padding-top: 6px;
-    color: #7f8184;
+    color: #81ebfb;
     
 }
 .sheet-desc textarea{
@@ -952,9 +966,10 @@ width:50%;
     display: inline-block;
     font-size: 119%;
     line-height: 145%;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
     font-weight: 800;
-    color: rgb(127, 129, 132);
+    color: #81ebfb;
+	text-shadow: 0 0 3px white;
     text-transform: uppercase;
     height: 150px;
     width: 136px;
@@ -963,16 +978,17 @@ width:50%;
 
 .sheet-simple_input input{
     border: none;
-    background: none;
-    border-bottom: 1px solid black;
+    background:none;
+    border-bottom: 1px solid #02579a;
     border-radius: 0;
     box-shadow: none;
     width: 80%;
     margin: 0px;
     margin-bottom: 4px;
     padding: 3px 0px 0px 0px;
-        color: #c43c35;
-    font-family: Tahoma, Geneva, sans-serif;
+        color: #81ebfb;
+		text-shadow: 0 0 3px white;
+    font-family: Tahoma, Gadget, sans-serif;
     font-size: 109%;
     width: 100%;
     height: auto;
@@ -981,6 +997,16 @@ width:50%;
 }
 .sheet-simple_input .sheet-col60  input{
     width:95% !important;
+	background-color:#102536;
+}
+.sheet-col40 .sheet-simple_input  input{
+	background-color:#102536;
+}
+.sheet-simple_input .sheet-col40  input{
+	background-color:#102536;
+}
+.sheet-simple_input .sheet-fullwidth input{
+	background-color:#102536;
 }
 .sheet-simple_input label{
     font-family: Tahoma, Geneva, sans-serif;
@@ -988,11 +1014,13 @@ width:50%;
     letter-spacing: 1px;
     font-size: 71%;
     margin:0;
+	color:white;
+	text-shadow:0 0 5px #81ebfb;
 }
 
 .sheet-blackborder{
     box-sizing:border-box;
-    border-top:5px solid black;
+    border-top:5px solid #02579a;
         margin-top:15px !important;
 }
 .sheet-stress1,.sheet-stress2,.sheet-stress3,.sheet-stress4{
@@ -1006,12 +1034,13 @@ width:50%;
     width:104px;
 }
 .sheet-stress1,.sheet-stress3{
-    background-color: black;
+    background-color: #02579a;
     width: 74px;
     height: 12px;
     vertical-align: top;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: white;
+	text-shadow: 0 0 3px #81ebfb;
     text-transform: uppercase;
     font-size: 74%;
     letter-spacing: 2px;
@@ -1033,12 +1062,12 @@ width:50%;
     width: 8px;
 	height: 25px;
     display:inline-block;
-	    margin: 0px 5px 0px 0px;
+	    margin: 0px 0px 0px 0px;
 	position: relative;
    background-image:url(http://i.imgur.com/XNFdq3n.png);
 }
 .sheet-attribute .sheet-stresstooth{
-    	    margin: 0px 2px 0px 0px;
+    	    margin: 0px 0px 0px 0px;
 }
 .sheet-regulartooth{
        background-image:url(http://i.imgur.com/pGe2dC1.png);
@@ -1163,18 +1192,18 @@ input.sheet-stresszero[type="radio"]{
 }
 input.sheet-traumazero[type="radio"]{
            position: absolute;
-    left: 218px;
-    top: 370px;
+    left: 215px;
+    top: 363px;
 }
 input.sheet-stresszero[type="radio"] + span::before,input.sheet-stresszero[type="radio"]:checked + span::before{
  position:absolute;   
         left: 80px;
-    top: 362px;
+    top: 363px;
 }
 input.sheet-traumazero[type="radio"] + span::before,input.sheet-traumazero[type="radio"]:checked + span::before{
      position: absolute;
     left: 209px;
-    top: 362px;
+    top: 363px;
 }
 input.sheet-xpzero3[type="radio"]{
     position: relative;
@@ -1197,6 +1226,14 @@ input.sheet-xpzero3[type="radio"] + span::before,input.sheet-xpzero3[type="radio
 }
 .charsheet input.sheet-armortooth[type="checkbox"] + span::before {
           left: 12px;
+}
+.charsheet input.sheet-armortoothB[type="checkbox"] {
+        left: -2px;
+    top: -9px;
+    z-index:10;
+}
+.charsheet input.sheet-armortoothB[type="checkbox"] + span::before {
+          left: -2px;
 }
 .charsheet input.sheet-armortooth2[type="checkbox"] + span::before {
         margin: 0px 0px 0px 0px;
@@ -1380,6 +1417,7 @@ input.sheet-trauma-check[type="checkbox"]{
            height: 11px;
     margin: 0;
     z-index: 10;
+	text-shadow: 0 0 3px white;
 }
 input.sheet-trauma-check + span {
  
@@ -1395,6 +1433,7 @@ input.sheet-trauma-check + span {
     font-size: 64%;
     font-weight: bold;
     text-transform: uppercase;
+	text-shadow: 0 0 3px white;
     position: relative;
     top: -3px;
            left: 2px;
@@ -1402,29 +1441,32 @@ input.sheet-trauma-check + span {
 }
 input.sheet-trauma-check + span::after{
        content: "—";
-    color:black!important;
+    color:#81ebfb !important;
+	text-shadow: 0 0 3px white;
     padding-left: 2px;
 }
 
-div.sheet-recoveryblurb.sheet-recoveryblurb2 input.sheet-trauma-check + span::after { color: #5e5e5e !important;}
+div.sheet-recoveryblurb.sheet-recoveryblurb2 input.sheet-trauma-check + span::after { color: #81ebfb !important;}
 
 
 span.sheet-trauma-check.sheet-traumalast::after{
        content: " " !important;
-    color:black!important;
+    color:#81ebfb!important;
+	text-shadow: 0 0 3px white;
     padding-left: 0px;
 }
 
 
 
 input.sheet-trauma-check + span:hover{
-    color:#9c9c9c;
+    color:#81ebfb;
 }
 input.sheet-trauma-check:checked + span {
     opacity:1 !important;
-  color: #ff0000 !important;
+  color: #e34a3a !important;
+  text-shadow: 0 0 3px #3d0008 !important;
 }
-div.sheet-recoveryblurb.sheet-recoveryblurb2 span { color: #5e5e5e;}
+div.sheet-recoveryblurb.sheet-recoveryblurb2 span { color: #81ebfb;}
 input.sheet-traumarow2 + span {
     top:-8px !important;
 }
@@ -1440,7 +1482,8 @@ div.sheet-stress4 span:last-child::after,div.sheet-stress4 span:nth-child(8)::af
 .sheet-4clock{display:none;}
 .sheet-6clock{display:none;}
 .sheet-8clock{display:none;}
-.sheet-12clock{display:none;}
+.sheet-12clock{display:none;
+line-height:22px;}
 .sheet-4segment:checked ~ .sheet-4clock {
     display: block;
 }
@@ -1453,11 +1496,10 @@ div.sheet-stress4 span:last-child::after,div.sheet-stress4 span:nth-child(8)::af
 .sheet-12segment:checked ~ .sheet-12clock {
     display: block;
 }
-
 div.sheet-harmprogress input.sheet-trauma-check + span{
     font-size:89%;
         top: 0px;
-
+		color:#81ebfb;
 }
 input.sheet-trauma-check[type="radio"]{
     opacity:0;
@@ -1467,6 +1509,7 @@ input.sheet-trauma-check[type="radio"]{
            height: 11px;
     margin: 0;
     z-index: 10;
+	color:#81ebfb;
 }
 
 /* END TRAUMA DETAILS */
@@ -1489,11 +1532,11 @@ input.sheet-trauma-check[type="radio"]{
         box-sizing:border-box;
     display:inline-block;
     overflow:hidden;
-    background-color: black;
+    background-color: #02579a;
     width: 100%;
     height: 12px;
     vertical-align: top;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 74%;
@@ -1501,9 +1544,10 @@ input.sheet-trauma-check[type="radio"]{
     padding-left: 5px;
     font-weight: 600;
     line-height: 9px;
+	text-shadow:0 0 5px #81ebfb;
 }
 .sheet-armor{
-    text-align:right;
+
     vertical-align:top;
     width:50%;
         box-sizing:border-box;
@@ -1511,7 +1555,7 @@ input.sheet-trauma-check[type="radio"]{
     overflow:hidden;
 }
 .sheet-armor .sheet-stresstooth3 {
-    margin-left:10px;
+    margin-left:2px;
 }
 
 .sheet-armorcaption{
@@ -1519,23 +1563,23 @@ input.sheet-trauma-check[type="radio"]{
     display: inline-block;
     position: relative;
     top: -9px;
-     right: 3px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: white;
     text-transform: uppercase;
-    font-size: 88%;
-    letter-spacing: 0px;
-    font-weight: 800;
+    font-size: 90%;
+    letter-spacing: -1px;
+    font-weight: 900;
     line-height: 0px;
+	text-shadow:0 0 2px #81ebfb;
 }
 .sheet-col90 input{
     margin:0;
     padding-left: 5px;
-    background-color:#d6d8d9;
+    background-color:#102536;
     border:none;
     height: 20px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: #81ebfb;
     text-transform: uppercase;
     font-size: 85%;
     letter-spacing: 0px;
@@ -1545,8 +1589,8 @@ input.sheet-trauma-check[type="radio"]{
 .sheet-specialarmorcaption{
     font-family: Helvetica, Arial, sans-serif;
     font-style:italic;
-    color:#808183;
-    
+    color:#white;
+    text-shadow:0 0 2px #81ebfb;
     font-size: 80%;
     line-height: 0px;
     padding-top: 7px;
@@ -1561,9 +1605,10 @@ input.sheet-trauma-check[type="radio"]{
     border-bottom: 1px solid #8c8c8c;
     border-right: 1px solid #8c8c8c;
     overflow: hidden;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: white;
     text-transform: uppercase;
+	text-shadow: 0 0 3px #81ebfb;
     font-size: 70%;
     letter-spacing: 0px;
     font-weight: 800;
@@ -1576,10 +1621,11 @@ input.sheet-trauma-check[type="radio"]{
     box-sizing: border-box;
     border-top: 1px solid #8c8c8c;
     overflow: hidden;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: #717275;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: white;
     text-transform: uppercase;
     font-size: 73%;
+	text-shadow: 0 0 3px #81ebfb;
     letter-spacing: 0px;
     font-weight: 800;
     line-height: 0px;
@@ -1604,8 +1650,9 @@ input.sheet-trauma-check[type="radio"]{
     display:inline-block;
 	    margin: 0px 0px 0px 2px;
 	position: relative;
-   background-color:white;
-    border:1px solid black;
+   background-color: #02579a;
+    border:1px solid white;
+	box-shadow: 0 0 5px #81ebfb;
 }
 .sheet-coinbox:last-child{
     margin-right:0px !important;
@@ -1627,7 +1674,7 @@ input.sheet-trauma-check[type="radio"]{
 	position: absolute;
     width: 10px;
 	height: 10px;
-	   background-color:#2f6196;
+	   background-color:#02579a;
 }
 
 .sheet-coinbox label:hover::after {
@@ -1669,8 +1716,8 @@ input.sheet-coinbox2[type="radio"] + span::before,input.sheet-coinbox2[type="che
 	 margin: 0px 4px 0px 0px;
     content:"";
 	position: relative;
-   	   background-color:#2f6196;
-    border:1px solid black;
+   	   background-color:#81ebfb;
+    border:1px solid #02579a;
     	cursor: pointer;
     padding:0;
 }
@@ -1689,10 +1736,10 @@ input.sheet-coinbox2[type="radio"]:checked ~ input.sheet-coinbox2[type="radio"] 
 }
 input.sheet-coinbox2[type="radio"]:checked + span::before,input.sheet-coinbox2[type="checkbox"]:checked + span::before{
    
-    background-color:#2f6196;
+    background-color:#81ebfb;
 
 }
-
+/* Load Boxes */
 .sheet-loadcheckholder .sheet-coinbox {
 
     transform: rotate(45deg);
@@ -1701,23 +1748,25 @@ input.sheet-coinbox2[type="radio"]:checked + span::before,input.sheet-coinbox2[t
 	height: 7px;
     border: none;
         background-color: rgba(179,180,182,0);
+		top: 5px !important;
+		left: 5px !important;
 }
 
 .sheet-loadcheckholder input.sheet-coinbox2[type="checkbox"] + span::before {
      width: 8px;
 height: 8px;
 top: 0px;
-right: -5px;
+right: 0px;
     background-color:white;
 }
 .sheet-loadcheckholder input.sheet-coinbox2[type="checkbox"]:checked + span::before {
-    background-color:#2f6196;
+    background-color:#81ebfb;
 }
 .sheet-loadcheckholder input.sheet-coinbox2[type="checkbox"] {
      width: 12px;
     height: 12px;
-    left: 17px;
-    top: 4px;
+    left: 5px;
+    top: 0px;
     z-index: 10;
 }
 
@@ -1746,8 +1795,9 @@ input.sheet-stashbox3[type="radio"] + span::before{
 	    margin: 0px 9px 0px 0px;
     content:"";
 	position: relative;
-   	  background-color: black;
-    border:1px solid black;
+   	  background-color: #81ebfb;
+    border:1px solid #02579a;
+	box-shadow: 0 0 2px white;
     	cursor: pointer;
     padding:0;
 }
@@ -1781,13 +1831,15 @@ filter: alpha(opacity=70);
 
 input.sheet-stashbox3[type="radio"]:checked ~ input.sheet-stashbox3[type="radio"] + span::before{    
     content: "";
-        background-color: #c6c7c9;
-       border:1px solid #c6c7c9;
+        background-color: white;
+       border:1px solid #102536;
+	   box-shadow:0 0 3px #81ebfb;
 }
 input.sheet-stashbox3[type="radio"]:checked + span::before{
    
-    background-color:black;
-       border:1px solid black;
+    background-color: #81ebfb;
+       border:1px solid #02579a;
+	   box-shadow:0 0 3px white;
 
 }
 input.sheet-coinbox2zero{
@@ -1801,8 +1853,8 @@ input.sheet-coinbox2zero[type="radio"] + span::before{
     width: 10px;
     height: 13px;
     position: absolute;
-    left: 381px;
-    top: 507px;
+    left: 385px;
+    top: 508px;
     border: none;
     background-color: rgba(255,255,255,0);
     background-image:url(http://i.imgur.com/b7fMDSq.png);
@@ -1812,8 +1864,8 @@ input.sheet-coinbox2zero[type="radio"]:checked + span::before{
     width: 10px;
     height: 13px;
     position: absolute;
-    left: 381px;
-    top: 507px;
+    left: 385px;
+    top: 508px;
     border: none;
     background-color: rgba(255,255,255,0);
    background-image:url(http://i.imgur.com/b7fMDSq.png);
@@ -1838,8 +1890,8 @@ input.sheet-coinbox2zero[type="radio"] + span::before{
     width: 10px;
     height: 13px;
     position: absolute;
-    left: 381px;
-       top: 507px;
+    left: 378px;
+       top: 508px;
 
     border: none;
     background-color: rgba(255,255,255,0);
@@ -1850,8 +1902,8 @@ input.sheet-coinbox2zero[type="radio"]:checked + span::before{
     width: 10px;
     height: 13px;
     position: absolute;
-    left: 381px;
-        top: 507px;
+    left: 378px;
+        top: 508px;
 
     border: none;
     background-color: rgba(255,255,255,0);
@@ -1859,11 +1911,11 @@ input.sheet-coinbox2zero[type="radio"]:checked + span::before{
 }
 input.sheet-stashbox3.sheet-coinbox2zero{
         top: 0px !important;
-    left: -5px !important;
+    left: 0px !important;
 }
 input.sheet-stashbox3.sheet-coinbox2zero[type="radio"] + span::before,input.sheet-stashbox3.sheet-coinbox2zero[type="radio"]:checked + span::before{
-         left: 337px;
-    top: 533px;
+         left: 342px;
+    top: 532px;
 }
 
 
@@ -1877,7 +1929,7 @@ input.sheet-stashbox3.sheet-coinbox2zero[type="radio"] + span::before,input.shee
     padding:0;
     margin:0;
     overflow:hidden;
-    border-bottom:1px solid black;
+    border-bottom:1px solid #02579a;
     
     position: relative;
     top: -11px;
@@ -1900,10 +1952,11 @@ input.sheet-stashbox3.sheet-coinbox2zero[type="radio"] + span::before,input.shee
     height:40px;
 }
 .sheet-harmdetails1{
-    background-color: #d6d8d9;
+    background-color: #102536;
     width: 4%;
     font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    color: #81ebfb;
+	text-shadow: 0 0 3px white;
     text-transform: uppercase;
     font-size: 100%;
     letter-spacing: 0px;
@@ -1915,31 +1968,38 @@ input.sheet-stashbox3.sheet-coinbox2zero[type="radio"] + span::before,input.shee
 }
 .sheet-harmdetails2{
     width:76%;
+	
 }
 .sheet-harmdetails2b{
     width:38%;
 }
 div.sheet-harmcolumn1 div:nth-child(3)  div:nth-child(3),div.sheet-harmrow.sheet-harmlast div:nth-child(3){
-        border-left: 1px solid #d6d8d9;
+        border-left: 1px solid #102536;
 }
 
 .sheet-harmdetails2 input{
     border-bottom: none;
     padding: 6px;
-    padding-top: 12px;
+    padding-top: 6px;
     font-size: 92%;
+	color: #e34a3a !important;
+	text-shadow: 0 0 3px #3d0008;
+	font-family: "Arial Black", Gadget, Sans-serif;
 }
 .sheet-harmdetails2b input{
      border-bottom: none;
     padding: 6px;
-    padding-top: 12px;
+    padding-top: 6px;
     font-size: 92%;
+	color: #e34a3a !important;
+	text-shadow: 0 0 3px #3d0008;
+	 font-family: "Arial Black", Gadget, sans-serif;
 }
 .sheet-harmdetails3{
-    background-color: #d6d8d9;
+    background-color: #102536;
     width: 20%;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: #575859;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: #81ebfb;
     text-transform: uppercase;
     text-align: center;
     font-size: 80%;
@@ -1947,6 +2007,7 @@ div.sheet-harmcolumn1 div:nth-child(3)  div:nth-child(3),div.sheet-harmrow.sheet
     font-weight: 800;
     line-height: 119%;
     padding: 8px;
+	text-shadow: 0 0 3px white;
 }
 
 div.sheet-harmcolumn1 div:nth-child(3) div.sheet-harmdetails3{
@@ -1960,11 +2021,11 @@ div.sheet-harmcolumn1 div:nth-child(3) div.sheet-harmdetails3{
     box-sizing:border-box;
     margin:0;
     padding:8px;
-    background-color:#d6d8d9;
+    background-color:#102536;
       font-family: Helvetica, Arial, sans-serif;
     font-style:italic;
-    color:black;
-    
+    color:#81ebfb;
+    text-shadow: 0 0 3px white;
     font-size: 80%;
     line-height: 0px;
 }
@@ -1974,8 +2035,9 @@ div.sheet-harmcolumn1 div:nth-child(3) div.sheet-harmdetails3{
     margin-top: 6px;
 }
 .sheet-recoveryblurb span{
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: #81ebfb;
+	text-shadow: 0 0 3px white;
     text-transform: uppercase;
     text-align: center;
     font-size: 81%;
@@ -1994,16 +2056,17 @@ div.sheet-harmcolumn1 div:nth-child(3) div.sheet-harmdetails3{
   height: 0; 
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  border-left: 4px solid black;
+  border-left: 4px solid #81ebfb;
 }
 .sheet-clockname{
         width: 100%;
-        background-color: #d6d8d9;
+        background-color: #102536;
     box-shadow: none;
     border: none;
     padding: 0;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: #81ebfb;
+	text-shadow: 0 0 3px white;
     text-transform: uppercase;
     text-align: left;
     font-size: 106%;
@@ -2014,6 +2077,7 @@ div.sheet-harmcolumn1 div:nth-child(3) div.sheet-harmdetails3{
 }
 .sheet-harmprogress{
         margin-top: 10px;
+		color:#81ebfb !important;
 }
 .sheet-harmprogress input.sheet-trauma-check + label{
         top: 0px;
@@ -2035,155 +2099,201 @@ div.sheet-harmprogress label:nth-child(19)::after {
     z-index: 1;
     height:44px;
     width:44px;
-    background-image:url('http://i.imgur.com/ji8z8CE.png');
+    background-image:url('http://i.imgur.com/YZNY1LM.png');
 }
 .sheet-harmrecoveryclock2{
       left: 327px;
+	  background-image:url("http://i.imgur.com/b3vFvuk.png");
 }
 
 input.sheet-longoption {    width: 64px !important; }
 input.sheet-longoption  + span{text-transform:lowercase;}
 .sheet-harmprogress input.sheet-recoverytracker0:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/ji8z8CE.png");
+  background-image:url("http://i.imgur.com/s8mN7Da.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker1:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/My9TlI6.png");
+  background-image:url("http://i.imgur.com/dBdCMqR.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker2:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/5o93FQt.png");
+  background-image:url("http://i.imgur.com/T6ZC3aR.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker3:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/MR6r8J7.png");
+  background-image:url("http://i.imgur.com/1TMlCMK.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker4:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/OADDLy1.png");
+  background-image:url("http://i.imgur.com/8uuSoyl.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker5:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/XvnSlyZ.png");
+  background-image:url("http://i.imgur.com/wHTyUIE.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker6:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/IKUp5Bv.png");
+  background-image:url("http://i.imgur.com/WXAzJdO.png");
 }
-.sheet-harmprogress input.sheet-recoverytracker7:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/tmBBDIN.png");
-}
-.sheet-harmprogress input.sheet-recoverytracker8:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/Y0eUmrG.png");
 }
 
 .sheet-harmprogress input.sheet-clock4_0:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/dafd6b0.png");
+  background-image:url("http://i.imgur.com/b3vFvuk.png");
 }
 .sheet-harmprogress input.sheet-clock4_1:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/fM5WKMB.png");
+  background-image:url("http://i.imgur.com/O16MXWx.png");
 }
 .sheet-harmprogress input.sheet-clock4_2:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/P6Wx884.png");
+  background-image:url("http://i.imgur.com/OwFhQsC.png");
 }
 .sheet-harmprogress input.sheet-clock4_3:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/C1mMa0r.png");
+  background-image:url("http://i.imgur.com/33cg4DC.png");
 }
 .sheet-harmprogress input.sheet-clock4_4:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/RZfr3By.png");
+  background-image:url("http://i.imgur.com/WE03f13.png");
 }
 
 .sheet-harmprogress input.sheet-clock6_0:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/arZJyPv.png");
+ background-image:url("http://i.imgur.com/s8mN7Da.png");
 }
 .sheet-harmprogress input.sheet-clock6_1:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/7l0Tihg.png");
+   background-image:url("http://i.imgur.com/QUWZtyb.png");
 }
 .sheet-harmprogress input.sheet-clock6_2:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/MhIfWuq.png");
+   background-image:url("http://i.imgur.com/Pf0igAu.png");
 }
 .sheet-harmprogress input.sheet-clock6_3:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/qwiaO8q.png");
+  background-image:url("http://i.imgur.com/dRrWPYE.png");
 }
 .sheet-harmprogress input.sheet-clock6_4:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/8O2eCB5.png");
+  background-image:url("http://i.imgur.com/6pmRDtd.png");
 }
 .sheet-harmprogress input.sheet-clock6_5:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/i7ivEnS.png");
+  background-image:url("http://i.imgur.com/EenI54J.png");
 }
 .sheet-harmprogress input.sheet-clock6_6:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/DuYwNvN.png");
+  background-image:url("http://i.imgur.com/BGx1Tj9.png");
+}
+
+.sheet-harmprogress input.sheet-clock8_0:checked + span  ~ .sheet-harmrecoveryclock {
+  background-image:url("http://i.imgur.com/p0GOdoz.png");
+}
+.sheet-harmprogress input.sheet-clock8_1:checked + span  ~ .sheet-harmrecoveryclock {
+  background-image:url("http://i.imgur.com/mV2qUjg.png");
+}
+.sheet-harmprogress input.sheet-clock8_2:checked + span  ~ .sheet-harmrecoveryclock {
+  background-image:url("http://i.imgur.com/KvKM6w2.png");
+}
+.sheet-harmprogress input.sheet-clock8_3:checked + span  ~ .sheet-harmrecoveryclock {
+  background-image:url("http://i.imgur.com/EQBIjZZ.png");
+}
+.sheet-harmprogress input.sheet-clock8_4:checked + span  ~ .sheet-harmrecoveryclock {
+  background-image:url("http://i.imgur.com/XNo30BD.png");
+}
+.sheet-harmprogress input.sheet-clock8_5:checked + span  ~ .sheet-harmrecoveryclock {
+  background-image:url("http://i.imgur.com/p9123r8.png");
+}
+.sheet-harmprogress input.sheet-clock8_6:checked + span  ~ .sheet-harmrecoveryclock {
+  background-image:url("http://i.imgur.com/zQfqPKQ.png");
+}
+.sheet-harmprogress input.sheet-clock8_7:checked + span  ~ .sheet-harmrecoveryclock {
+  background-image:url("http://i.imgur.com/im6flnw.png");
+}
+.sheet-harmprogress input.sheet-clock8_8:checked + span  ~ .sheet-harmrecoveryclock {
+  background-image:url("http://i.imgur.com/Q2WkeOv.png");
 }
 
 .sheet-harmprogress input.sheet-clock12_0:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/AzLi8pr.png");
+  background-image:url("http://i.imgur.com/znONopv.png");
 }
 .sheet-harmprogress input.sheet-clock12_1:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/pDCHycE.png");
+ background-image:url("http://i.imgur.com/oGc8O6H.png");
 }
 .sheet-harmprogress input.sheet-clock12_2:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/JbRUclC.png");
+  background-image:url("http://i.imgur.com/2oqwIXA.png");
 }
 .sheet-harmprogress input.sheet-clock12_3:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/jRyp6oP.png");
+  background-image:url("http://i.imgur.com/xnoidzV.png");
 }
 .sheet-harmprogress input.sheet-clock12_4:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/BHM56D9.png");
+  background-image:url("http://i.imgur.com/kE0vd5Z.png");
 }
 .sheet-harmprogress input.sheet-clock12_5:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/a4c1e5I.png");
+  background-image:url("http://i.imgur.com/v3IYdfi.png");
 }
 .sheet-harmprogress input.sheet-clock12_6:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/IRGWvwH.png");
+  background-image:url("http://i.imgur.com/J4HQ6Yz.png");
 }
 .sheet-harmprogress input.sheet-clock12_7:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/GbUzXr7.png");
+ background-image:url("http://i.imgur.com/6zvyl8s.png");
 }
 .sheet-harmprogress input.sheet-clock12_8:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/krkIEho.png");
+ background-image:url("http://i.imgur.com/8e9YyiS.png");
 }
 .sheet-harmprogress input.sheet-clock12_9:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/7vuvV92.png");
+ background-image:url("http://i.imgur.com/dENb7BK.png");
 }
 .sheet-harmprogress input.sheet-clock12_10:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/Q9xWEYx.png");
+ background-image:url("http://i.imgur.com/x1DfZVb.png");
 }
 .sheet-harmprogress input.sheet-clock12_11:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/N29lNdB.png");
+ background-image:url("http://i.imgur.com/F13aePT.png");
 }
 .sheet-harmprogress input.sheet-clock12_12:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/Y1Vd6bo.png");
+ background-image:url("http://i.imgur.com/BAOm0Oz.png");
 }
 
 .sheet-specialdropdown{
-	background-color: #b3b4b6;
+	background-color: #02579a;
     width: 100%;
     height: 20px;
     vertical-align: top;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: white;
     text-transform: uppercase;
     font-size: 88%;
     letter-spacing: 1px;
     font-weight: 600;
     line-height: 0px;
+	text-shadow:0 0 5px #81ebfb;
 }
 .sheet-specialheader{
     
     box-sizing: border-box;
     display: inline-block;
     overflow: hidden;
-    background-color: #b3b4b6;
+    background-color: #02579a;
     width: 100%;
     height: 20px;
     vertical-align: top;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: white;
     text-transform: uppercase;
     font-size: 74%;
     letter-spacing: 1px;
-
+	padding-left: 5px;
+    padding-top: 11px;
     font-weight: 600;
     line-height: 0px;
+	text-shadow:0 0 5px #81ebfb;
+}
+.sheet-specialheaderfriends{
+    
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #02579a;
+    width: 100%;
+    height: 20px;
+    vertical-align: top;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: White;
+    text-transform: uppercase;
+    font-size: 75%;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 0px;
+	text-shadow:0 0 5px #81ebfb;
 }
 .sheet-specialheader2{       
     margin-top: 26px;
     margin-bottom: 15px;
         padding-top: 11px;
+		text-shadow:0 0 5px #81ebfb;
 }
 .sheet-specialability{
             padding-top: 2px;
@@ -2192,7 +2302,7 @@ input.sheet-longoption  + span{text-transform:lowercase;}
 }
 .sheet-abilitiesholder{
     width:100%;
-    background-color:#d6d8d9;
+    background-color:#102536;
     box-sizing:border-box;
 
 }
@@ -2201,8 +2311,8 @@ input.sheet-longoption  + span{text-transform:lowercase;}
         border-bottom: none;
     display: inline-block;
     width: 25%;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: #81ebfb;
        font-variant: small-caps;
     font-size: 100%;
     font-weight: 800;
@@ -2216,12 +2326,13 @@ input.sheet-longoption  + span{text-transform:lowercase;}
     display: inline-block;
     height: 50px;
     box-shadow: none;
-    color: black;
+    color: #81ebfb;
     font-size: 95%;
     border: none;
     line-height: 122%;
-    background-color: rgb(214, 216, 217);
+    background:none;
     font-family: Helvetica, Arial, sans-serif;
+	text-shadow:0 0 3px white;
 }
 
 /* SPECIAL ABILITY TICKBOXES */
@@ -2250,9 +2361,9 @@ input.sheet-longoption  + span{text-transform:lowercase;}
     position: relative;
     padding: 0;
     background-color: white;
-    border: 1px solid #838587;
+    border: 1px solid white;
     border-radius: 30px;
-
+	
 }
 
 
@@ -2265,6 +2376,7 @@ input.sheet-longoption  + span{text-transform:lowercase;}
     width: 10px;
 	height: 10px;
         border-radius: 30px;
+	
 }
 
 
@@ -2283,19 +2395,21 @@ input.sheet-longoption  + span{text-transform:lowercase;}
 input.sheet-itemcheckbox{
         width: 16px !important;
     height: 15px !important;
+	box-shadow:0 0 5px #81ebfb !important;
 }
 input.sheet-itemcheckbox + span::before, input.sheet-itemcheckbox:checked + span::before{
     top: 2px !important;
     border-radius: 0px !important;
-        background-color: #d6d8d9 !important;
+        background-color: #102536 !important;
     margin-right: 1px !important;
+	box-shadow:0 0 5px #81ebfb !important;
 }
 .sheet-regularitems input.sheet-itemcheckbox + span::before, .sheet-regularitems input.sheet-itemcheckbox:checked + span::before{
-      background-color: white !important;
+      background-color: #102536 !important;
 }
 
 input.sheet-itemcheckbox:checked + span::before, .sheet-regularitems input.sheet-itemcheckbox:checked + span::before{
-    background-color:#2f6196 !important;
+    background-color:#81ebfb !important;
 }
 .sheet-abilitycheck input[type="checkbox"]:hover + span::before,input.sheet-itemcheckbox:hover + span::before  {
 	filter: alpha(opacity=30);
@@ -2303,33 +2417,33 @@ input.sheet-itemcheckbox:checked + span::before, .sheet-regularitems input.sheet
 }
 
 .sheet-abilitycheck input[type="checkbox"]:checked ~ input[type=text],input.sheet-itemcheckbox:checked ~ input[type=text]{
-  color:#2f6196;
+  color:#81ebfb;
 }
 
 .charsheet button.repcontrol_edit,.charsheet button.repcontrol_add{
     letter-spacing:0px  !important;
-    text-shadow: none !important;
+    text-shadow: 0 0 2px white !important;
     padding: 6px !important;
         background-image: none;
-   background-color: #d6d8d9 !important;
-    color: #616161 !important;
+   background-color: #102536 !important;
+    color: #81ebfb;
     border-radius: 0;
-    border-color: #b3b4b6 !important;
-    box-shadow: none;
+    border-color: #81ebfb !important;
+    box-shadow: 0 0 2px white;
     -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
-    font-family: "Arial Black", Gadget, sans-serif; !important;
+    font-family: Tahoma, Gadget, sans-serif; !important;
        font-variant: small-caps !important;
     font-size: 100% !important;
     font-weight: 800 !important;
 }
 .charsheet button.repcontrol_edit:hover,.charsheet button.repcontrol_add:hover{
-        color: #020202  !important;
-        border-color: #020202  !important;
-     background-color:#cccccc !important;
+        color: white  !important;
+        border-color: white  !important;
+     background-color:#102536 !important;
 
 }
 div.itemcontrol{
@@ -2340,9 +2454,9 @@ div.itemcontrol{
 .sheet-markxp{
     display:inline-block;
     width:30%;
-    background-color:black;
+    background-color:#02579a;
     color:white;
-    font-family: "Arial Black", Gadget, sans-serif;;
+    font-family: Tahoma, Gadget, sans-serif;;
     text-transform: uppercase;
     font-size: 74%;
     letter-spacing: 2px;
@@ -2351,6 +2465,7 @@ div.itemcontrol{
     line-height: 19px;
     height: 16px;
     margin-top: 9px;
+	text-shadow:0 0 5px #81ebfb;
     
 }
 .sheet-playbookadvancement{
@@ -2358,9 +2473,9 @@ div.itemcontrol{
         display:inline-block;
     width: 67%;
     padding-right: 0px;
-    background-color:black;
+    background-color:#02579a;
     color:white;
-        font-family: "Arial Black", Gadget, sans-serif;;
+        font-family: Tahoma, Gadget, sans-serif;;
     text-transform: uppercase;
     font-size: 74%;
     letter-spacing: 2px;
@@ -2369,6 +2484,7 @@ div.itemcontrol{
     line-height: 19px;
     height: 16px;
     margin-top: 9px;
+	text-shadow:0 0 5px #81ebfb;
     
 }
 .sheet-playbookholder{
@@ -2379,7 +2495,7 @@ div.itemcontrol{
 }
 .sheet-markxpdesc{
     width:99%;
-    background-color:#d6d8d9;
+    background-color:#102536;
     
 }
 .sheet-markxpdesc ul {
@@ -2394,16 +2510,17 @@ div.itemcontrol{
     position: relative;
          font-family: Helvetica, Arial, sans-serif;
     font-style: italic;
-    color: black;
+    color: #81ebfb;
     font-size: 95%;
     line-height: 127%;
+	text-shadow: 0 0 3px white;
    
 }
 .sheet-markxpdesc li:after {
       content: '';
       height: .4em;
       width: .4em;
-      background: black;
+      background: #02579a;
       display: block;
       position: absolute;
       transform: rotate(45deg);
@@ -2421,7 +2538,7 @@ div.itemcontrol{
          border-bottom: none;
     font-family: Helvetica, Arial, sans-serif;
     font-style: italic;
-    color: black;
+    color: #81ebfb;
     font-size: 95%;
     line-height: 125%;
     padding: 0px;
@@ -2431,11 +2548,12 @@ div.itemcontrol{
 .sheet-attribute{
     width:100%;
     height: 21px;
-    background-color: black;
+    background-color: #02579a;
     box-sizing: border-box;
     vertical-align: top;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: white;
+	text-shadow: 0 0 3px #81ebfb !important;
     text-transform: uppercase;
     font-size: 107%;
     letter-spacing: 0;
@@ -2448,14 +2566,14 @@ div.itemcontrol{
 
 .sheet-loadheader,.sheet-loadheader2{
  width: 100%;
-    background-color: #b3b4b6;
+    background-color: #02579a;
     height: 20px;
     box-sizing: border-box;
-    padding-left: 6px;
+    padding-left: 3px;
     padding-top: 5px;
     line-height:0px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: white;
     text-transform: uppercase;
     font-size: 74%;
     letter-spacing: 0px;
@@ -2473,13 +2591,13 @@ div.itemcontrol{
    
     text-transform: uppercase !important;
     letter-spacing: 0px !important;
-    text-shadow: none !important;
-    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0 0 1px #81ebfb !important;
+    font-family: Tahoma, Gadget, sans-serif;
     font-size: 92% !important;
     font-weight: 800;
     line-height: 9px;
     border: none;
-       background-color: black;
+       background-color: #02579a;
     color: white;
     margin: 0 !important;
     padding: 0 !important;
@@ -2488,8 +2606,10 @@ div.itemcontrol{
     
 }
 .charsheet button.sheet-attributebtn:hover{
-        color:#2f6196 !important
-
+        color:#81ebfb !important
+		text-shadow:0 0 1px white;
+		filter: alpha(opacity=30);
+	opacity: 0.3;
 }
 .charsheet button.sheet-attributebtn:before{
     content:"" !important;
@@ -2511,7 +2631,7 @@ height: 22px;
 }
 .sheet-firstdotholder{
     display:inline-block;
-    border-right:1px solid black;
+    border-right:3px solid #02579a;
     padding:2px;
     
     margin-right: 6px;
@@ -2543,7 +2663,7 @@ height: 22px;
 	position: absolute;
     width: 10px;
 	height: 10px;
-	   background-color:#2f6196;
+	   background-color:#81ebfb;
                 border-radius: 50px;
         top: 0px;
     left: 0px;
@@ -2556,7 +2676,7 @@ height: 22px;
 
 .sheet-stashbox.sheet-attributedot:last-child label:after {
       border:none;
-    background-color:#2f6196;
+    background-color:#81ebfb;
                 border-radius: 50px;
     
 }
@@ -2567,33 +2687,35 @@ height: 22px;
     line-height: 13px;
     font-size: 95% !important;
     text-transform: uppercase !important;
-    background-color: white !important;
-    color: black;
+	text-shadow: 0 0 3px white !important;
+	filter:drop-shadow(0 0 3px white);
+	background:none;
+    color: #81ebfb;
     position: relative;
     top: -1px;
     left: 2px;
 }
 .sheet-vicebutton, .sheet-fortunebtn{
     letter-spacing: 0px !important;
-    text-shadow: none !important;
+    text-shadow: 0 0 2px white !important;
     background-image: none;
-    color: #616161 !important;
+    color: #81ebfb !important;
     border-radius: 0;
-    border-color: #b3b4b6 !important;
-    box-shadow: none;
+    border-color: #81ebfb !important;
+    box-shadow: 0 0 2px white;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
-    font-family: "Arial Black", Gadget, sans-serif; !important;
+    font-family: Tahoma, Gadget, sans-serif; !important;
     font-size: 97% !important;
     content: ''!important;
     position: absolute;
         top: 313px;
     left: 400px;
     font-weight: 600!important;
-    background-color: white !important;
+    background-color: #102536 !important;
     font-variant: normal !important;
     padding: 2px !important;
     text-transform:none !important;
@@ -2609,8 +2731,8 @@ height: 22px;
     margin-top: 10px !important;
 }
 .charsheet button.sheet-vicebutton:hover, .charsheet button.sheet-fortunebtn:hover{
-        color: #020202 !important;
-    border-color: #020202 !important;
+        color: white !important;
+    border-color: white !important;
 
 }
 .charsheet button.sheet-vicebutton:before,.charsheet button.sheet-fortunebtn:before{
@@ -2628,7 +2750,7 @@ height: 22px;
 }
 .sheet-rolltemplate-bitd .sheet-rolltablename{
     
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: #96182d;
     text-transform: uppercase;
     font-size: 103%;
@@ -2643,7 +2765,7 @@ padding-left: 32px;
 }
 .sheet-rolltemplate-bitd .sheet-rolltablerolls{
     
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: #96182d;
     text-transform: uppercase;
     font-size: 103%;
@@ -2678,7 +2800,7 @@ padding-left: 32px;
     display: inline-block;
     width: 49%;
     box-sizing: border-box;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 82%;
@@ -2732,7 +2854,7 @@ border: 0px solid white !important;
 }
 .sheet-rolltemplate-bitd2 .sheet-rolltablename{
     
-       font-family: "Arial Black", Gadget, sans-serif;
+       font-family: Tahoma, Gadget, sans-serif;
     color: #8da8bb;
     text-transform: uppercase;
     font-size: 91%;
@@ -2746,7 +2868,7 @@ border: 0px solid white !important;
 }
 .sheet-rolltemplate-bitd2 .sheet-rolltablerolls{
     
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: #8da8bb;
     text-transform: uppercase;
     font-size: 91%;
@@ -2964,7 +3086,7 @@ border: 0px solid white !important;
 }
 .sheet-rolltemplate-bitd4 .sheet-rolltablename{
     
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: #303032;
     text-transform: uppercase;
     font-size: 103%;
@@ -2978,7 +3100,7 @@ padding-left: 32px;
 }
 .sheet-rolltemplate-bitd4 .sheet-rolltablerolls{
     
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: #303032;
     text-transform: uppercase;
     font-size: 103%;
@@ -3011,7 +3133,7 @@ padding-left: 32px;
     display: inline-block;
     width: 49%;
     box-sizing: border-box;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Tahoma, Gadget, sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 82%;
@@ -3074,12 +3196,13 @@ border: 0px solid white !important;
         margin-bottom: 5px;
     position: relative;
     top: -10px;
+	text-shadow:0 0 5px white;
 }
 .sheet-bonusdieheader{
     width:100%;
     box-sizing:border-box;
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    font-family: Tahoma, Gadget, sans-serif;
+    color: #81ebfb;
     text-transform: uppercase;
     font-size: 88%;
     letter-spacing: 0px;
@@ -3089,7 +3212,7 @@ border: 0px solid white !important;
 .sheet-bonusdie1push{
      box-sizing:border-box;
     width:10%;
-    background-color:black;
+    background-color:#02579a ;
     color:white;
         display: inline-block;
         padding: 11px 4px 4px 4px;
@@ -3100,10 +3223,10 @@ border: 0px solid white !important;
 .sheet-bonusdie2push{
         display: inline-block;
     vertical-align:top;
-    background-color:#d6d8d9;
+    background-color:#102536;
     box-sizing:border-box;
     width:90%;
-    color: black;
+    color: #81ebfb;
     padding:5px;
 	height: 45px;
     font-size: 80%;
@@ -3114,7 +3237,7 @@ border: 0px solid white !important;
 .sheet-bonusdie1assist{
     box-sizing:border-box;
     width:10%;
-    background-color:black;
+    background-color:#02579a;
     color:white;
         display: inline-block;
         padding: 3px 4px 4px 4px;
@@ -3126,10 +3249,10 @@ border: 0px solid white !important;
 .sheet-bonusdie2assist{
         display: inline-block;
     vertical-align:top;
-    background-color:#d6d8d9;
+    background-color:#102536;
     box-sizing:border-box;
     width:90%;
-    color: black;
+    color: #81ebfb;
     padding:5px;
 	height:33px;
     font-size: 80%;
@@ -3140,7 +3263,7 @@ border: 0px solid white !important;
 .sheet-bonusdie1gambits{
     box-sizing:border-box;
     width:10%;
-    background-color:black;
+    background-color: #02579a;
     color:white;
         display: inline-block;
         padding: 3px 4px 4px 4px;
@@ -3152,10 +3275,10 @@ border: 0px solid white !important;
 .sheet-bonusdie2gambits{
         display: inline-block;
     vertical-align:top;
-    background-color:#d6d8d9;
+    background-color:#102536;
     box-sizing:border-box;
     width:90%;
-    color: black;
+    color: #81ebfb;
     padding:5px;
 	height:22px;
     font-size: 80%;
@@ -3166,7 +3289,7 @@ border: 0px solid white !important;
 .sheet-bonusdie1gambitexpo{
     box-sizing:border-box;
     width:10%;
-    background-color:black;
+    background-color:#02579a;
     color:white;
         display: inline-block;
         padding: 35px 4px 4px 4px;
@@ -3178,10 +3301,10 @@ border: 0px solid white !important;
 .sheet-bonusdie2gambitexpo{
         display: inline-block;
     vertical-align:top;
-    background-color:#d6d8d9;
+    background-color:#102536;
     box-sizing:border-box;
     width:90%;
-    color: black;
+    color: #81ebfb;
     padding:5px;
 	height:82px;
     font-size: 80%;
@@ -3198,11 +3321,11 @@ border: 0px solid white !important;
     display: inline-block;
     height: 50px;
     box-shadow: none;
-    color: #6c6c6c;
+    color: #81ebfb;
     font-size: 95%;
     border: none;
     line-height: 122%;
-    background-color: rgb(214, 216, 217);
+    background-color: #102536;
     font-family: Helvetica, Arial, sans-serif;
         font-variant: normal;
     font-weight: 400;
@@ -3212,6 +3335,7 @@ border: 0px solid white !important;
     width: 146px;
         width: 137px;
     padding-left: 0px;
+	text-shadow:0 0 3px white;
 }
 
 /* Action Dots */
@@ -3224,7 +3348,8 @@ input.sheet-attributecheck2 + span::before{
     height: 0 !important;
     border-style: solid !important;
     border-width: 10px 15px 10px 0 !important;
-    border-color: transparent transparent transparent #cfd3d6 !important;
+    border-color: transparent transparent transparent #102536 !important;
+	filter: drop-shadow(0 0 3px #81ebfb);
     /* top: -3px !important; */
 }
 
@@ -3235,17 +3360,18 @@ input.sheet-actiondot + span::before {
 }
 
 input.sheet-actiondot:checked + span::before {
-     border-color: transparent transparent transparent #2f6196!important;
+     border-color: transparent transparent transparent #81ebfb!important;
+	 filter: drop-shadow(0 0 5px white);
 }
 input.sheet-actiondot:checked ~ input[type=text]{
-    color:#2f6196 !important;
+    color:#81ebfb !important;
 }
 
 
 
 
 /* FRIEND CHECKS */
-
+	
 input.sheet-friendcheck2 + span::before{
     margin: 0px 0px 0px -1px !important;
     border-radius: 0 !important;
@@ -3253,33 +3379,39 @@ input.sheet-friendcheck2 + span::before{
     height: 0 !important;
     border-style: solid !important;
     border-width: 0 5px 10px 5px !important;
-    border-color: transparent transparent #ffffff transparent !important;
-    background-color: #d6d8d9 !important;
+    border-color: transparent transparent #102536 transparent !important;
+    background-color: #102536 !important;
     top: -3px !important;
+	filter:drop-shadow(0 0 3px white) !important;
 }
 input.sheet-frienddown + span::before {
         border-width: 10px 5px 0 5px !important;
-    border-color: #ffffff transparent transparent transparent !important;
+    border-color: #102536 transparent transparent transparent !important;
     top: 1px !important;
         margin: 0px 0px 0px 3px !important;
+		fiter:drop-shadow(0 0 3px white) !important;
+		box-shadow: 0 0 3px white;
+
+
 }
 input.sheet-friendup + span::before {
          border-width: 0 5px 10px 5px !important;
-    border-color: transparent transparent #ffffff transparent;
+    border-color: transparent transparent #102536 transparent;
     top: -3px !important;
 }
 input.sheet-frienddown:checked + span::before {
-     border-color: #96182d transparent transparent transparent !important;
+     border-color: #e34a3a transparent transparent transparent !important;
 }
 input.sheet-friendup:checked + span::before {
-     border-color: transparent transparent #2f6196 transparent !important;
+     border-color: transparent transparent #81ebfb transparent !important;
 }
 input.sheet-friendup:checked ~ input[type=text]{
-    color:#2f6196 !important;
+    color:#81ebfb !important;
 }
 
 input.sheet-frienddown:checked ~ input[type=text]{
-    color:#96182d !important;
+    color:#e34a3a !important;
+	text-shadow: 0 0 3px #3d0008 !important;
 }
 
 
@@ -3292,7 +3424,7 @@ label.sheet-friendcheck {
     border-style: solid;
     border-width: 0 5px 10px 5px;
     border-color: transparent transparent #ffffff transparent;
-    background-color: #d6d8d9;
+    background-color: #102536;
     top:-3px;
     
 }
@@ -3306,12 +3438,13 @@ label.sheet-friendcheck {
     border-style: solid;
     border-width: 0 5px 10px 5px;
     border-color: transparent transparent #ff0000 transparent;
-    background-color: #d6d8d9;
+    background-color: #102536;
 }
 label.sheet-friendcheckdown{
         border-width: 10px 5px 0 5px;
     border-color: #ffffff transparent transparent transparent;
     top:1px;
+	
 }
 .sheet-abilitycheck label.sheet-friendcheckdown:after {
     top:-10px;
@@ -3335,10 +3468,11 @@ label.sheet-friendcheckdown{
 .sheet-gatherinfoheader{
     width:100%;
     box-sizing:border-box;
-    border-top:2px solid black;
-      font-family: "Arial Black", Gadget, sans-serif;
-    color: black;
+    border-top:2px solid #02579a; /* GATHER INFO COLOR CHANGE */
+      font-family: Tahoma, Gadget, sans-serif;
+    color: #81ebfb;
     text-transform: uppercase;
+	text-shadow: 0 0 3px white;
     font-size: 88%;
     letter-spacing: 0px;
     font-weight: 800;
@@ -3346,8 +3480,10 @@ label.sheet-friendcheckdown{
     margin-top:20px;
 }
 .sheet-gatherinfo .sheet-markxpdesc{
-    background-color:white;
-    padding:0;
+    border-left:5px solid #02579a;
+	background-color:#102536;
+	text-shadow: 0 0 3px white;
+    padding:5px;
     margin:0;
 }
 .sheet-gatherinfo .sheet-markxpdesc ul{
@@ -3363,7 +3499,7 @@ label.sheet-friendcheckdown{
     content: '';
     height: 4px;
     width: 4px;
-    background: black;
+    background: #02579a;
     display: block;
     position: absolute;
     transform: rotate(45deg);
@@ -3376,7 +3512,7 @@ label.sheet-friendcheckdown{
         font-family: sans-serif;
     text-transform: lowercase;
     font-style: italic;
-    font-size: 109%;
+    font-size: 100%;
 }
 .sheet-loadnumber{
     font-style: normal;
@@ -3394,6 +3530,7 @@ label.sheet-friendcheckdown{
     font-weight: 500;
     letter-spacing: 0px;
     padding-left: 5px;
+	text-shadow:0 0 5px white;
 }
 
 
@@ -3402,7 +3539,7 @@ label.sheet-friendcheckdown{
     width:100%;
     padding:0;
     margin:0;
-    
+	
 }
 .sheet-specialability.sheet-itemitem input[type=text] {
         width: 167px;
@@ -3417,6 +3554,8 @@ label.sheet-friendcheckdown{
     font-size: 83%;
         box-shadow: none;
     background-color: rgba(255, 255, 255, 0);
+	color:white;
+	text-shadow:0 0 5px #81ebfb;
 }
 .sheet-specialability.sheet-itemitem input.sheet-itemshort[type=text] {
     width: 69px;
@@ -3446,7 +3585,10 @@ label.sheet-friendcheckdown{
   padding: 7px;
 }
 .sheet-abilitycheckshort{width:50%;}
-.sheet-playbookitems{background-color:#d6d8d9;}
+.sheet-playbookitems{
+	background-color:#102536;
+	text-shadow:0 0 5px white !important;
+}
 .sheet-floatingbar{
            display: inline-block;
     position: relative;
@@ -3464,31 +3606,34 @@ label.sheet-friendcheckdown{
     left: -72px;
 }
 .sheet-playbookitems .sheet-abilitycheck label{
-        background-color: #d6d8d9;
+        background-color: #102536;
 }
 .charsheet .sheet-itemitem button.repcontrol_edit,.charsheet .sheet-itemitem button.repcontrol_add{
     
     font-weight: 600!important;
-    background-color: white !important;
+    background-color: #102536 !important;
     margin-top: 12px;
     font-size: 91% !important;
     font-family: sans-serif !important;
     font-variant: normal !important;
     padding: 4px !important;
+	color: #81ebfb;
+	text-shadow:0 0 2px white !important;
 }
 .sheet-teamworkbox{
     width:95%;
     padding:5px;
     margin-bottom:5px;
     box-sizing:border-box;
-    color: black;
-    background-color:#d6d8d9;
+    color: #81ebfb;
+    background-color:#102536;
     font-size: 89%;
     line-height: 122%;
     font-family: Helvetica, Arial, sans-serif;
+	text-shadow: 0 0 3px white;
     font-variant: normal;
     font-weight: 400;
-	border-left:5px solid black;
+	border-left:5px solid #02579a ;
 }
 .sheet-boldspan{
     font-weight:800;
@@ -3503,7 +3648,8 @@ label.sheet-friendcheckdown{
 }
 .sheet-planningdesc{
      font-family: Helvetica, Arial, sans-serif;
-    color: black;
+    color: #81ebfb;
+		text-shadow: 0 0 3px white;
     font-size: 95%;
     line-height: 127%;
         font-size: 86%;
@@ -3522,20 +3668,14 @@ label.sheet-friendcheckdown{
     margin-left: 10px;
     margin-right: 10px;
     box-sizing: border-box;
-    font-family: "Lucida Console", cursive;
-    color: #c43c35;
-    font-size: 155%;
+    font-family: Helvetica, Arial, Trebuchet MS, Tahoma, sans-serif;
+    color: #81ebfb;
+	text-shadow: 0 0 2px white;
     padding: 0px;
     width: 356px;
     border: 0;
-    background-color: #ffffff;
-    box-shadow: none;
+    background-color: #102536;
+    box-shadow: 0 0 2px white;
     resize:vertical;
-    background-image: -webkit-linear-gradient(top , transparent, transparent 26px,#a7a7a7 0);
-       background-image: -moz-linear-gradient(top , transparent, transparent 26px,#a7a7a7 0);
-       background-image: -o-linear-gradient(top , transparent, transparent 26px,#a7a7a7 0);
-       background-image: linear-gradient(top , transparent, transparent 26px,#a7a7a7 0);
-    background-size: 100% 27px;
-    line-height: 137%;
         height: 378px;
 }
