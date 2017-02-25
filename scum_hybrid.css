@@ -888,7 +888,7 @@ width:50%;
 .sheet-scumlogo{
     height:63px;
     width:95%;
-    background-image:url(http://i.imgur.com/bzBnuQQ.png);
+    background-image:url(http://i.imgur.com/QLIajBA.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -1064,13 +1064,13 @@ width:50%;
     display:inline-block;
 	    margin: 0px 0px 0px 0px;
 	position: relative;
-   background-image:url(http://i.imgur.com/XNFdq3n.png);
+   background-image:url(http://i.imgur.com/FCcq2cW.png);
 }
 .sheet-attribute .sheet-stresstooth{
     	    margin: 0px 0px 0px 0px;
 }
 .sheet-regulartooth{
-       background-image:url(http://i.imgur.com/pGe2dC1.png);
+       background-image:url(http://i.imgur.com/VEpZTnk.png);
 }
 
 .sheet-stresstooth:last-child{
@@ -1093,10 +1093,10 @@ width:50%;
 	position: absolute;
 	width: 8px;
 	height: 25px;
-	 background-image:url(http://i.imgur.com/17DqQbA.png);
+	 background-image:url(http://i.imgur.com/s1IFBeP.png);
 }
 .sheet-regulartooth label:after{
-       background-image:url(http://i.imgur.com/ZYuytKg.png);
+       background-image:url(http://i.imgur.com/uoITT4A.png);
 }
 
 .sheet-stresstooth label:hover::after {
@@ -1131,7 +1131,7 @@ input.sheet-stresstooth3[type="radio"] + span::before,input.sheet-stresstooth3[t
     content: "";
     position: relative;
     left: 8px;
-    background-image:url(http://i.imgur.com/17DqQbA.png);
+    background-image:url(http://i.imgur.com/s1IFBeP.png);
     cursor: pointer;
     padding: 0;
 }
@@ -1146,11 +1146,11 @@ filter: alpha(opacity=70);
 
 input.sheet-stresstooth3[type="radio"]:checked ~ input.sheet-stresstooth3[type="radio"] + span::before,input.sheet-stresstooth3[type="checkbox"]:checked ~ input.sheet-stresstooth3[type="checkbox"] + span::before{    
     content: "";
-    background-image:url(http://i.imgur.com/XNFdq3n.png);
+    background-image:url(http://i.imgur.com/FCcq2cW.png);
 }
 input.sheet-stresstooth3[type="radio"]:checked + span::before,input.sheet-stresstooth3[type="checkbox"]:checked + span::before{
    
-    background-image:url(http://i.imgur.com/17DqQbA.png);
+    background-image:url(http://i.imgur.com/s1IFBeP.png);
 
 }
 input.sheet-regulartooth3{
@@ -1158,22 +1158,22 @@ input.sheet-regulartooth3{
 }
 
 input.sheet-regulartooth3:checked ~ span::before{
-    background-image:url(http://i.imgur.com/pGe2dC1.png) !important;
+    background-image:url(http://i.imgur.com/VEpZTnk.png) !important;
 }
 
 input.sheet-regulartooth3:checked + span::before,input.sheet-regulartooth3 + span::before{    
-    background-image:url(http://i.imgur.com/ZYuytKg.png) !important;
+    background-image:url(http://i.imgur.com/uoITT4A.png) !important;
 }
 
 input.sheet-traumatooth3, input.sheet-traumatooth3 + span::before{
     	height: 13px;
     }
 input.sheet-traumatooth3 + span::before,input.sheet-traumatooth3:checked + span::before{
-    background-image:url(http://i.imgur.com/co4IzVF.png) !important;
+    background-image:url(http://i.imgur.com/WdMHb7S.png) !important;
 }
 input.sheet-traumatooth3:checked ~ input.sheet-traumatooth3 + span::before,input.sheet-traumazero:checked ~ input.sheet-traumatooth3 + span::before{    
     content: "";
-     background-image:url(http://i.imgur.com/m3eW79B.png) !important;
+     background-image:url(http://i.imgur.com/eP4PLcZ.png) !important;
 }
  
 input.sheet-zero3[type="radio"] + span::before{
@@ -1240,10 +1240,10 @@ input.sheet-xpzero3[type="radio"] + span::before,input.sheet-xpzero3[type="radio
 }
 input.sheet-stresstooth3[type="checkbox"] + span::before{
      content: "";
-    background-image:url(http://i.imgur.com/XNFdq3n.png);
+    background-image:url(http://i.imgur.com/FCcq2cW.png);
 }
 input.sheet-stresstooth3[type="checkbox"]:checked + span::before{
-     background-image:url(http://i.imgur.com/17DqQbA.png);
+     background-image:url(http://i.imgur.com/s1IFBeP.png);
 }
 
 
@@ -1256,7 +1256,7 @@ label.sheet-stresstooth2{
     display:inline-block;
 	    margin: 0px 1px 0px 0px;
 	position: relative;
-    background-image:url(http://i.imgur.com/17DqQbA.png);
+    background-image:url(http://i.imgur.com/s1IFBeP.png);
     	cursor: pointer;
     padding:0;
 }
@@ -1271,11 +1271,11 @@ label.sheet-stresstooth2:hover{
 }
 input.sheet-stresstooth2[type=radio]:checked ~ label
 {    
-  background-image:url(http://i.imgur.com/XNFdq3n.png);
+  background-image:url(http://i.imgur.com/FCcq2cW.png);
 }
 
 input.sheet-stresstooth2[type=radio]:checked + label{
-     background-image:url(http://i.imgur.com/17DqQbA.png);
+     background-image:url(http://i.imgur.com/s1IFBeP.png);
 }
 
 
@@ -1314,18 +1314,18 @@ input.sheet-regulartooth2.sheet-stresstooth2.sheet-zero[type=radio]:checked + la
 /* Left-filled radio Trauma radios DEPRECATED */ 
 label.sheet-stresstooth2.sheet-traumatooth2 {
 	height: 13px;
- background-image:url(http://i.imgur.com/co4IzVF.png);
+ background-image:url(http://i.imgur.com/WdMHb7S.png);
 }
 label.sheet-stresstooth2.sheet-traumatooth2:last-child{
         left: 1px;
 }
 
 input.sheet-stresstooth2.sheet-traumatooth2[type=radio]:checked ~ label,input.sheet-traumatooth2.sheet-zero[type=radio]:checked ~ label{    
- background-image:url(http://i.imgur.com/m3eW79B.png);
+ background-image:url(http://i.imgur.com/eP4PLcZ.png);
 }
 
 input.sheet-stresstooth2.sheet-traumatooth2[type=radio]:checked + label{
-     background-image:url(http://i.imgur.com/co4IzVF.png);
+     background-image:url(http://i.imgur.com/WdMHb7S.png);
 }
 
 label.sheet-zero.sheet-traumatooth2{
@@ -1372,7 +1372,7 @@ input.sheet-traumatooth2.sheet-zero[type=radio]:checked + label{
     display:inline-block;
 	    margin: 0px 5px 0px 0px;
 	position: relative;
-   background-image:url(http://i.imgur.com/m3eW79B.png);
+   background-image:url(http://i.imgur.com/eP4PLcZ.png);
 }
 .sheet-traumatooth:last-child{
     margin-right:0px !important;
@@ -1394,7 +1394,7 @@ input.sheet-traumatooth2.sheet-zero[type=radio]:checked + label{
 	position: absolute;
 	width: 8px;
 	height: 13px;
-	 background-image:url(http://i.imgur.com/co4IzVF.png);
+	 background-image:url(http://i.imgur.com/WdMHb7S.png);
 }
 
 .sheet-traumatooth label:hover::after {
@@ -1740,6 +1740,7 @@ input.sheet-coinbox2[type="radio"]:checked + span::before,input.sheet-coinbox2[t
 
 }
 /* Load Boxes */
+
 .sheet-loadcheckholder .sheet-coinbox {
 
     transform: rotate(45deg);
@@ -1749,15 +1750,16 @@ input.sheet-coinbox2[type="radio"]:checked + span::before,input.sheet-coinbox2[t
     border: none;
         background-color: rgba(179,180,182,0);
 		top: 5px !important;
-		left: 5px !important;
+		left: 0px !important;
 }
 
 .sheet-loadcheckholder input.sheet-coinbox2[type="checkbox"] + span::before {
      width: 8px;
 height: 8px;
-top: 0px;
-right: 0px;
     background-color:white;
+	/*Testing Load Box positioning */
+	left: 3px;
+	top:-1px;
 }
 .sheet-loadcheckholder input.sheet-coinbox2[type="checkbox"]:checked + span::before {
     background-color:#81ebfb;
@@ -1765,8 +1767,6 @@ right: 0px;
 .sheet-loadcheckholder input.sheet-coinbox2[type="checkbox"] {
      width: 12px;
     height: 12px;
-    left: 5px;
-    top: 0px;
     z-index: 10;
 }
 
@@ -1915,7 +1915,8 @@ input.sheet-stashbox3.sheet-coinbox2zero{
 }
 input.sheet-stashbox3.sheet-coinbox2zero[type="radio"] + span::before,input.sheet-stashbox3.sheet-coinbox2zero[type="radio"]:checked + span::before{
          left: 342px;
-    top: 532px;
+		 /* Stash Box reset button positons.  Only for Stash Clearing */
+    top: 530px;
 }
 
 
@@ -2298,7 +2299,7 @@ input.sheet-longoption  + span{text-transform:lowercase;}
 .sheet-specialability{
             padding-top: 2px;
     padding-left: 4px;
-        border-bottom: 1px solid #b3b4b6;
+        border-bottom: 1px solid #102536;
 }
 .sheet-abilitiesholder{
     width:100%;
@@ -2312,7 +2313,7 @@ input.sheet-longoption  + span{text-transform:lowercase;}
     display: inline-block;
     width: 25%;
     font-family: Tahoma, Gadget, sans-serif;
-    color: #81ebfb;
+    color: white;
        font-variant: small-caps;
     font-size: 100%;
     font-weight: 800;
@@ -2326,7 +2327,7 @@ input.sheet-longoption  + span{text-transform:lowercase;}
     display: inline-block;
     height: 50px;
     box-shadow: none;
-    color: #81ebfb;
+    color: white;
     font-size: 95%;
     border: none;
     line-height: 122%;
@@ -2336,7 +2337,7 @@ input.sheet-longoption  + span{text-transform:lowercase;}
 }
 
 /* SPECIAL ABILITY TICKBOXES */
-.sheet-abilitycheck input[type="checkbox"],input.sheet-itemcheckbox, .sheet-attributedot input{
+.sheet-abilitycheck input[type="checkbox"],input.sheet-itemcheckbox, .sheet-friendability input[type="checkbox"], .sheet-attributedot input{
     display: inline-block;
     position: absolute;
     z-index: 100;
@@ -2344,13 +2345,13 @@ input.sheet-longoption  + span{text-transform:lowercase;}
         width: 20px;
     height: 20px;
 }
-.sheet-abilitycheck {
+.sheet-abilitycheck, .sheet-friendability {
    display:inline-block;
     width: 100%;
-    
+    padding-top:0px
 }
 
-.sheet-abilitycheck input[type="checkbox"] + span::before,input.sheet-itemcheckbox + span::before, .sheet-attributedot input + span::before{
+.sheet-abilitycheck input[type="checkbox"] + span::before,.sheet-friendability input[type="checkbox"] + span::before, input.sheet-itemcheckbox + span::before, .sheet-attributedot input + span::before{
     	content: '';
 	cursor: pointer;
     top: 0px;
@@ -2366,7 +2367,6 @@ input.sheet-longoption  + span{text-transform:lowercase;}
 	
 }
 
-
 .sheet-abilitycheck input[type="checkbox"]:checked + span::before,input.sheet-itemcheckbox:checked + span::before,.sheet-attributedot input:checked + span::before{
 	content: '';
 	position: relative;
@@ -2376,9 +2376,26 @@ input.sheet-longoption  + span{text-transform:lowercase;}
     width: 10px;
 	height: 10px;
         border-radius: 30px;
+}
+.sheet-abilitycheck input[type="checkbox"] + span::before{
+	top:3px!important;
+		background-color:white!important;
+		filter:drop-shadow(0 0 3px #81ebfb);
 	
 }
-
+.sheet-abilitycheck input[type="checkbox"]:checked + span::before{
+	top:3px!important;
+		background-color:#81ebfb!important;
+	filter:drop-shadow(0 0 3px white);
+}
+/* Aligns the Radial Button in the special abilities menus and keeps the item boxes lined up for item menu */
+.sheet-specialability .sheet-abilitycheck input[type="checkbox"] + span::before{
+	top:6px!important;
+	
+}
+.sheet-specialability .sheet-abilitycheck input[type="checkbox"]:checked + span::before{
+	top:6px!important;
+}
 
 .sheet-attributedot input, .sheet-attributedot input + span:before {
         border-radius: 50px !important;
@@ -2395,17 +2412,20 @@ input.sheet-longoption  + span{text-transform:lowercase;}
 input.sheet-itemcheckbox{
         width: 16px !important;
     height: 15px !important;
-	box-shadow:0 0 5px #81ebfb !important;
+	box-shadow:0 0 3px #81ebfb !important;
+}
+input.sheet-itemcheckbox[type="checkbox"] + span::before{
+	background-color:white !important;
 }
 input.sheet-itemcheckbox + span::before, input.sheet-itemcheckbox:checked + span::before{
-    top: 2px !important;
+    top: 1px !important;
     border-radius: 0px !important;
-        background-color: #102536 !important;
+        background-color: white !important;
     margin-right: 1px !important;
-	box-shadow:0 0 5px #81ebfb !important;
+	box-shadow:0 0 3px #81ebfb !important;
 }
 .sheet-regularitems input.sheet-itemcheckbox + span::before, .sheet-regularitems input.sheet-itemcheckbox:checked + span::before{
-      background-color: #102536 !important;
+      background-color: #white !important;
 }
 
 input.sheet-itemcheckbox:checked + span::before, .sheet-regularitems input.sheet-itemcheckbox:checked + span::before{
@@ -2415,11 +2435,13 @@ input.sheet-itemcheckbox:checked + span::before, .sheet-regularitems input.sheet
 	filter: alpha(opacity=30);
 	opacity: 0.3;
 }
-
+/* Makes the Special/Start ability text change to blue when the input radial is selected */
 .sheet-abilitycheck input[type="checkbox"]:checked ~ input[type=text],input.sheet-itemcheckbox:checked ~ input[type=text]{
   color:#81ebfb;
 }
-
+.sheet-abilitycheck input[type="checkbox"]:checked ~ textarea{
+  color:#81ebfb;
+}
 .charsheet button.repcontrol_edit,.charsheet button.repcontrol_add{
     letter-spacing:0px  !important;
     text-shadow: 0 0 2px white !important;
@@ -2560,7 +2582,7 @@ div.itemcontrol{
     padding-left: 7px;
     font-weight: 800;
     line-height: 9px;
-    padding-top: 1px;
+    padding-top: 0px;
 
 }
 
@@ -2963,7 +2985,7 @@ border: 0px solid white !important;
 .sheet-rolltemplate-bitd3 .sheet-rolltableholder{
        margin-left: -45px;
     margin-right: -1px;
-    background-image:url(http://i.imgur.com/JRHeBtH.jpg);
+    background-image:url(http://i.imgur.com/erFriJx.png);
     width:299px;
     height:258px;
     font-variant-numeric: lining-nums;  
@@ -3075,7 +3097,7 @@ border: 0px solid white !important;
 .sheet-rolltemplate-bitd4 .sheet-rolltableholder{
       margin-left: -45px;
     margin-right: -1px;
-    background-image:url(http://i.imgur.com/jYgw79y.jpg);
+    background-image:url(http://i.imgur.com/J2XSUbn.jpg);
     background-position:bottom right;
     background-repeat:no-repeat;
     background-color:white;
@@ -3112,6 +3134,7 @@ padding-left: 32px;
 }
 .sheet-rolltemplate-bitd4 .sheet-rolltabletitle{
      padding-left: 30px;
+	 padding-right: 30px;
     padding-top: 22px;
 }
 .sheet-rolltemplate-bitd4 .sheet-rolltabledice{
@@ -3188,7 +3211,7 @@ border: 0px solid white !important;
     font-family: Arial, sans-serif;
 }
 
-
+/* Bonus Die Exposition Boxes */
 .sheet-bonusdie{
     width:100%;
     box-sizing:border-box;
@@ -3316,27 +3339,9 @@ border: 0px solid white !important;
     font-weight:800;
     
 }
-.sheet-specialability input.sheet-friend[type=text]{
-    resize: vertical;
-    display: inline-block;
-    height: 50px;
-    box-shadow: none;
-    color: #81ebfb;
-    font-size: 95%;
-    border: none;
-    line-height: 122%;
-    background-color: #102536;
-    font-family: Helvetica, Arial, sans-serif;
-        font-variant: normal;
-    font-weight: 400;
-    padding-top: 0px;
-    padding-right: 0px;
-    height: 33px;
-    width: 146px;
-        width: 137px;
-    padding-left: 0px;
-	text-shadow:0 0 3px white;
-}
+
+
+
 
 /* Action Dots */
 
@@ -3355,7 +3360,7 @@ input.sheet-attributecheck2 + span::before{
 
 input.sheet-actiondot + span::before {
          border-width: 5px 0px 5px 10px !important;
-    border-color: transparent #ffffff transparent transparent;
+    border-color: transparent #102536 transparent transparent;
     /* top: -3px !important; */
 }
 
@@ -3371,40 +3376,87 @@ input.sheet-actiondot:checked ~ input[type=text]{
 
 
 /* FRIEND CHECKS */
-	
+
+.sheet-specialfriends input.sheet-friend[type=text]{
+    resize: vertical;
+	vertical-align:central;
+    display: inline-block;
+    height: 50px;
+    box-shadow: none;
+    color: #81ebfb;
+    font-size: 95%;
+    border: none;
+    line-height: 122%;
+    background-color: #102536;
+    font-family: Helvetica, Arial, sans-serif;
+        font-variant: normal;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-right: 0px;
+    height: 33px;
+    width: 146px;
+        width: 137px;
+    padding-left: 0px;
+	text-shadow:0 0 3px white;
+}
+
+.sheet-friendsholder {
+	    width:100%;
+    background-color:#102536;
+    box-sizing:border-box;
+}
+.sheet-specialfriends {
+	 padding-top: 2px;
+    padding-left: 4px;
+        border-bottom: 1px solid #102536;
+}
+.sheet-friendability {
+	display:inline-block;
+    width: 100%;
+    padding-top:0px
+}
 input.sheet-friendcheck2 + span::before{
     margin: 0px 0px 0px -1px !important;
     border-radius: 0 !important;
     width: 0 !important;
     height: 0 !important;
     border-style: solid !important;
-    border-width: 0 5px 10px 5px !important;
-    border-color: transparent transparent #102536 transparent !important;
-    background-color: #102536 !important;
-    top: -3px !important;
+    /*border-width: 0 5px 10px 5px !important;
+    border-color: transparent transparent #102536 transparent !important; */
+    background-color: white !important;
 	filter:drop-shadow(0 0 3px white) !important;
+	top: 2px;
 }
+
 input.sheet-frienddown + span::before {
-        border-width: 10px 5px 0 5px !important;
-    border-color: #102536 transparent transparent transparent !important;
-    top: 1px !important;
+                border-width: 0 5px 10px 5px !important;
+    border-color: transparent transparent white transparent;
         margin: 0px 0px 0px 3px !important;
-		fiter:drop-shadow(0 0 3px white) !important;
-		box-shadow: 0 0 3px white;
-
-
 }
 input.sheet-friendup + span::before {
          border-width: 0 5px 10px 5px !important;
-    border-color: transparent transparent #102536 transparent;
-    top: -3px !important;
+    border-color: transparent transparent #81ebfb transparent;
 }
 input.sheet-frienddown:checked + span::before {
+	border-width: 10px 5px 0px 5px !important;
      border-color: #e34a3a transparent transparent transparent !important;
+	 background-color: #e34a3a !important;
+	 
 }
 input.sheet-friendup:checked + span::before {
      border-color: transparent transparent #81ebfb transparent !important;
+	 background-color: #81ebfb !important;
 }
+input.sheet-friendup ~ input[type=text]{
+    color:white !important;
+	text-shadow:0 0 3px #81ebfb;
+}
+
+input.sheet-frienddown ~ input[type=text]{
+    color:white !important;
+	text-shadow:0 0 3px #81ebfb;
+}
+
 input.sheet-friendup:checked ~ input[type=text]{
     color:#81ebfb !important;
 }
@@ -3414,10 +3466,8 @@ input.sheet-frienddown:checked ~ input[type=text]{
 	text-shadow: 0 0 3px #3d0008 !important;
 }
 
-
 label.sheet-friendcheck {
         margin: 0px 0px 0px -1px;
-    
     border-radius: 0;
     width: 0;
     height: 0;
@@ -3425,10 +3475,8 @@ label.sheet-friendcheck {
     border-width: 0 5px 10px 5px;
     border-color: transparent transparent #ffffff transparent;
     background-color: #102536;
-    top:-3px;
-    
 }
-.sheet-abilitycheck label.sheet-friendcheck:after {
+.sheet-friendability label.sheet-friendcheck:after {
     	opacity: 0;
     	filter: alpha(opacity=0);
     margin: 0px 0px 0px -5px;
@@ -3443,28 +3491,35 @@ label.sheet-friendcheck {
 label.sheet-friendcheckdown{
         border-width: 10px 5px 0 5px;
     border-color: #ffffff transparent transparent transparent;
-    top:1px;
-	
 }
-.sheet-abilitycheck label.sheet-friendcheckdown:after {
-    top:-10px;
+.sheet-friendability label.sheet-friendcheckdown:after {
             border-width: 10px 5px 0 5px;
     border-color: #000000 transparent transparent transparent;
 }
 
-.sheet-abilitycheck label.sheet-friendcheck:hover::after {
+.sheet-friendability label.sheet-friendcheck:hover::after {
 	filter: alpha(opacity=30);
 	opacity: 0.3;
 }
 
-.sheet-abilitycheck input[type=checkbox]:checked + label.sheet-friendcheck:after {
+.sheet-friendability input[type=checkbox]:checked + label.sheet-friendcheck:after {
 	filter: alpha(opacity=100);
 	opacity: 1;
+	display: inline-block;
+    position: absolute;
+    z-index: 100;
+    opacity: 0; 
+        width: 20px;
+    height: 20px;
 }
 
-.sheet-abilitycheck input[type=checkbox]:checked + label.sheet-friendcheckdown ~ input[type=text]{
+.sheet-friendability input[type=checkbox]:checked + label.sheet-friendcheckdown ~ input[type=text]{
   color:#000000;
 }
+
+
+/* Gather Info */
+
 .sheet-gatherinfoheader{
     width:100%;
     box-sizing:border-box;
@@ -3485,10 +3540,11 @@ label.sheet-friendcheckdown{
 	text-shadow: 0 0 3px white;
     padding:5px;
     margin:0;
+	width:92%;
 }
 .sheet-gatherinfo .sheet-markxpdesc ul{
         padding: 0;
-    margin: 0;
+		margin-right:20px !important;
 }
 .sheet-gatherinfo .sheet-markxpdesc li{
          margin-bottom: 4px;
@@ -3587,7 +3643,7 @@ label.sheet-friendcheckdown{
 .sheet-abilitycheckshort{width:50%;}
 .sheet-playbookitems{
 	background-color:#102536;
-	text-shadow:0 0 5px white !important;
+	text-shadow:0 0 3px white !important;
 }
 .sheet-floatingbar{
            display: inline-block;
