@@ -1759,7 +1759,7 @@ height: 8px;
     background-color:white;
 	/*Testing Load Box positioning */
 	left: 5px;
-	top:-2px;
+	top:-1px;
 }
 .sheet-loadcheckholder input.sheet-coinbox2[type="checkbox"]:checked + span::before {
     background-color:#81ebfb;
