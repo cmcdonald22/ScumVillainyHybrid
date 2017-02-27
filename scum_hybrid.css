@@ -14,7 +14,7 @@ e34a3a soft red
 }
 /* Test Color Stuff */
 .sheet-sheet-type-character  {
-	background-image: url("http://i.imgur.com/gQwsrDL.png");
+	background-image: url("http://i.imgur.com/JgP5ZZy.png");
 	color:#83eeff;
 }
 .sheet-sheet-typeselector {}
@@ -2114,142 +2114,142 @@ div.sheet-harmprogress label:nth-child(19)::after {
     z-index: 1;
     height:44px;
     width:44px;
-    background-image:url('http://i.imgur.com/YZNY1LM.png');
+    background-image:url("http://i.imgur.com/WyOBm3g.png");
 }
 .sheet-harmrecoveryclock2{
       left: 327px;
-	  background-image:url("http://i.imgur.com/b3vFvuk.png");
+	  background-image:url("http://i.imgur.com/WyOBm3g.png");
 }
 
 input.sheet-longoption {    width: 64px !important; }
 input.sheet-longoption  + span{text-transform:lowercase;}
 .sheet-harmprogress input.sheet-recoverytracker0:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/s8mN7Da.png");
+  background-image:url("http://i.imgur.com/jF2ces6.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker1:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/dBdCMqR.png");
+  background-image:url("http://i.imgur.com/sOHFRwa.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker2:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/T6ZC3aR.png");
+  background-image:url("http://i.imgur.com/GL5eJWX.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker3:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/1TMlCMK.png");
+  background-image:url("http://i.imgur.com/UoIPXc8.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker4:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/8uuSoyl.png");
+  background-image:url("http://i.imgur.com/dGXPeOg.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker5:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/wHTyUIE.png");
+  background-image:url("http://i.imgur.com/AzANYtA.png");
 }
 .sheet-harmprogress input.sheet-recoverytracker6:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/WXAzJdO.png");
+  background-image:url("http://i.imgur.com/MWMRvES.png");
 }
 }
 
 .sheet-harmprogress input.sheet-clock4_0:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/b3vFvuk.png");
+  background-image:url("http://i.imgur.com/WyOBm3g.png");
 }
 .sheet-harmprogress input.sheet-clock4_1:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/O16MXWx.png");
+  background-image:url("http://i.imgur.com/N2X2cTL.png");
 }
 .sheet-harmprogress input.sheet-clock4_2:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/OwFhQsC.png");
+  background-image:url("http://i.imgur.com/JMM2r6j.png");
 }
 .sheet-harmprogress input.sheet-clock4_3:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/33cg4DC.png");
+  background-image:url("http://i.imgur.com/uddeRxr.png");
 }
 .sheet-harmprogress input.sheet-clock4_4:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/WE03f13.png");
+  background-image:url("http://i.imgur.com/xAjl6Dr.png");
 }
 
 .sheet-harmprogress input.sheet-clock6_0:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/s8mN7Da.png");
+ background-image:url("http://i.imgur.com/o74qem7.png");
 }
 .sheet-harmprogress input.sheet-clock6_1:checked + span  ~ .sheet-harmrecoveryclock {
-   background-image:url("http://i.imgur.com/QUWZtyb.png");
+   background-image:url("http://i.imgur.com/ZGxb27v.png");
 }
 .sheet-harmprogress input.sheet-clock6_2:checked + span  ~ .sheet-harmrecoveryclock {
-   background-image:url("http://i.imgur.com/Pf0igAu.png");
+   background-image:url("http://i.imgur.com/S5kv8oM.png");
 }
 .sheet-harmprogress input.sheet-clock6_3:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/dRrWPYE.png");
+  background-image:url("http://i.imgur.com/ap2MC31.png");
 }
 .sheet-harmprogress input.sheet-clock6_4:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/6pmRDtd.png");
+  background-image:url("http://i.imgur.com/NasMhtf.png");
 }
 .sheet-harmprogress input.sheet-clock6_5:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/EenI54J.png");
+  background-image:url("http://i.imgur.com/sZbVtys.png");
 }
 .sheet-harmprogress input.sheet-clock6_6:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/BGx1Tj9.png");
+  background-image:url("http://i.imgur.com/9Jzphbf.png");
 }
 
 .sheet-harmprogress input.sheet-clock8_0:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/p0GOdoz.png");
+  background-image:url("http://i.imgur.com/3jiS7W5.png");
 }
 .sheet-harmprogress input.sheet-clock8_1:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/mV2qUjg.png");
+  background-image:url("http://i.imgur.com/UKvufQ9.png");
 }
 .sheet-harmprogress input.sheet-clock8_2:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/KvKM6w2.png");
+  background-image:url("http://i.imgur.com/z5whbrr.png");
 }
 .sheet-harmprogress input.sheet-clock8_3:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/EQBIjZZ.png");
+  background-image:url("http://i.imgur.com/qtfzpbB.png");
 }
 .sheet-harmprogress input.sheet-clock8_4:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/XNo30BD.png");
+  background-image:url("http://i.imgur.com/dUSvEMj.png");
 }
 .sheet-harmprogress input.sheet-clock8_5:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/p9123r8.png");
+  background-image:url("http://i.imgur.com/NkcXp5B.png");
 }
 .sheet-harmprogress input.sheet-clock8_6:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/zQfqPKQ.png");
+  background-image:url("http://i.imgur.com/ccV4ViK.png");
 }
 .sheet-harmprogress input.sheet-clock8_7:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/im6flnw.png");
+  background-image:url("http://i.imgur.com/7MRDVQL.png");
 }
 .sheet-harmprogress input.sheet-clock8_8:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/Q2WkeOv.png");
+  background-image:url("http://i.imgur.com/nIK3zj7.png");
 }
 
 .sheet-harmprogress input.sheet-clock12_0:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/znONopv.png");
+  background-image:url("http://i.imgur.com/hJtRnPa.png");
 }
 .sheet-harmprogress input.sheet-clock12_1:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/oGc8O6H.png");
+ background-image:url("http://i.imgur.com/hwI0E02.png");
 }
 .sheet-harmprogress input.sheet-clock12_2:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/2oqwIXA.png");
+  background-image:url("http://i.imgur.com/EcOMXXJ.png");
 }
 .sheet-harmprogress input.sheet-clock12_3:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/xnoidzV.png");
+  background-image:url("http://i.imgur.com/jxkDQX4.png");
 }
 .sheet-harmprogress input.sheet-clock12_4:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/kE0vd5Z.png");
+  background-image:url("http://i.imgur.com/uNj912f.png");
 }
 .sheet-harmprogress input.sheet-clock12_5:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/v3IYdfi.png");
+  background-image:url("http://i.imgur.com/cyzoQDr.png");
 }
 .sheet-harmprogress input.sheet-clock12_6:checked + span  ~ .sheet-harmrecoveryclock {
-  background-image:url("http://i.imgur.com/J4HQ6Yz.png");
+  background-image:url("http://i.imgur.com/O5QY0JK.png");
 }
 .sheet-harmprogress input.sheet-clock12_7:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/6zvyl8s.png");
+ background-image:url("http://i.imgur.com/XtYYi4t.png");
 }
 .sheet-harmprogress input.sheet-clock12_8:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/8e9YyiS.png");
+ background-image:url("http://i.imgur.com/CPNLeCf.png");
 }
 .sheet-harmprogress input.sheet-clock12_9:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/dENb7BK.png");
+ background-image:url("http://i.imgur.com/t6YfeLl.png");
 }
 .sheet-harmprogress input.sheet-clock12_10:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/x1DfZVb.png");
+ background-image:url("http://i.imgur.com/hNrZe47.png");
 }
 .sheet-harmprogress input.sheet-clock12_11:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/F13aePT.png");
+ background-image:url("http://i.imgur.com/Ry683RN.png");
 }
 .sheet-harmprogress input.sheet-clock12_12:checked + span  ~ .sheet-harmrecoveryclock {
- background-image:url("http://i.imgur.com/BAOm0Oz.png");
+ background-image:url("http://i.imgur.com/mQ1VaCe.png");
 }
 
 .sheet-specialdropdown{
@@ -3094,7 +3094,7 @@ border: 0px solid white !important;
 }
 .sheet-rolltemplate-bitd3 .sheet-resistinstructions{
        font-family: Helvetica, Arial, sans-serif;
-        padding: 15px 56px 0px 27px;
+        padding: 2px 56px 0px 27px;
     color: #c9c9c9;
     font-weight: 200;
     font-size: 81%;
