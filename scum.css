@@ -842,8 +842,22 @@ float: left;
 height: 50px;
 background-color: transparent;
 }
+.sheet-shipplaybook{
+margin-left: 5px;
+width: calc(70% - 5px);
+float: left;
+height: 50px;
+background-color: transparent;
+}
+
 
 .sheet-playbook-title{
+width: 60%;
+height: inherit;
+float: left;
+padding: 5px 0 0 10px;
+}
+.sheet-ship-title{
 width: 60%;
 height: inherit;
 float: left;
@@ -863,7 +877,13 @@ color: #81ebfb;
 text-shadow: 0 0 2px white;
 font-weight: 200;
 }
-
+.sheet-ship-title input[type="text"]{
+letter-spacing: -2px;
+font-size: 274%;
+color: #81ebfb;
+text-shadow: 0 0 2px white;
+font-weight: 200;
+}
 .sheet-playbook-desc textarea{
 box-sizing: border-box;
 height: 50px;

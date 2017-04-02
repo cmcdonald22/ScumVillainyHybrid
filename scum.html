@@ -379,14 +379,7 @@
             </div>
             <input type="checkbox" class="sheet-hidden sheet-hidediv" name="attr_setting_show_strictures"/>
             <div class="sheet-strictures sheet-col100 sheet-def-margin">
-            <!-- VAMPIRE STRUCTURES USELESS BS
-            <div class="sheet-plainheader sheet-label">Strictures</div>
-            <div><span class="sheet-italic">When you gain a new vampire trait (except veteran), add a stricture.</span></div>
-            <div><input type="checkbox" class="sheet-checkbox sheet-circlebox" name="attr_stricture_slumber"/><span></span><span class="sheet-label">Slumber: </span><span>In downtime, you must spend one activity resting in a dark, silent place (or else suffer 3 stress).</span></div>
-            <div><input type="checkbox" class="sheet-checkbox sheet-circlebox" name="attr_stricture_forbidden"/><span></span><span class="sheet-label">Forbidden: </span><span>You cannot enter a private residence without permission from the owner.</span></div>
-            <div><input type="checkbox" class="sheet-checkbox sheet-circlebox" name="attr_stricture_repelled"/><span></span><span class="sheet-label">Repelled: </span><span>Spiritbane charms can hold you at bay. (Take 2 stress to resist the repulsion.)</span></div>
-            <div><input type="checkbox" class="sheet-checkbox sheet-circlebox" name="attr_stricture_bestial"/><span></span><span class="sheet-label">Bestial: </span><span>When you suffer physical harm or overindulge your vice, your body twists into a horrific bestial form until you next feed without overindulging.</span></div>
-            <div><input type="checkbox" class="sheet-checkbox sheet-circlebox" name="attr_stricture_bound"/><span></span><span class="sheet-label">Bound: </span><span>Your spirit must remain in this body, or be destroyed.</span></div> -->
+         
             </div>
         </div>
     </div>
@@ -583,12 +576,11 @@
 <!-- SHIP SHEET -->
     <input type="checkbox" name="attr_sheet_type" class="sheet-hidediv sheet-hidden" value="crew"/>
 <div class="sheet-type-crew">
-	<div class="sheet-col55">
-		<div class="sheet-col55 sheet-logoholder"><div class="sheet-scumlogo"></div></div>
-    	<div class="sheet-col45 sheet-crewheader sheet-label">Ship sheet</div>
+	<div class="sheet-col30">
+		<div class="sheet-col94 sheet-logoholder"><div class="sheet-scumlogo"></div></div>
 	</div>
-	<div class="sheet-playbook">
-    	<div class="sheet-playbook-title"><input type="text" class="sheet-label" name="attr_crew_type" placeholder="Crew"/></div>
+	<div class="sheet-shipplaybook">
+    	<div class="sheet-ship-title"><input type="text" class="sheet-label" name="attr_crew_type" placeholder="Ship"/></div>
         <div class="sheet-playbook-desc"><textarea spellcheck="false" name="attr_crew_description" class="sheet-label" placeholder="A short crew description"></textarea></div>
     </div>
     <div class="sheet-col55">
@@ -760,7 +752,9 @@
             	<div class="sheet-specialheader sheet-col100 sheet-label">Contacts</div>
                 <div class="sheet-greyholder sheet-col100">
                 	<fieldset class="repeating_contact">
-                	<div class="sheet-contact sheet-rep-block"><input type="checkbox" name="attr_check" class="sheet-checkbox"/><span></span><input type="text" placeholder="Contact name" name="attr_name"/></div>
+                	<div class="sheet-contact sheet-rep-block">
+                    	<input type="checkbox" name="attr_check" class="sheet-checkbox"/><span></span>
+                        <input type="text" placeholder="Contact name" name="attr_name"/></div>
                     </fieldset>
                 </div>
             </div>
@@ -838,7 +832,7 @@ var crewData={
 			upgrade_4_desc:'Lucky Charm (+1 gambit)',
 			upgrade_6_desc:'Thrillseekers (+1 stress)',
 		contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
-	bravos:{
+	cerberus:{
 		abilities:[{
 			name:'',description:''},
 			{name:'',description:''},
