@@ -19,6 +19,9 @@ background:white;
 	height:100%;
 	clear:both;
 }
+.sheet-type-crew {
+	background-image: url("http://i.imgur.com/JgP5ZZy.png") !important;
+}
 input.sheet-settings-checkbox{
 width: 20px;
 height: 20px;
@@ -96,7 +99,7 @@ content: "Character Mode";
 }
 
 input.sheet-type-selector[value="crew"]:checked ~ span::before{
-content: "Crew Mode";
+content: "Ship Mode";
 }
 
 input.sheet-type-selector[value="faction"]:checked ~ span::before{
@@ -403,7 +406,7 @@ background-color: transparent;
 
 
 
-.sheet-col55, .sheet-col45, .sheet-col50a, .sheet-col50b, .sheet-col94, .sheet-col100, .sheet-col97, .sheet-col68, .sheet-col30, .sheet-col50, .sheet-col2, .sheet-col70, .sheet-col52b, .sheet-col18{
+.sheet-col55, .sheet-col45, .sheet-col50a, .sheet-col50b, .sheet-col94, .sheet-col100, .sheet-col97, .sheet-col68, .sheet-col30, .sheet-col50, .sheet-col2, .sheet-col15, .sheet-col70, .sheet-col52b, .sheet-col18{
 float: left;
 }
 
@@ -412,6 +415,9 @@ width: 9px;
 }
 .sheet-col2 .sheet-blackborder{
 border:none !important;
+}
+.sheet-col15{
+width: 15%;
 }
 
 .sheet-col18{
@@ -449,6 +455,9 @@ width: 68%;
 
 .sheet-col70{
 width: 70%}
+
+.sheet-col82{
+width: 82%}
 
 .sheet-col94{
 width: 94%;
@@ -675,7 +684,7 @@ border-top: 2px solid #838587;
 
 
 
-.sheet-bitdlogo{
+.sheet-scumlogo{
 height: 63px;
 width: 95%;
 background-image: url("http://i.imgur.com/QLIajBA.png");
@@ -1220,7 +1229,7 @@ width: 12px;
 
 input.sheet-tooth + span{
 width: 8px;
-margin-right: 4px;
+margin-right: 1px;
 display: inline-block;
 vertical-align: top;
 }
@@ -1966,15 +1975,15 @@ margin: 19px 0 0 -10px;
 }
 
 .sheet-stress2 input.sheet-tooth + span{
-margin-right: 6px;
+margin-right: 1px;
 }
 
 .sheet-stress2 input[name="attr_setting_extra_stress1"]:checked ~ input.sheet-tooth + span{
-margin-right: 5px;
+margin-right: 1px;
 }
 
 .sheet-stress2 input[name="attr_setting_extra_stress1"]:checked + input[name="attr_setting_extra_stress2"]:checked ~ input.sheet-tooth + span{
-margin-right: 4px;
+margin-right: 1px;
 }
 
 
@@ -1993,7 +2002,7 @@ width: 11px;
 }
 
 .sheet-rep input.sheet-tooth + span{
-margin-right: 3px;
+margin-right: 1px !important;
 }
 
 .sheet-hold .sheet-black-on-grey{
@@ -2019,7 +2028,7 @@ font-family:  Helvetica, "Trebuchet MS", Arial, sans-serif;
 	box-shadow: 0 0 2px white;
 	    background-color: #102536;
 font-size: 155%;
-width: 356px;
+width: 95%;
 resize: vertical;
 line-height: 137%;
 height: 378px;
@@ -2085,7 +2094,7 @@ font-size: 92%;
 line-height: 9px;
 }
 
-button[type=roll].sheet-tierbutton{
+button[type=roll].sheet-crewbutton{
 font-size: inherit;
 letter-spacing: inherit;
 color: inherit;
@@ -2297,6 +2306,29 @@ border-color: transparent transparent transparent #81ebfb;
 filter:drop-shadow(0 0 2px white);
 background-color: transparent !important;
 }
+.sheet-specialability input.sheet-checkbox.sheet-circlebox + span{
+display: inline-block;
+width: 0;
+height: 0;
+margin-top:4px !important;
+border-radius:0px !important;
+border-width: 5px 0 5px 10px;
+border-style: solid;
+border-color: transparent transparent transparent white;
+background-color: transparent!important;
+}
+.sheet-specialability input.sheet-checkbox.sheet-circlebox:checked + span{
+display: inline-block;
+width: 0;
+height: 0;
+margin-top:4px !important;
+border-radius:0px !important;
+border-width: 5px 0 5px 10px;
+border-style: solid;
+border-color: transparent transparent transparent #81ebfb;
+filter:drop-shadow(0 0 2px white);
+background-color: transparent !important;
+}
 
 /* Friend triangles */
 
@@ -2480,81 +2512,18 @@ border-bottom: 1px solid lightgray;
 }
 
 
-/* CLAIMS */
+/* SHIP SYSTEMS */
 
 
-
-.sheet-claimbox{
-background-color: #d6d8d9;
+.sheet-ship-toprow {
+	margin-bottom:15px;
 }
-
-.sheet-claimbox, .sheet-lairbox, .sheet-claims-horisep{
-height: 66px;
+.sheet-ship-contacts {
+margin-top: 5px;
+	}
+.sheet-ship-size {
+	margin-right: 0px !important;
 }
-
-.sheet-claims-seprow, .sheet-claims-seprow div{
-height: 14px;
-}
-
-.sheet-lairbox{
-text-align: center;
-background-color: #808080;
-}
-
-.sheet-lairbox .sheet-label{
-color: white;
-margin-top: calc(50% - 18px);
-}
-
-.sheet-claims-horisep{
-float: left;
-height: 14px;
-margin-top: 26px;
-width: 2.5%;
-}
-
-.sheet-claims-vertsep{
-float: left;
-width: 14px;
-margin: 0 calc(9% - 7px);
-}
-
-.sheet-claimbox .sheet-label{
-font-size: 60%;
-line-height: 12px;
-height: 24px;
-font-weight: 600;
-width: 98%;
-margin: 4px 1% 2px;
-}
-
-.sheet-claimbox textarea{
-box-sizing: border-box;
-text-align: center;
-resize: none;
-color: black;
-}
-
-.sheet-claimbox textarea.sheet-claim-desc{
-width: 95%;
-margin: 2px 2.5% 4px;
-line-height: 10px;
-height: 30px;
-font-size: 64%;
-font-family:  Helvetica, "Trebuchet MS", Arial, sans-serif;
-}
-
-.sheet-claimbox div:first-child{
-float: left;
-position: absolute;
-margin: 1px 0 0 1px;
-line-height: 0;
-}
-
-input:checked + .sheet-claimbox{
-background-color:#c1c4c5;
-}
-
 
 /* STRICTURES */
 
@@ -2615,80 +2584,6 @@ top: .7em;
 padding-left: 11px;
 font-size: 84%;
 height: 16px;
-}
-
-
-/* FACTIONS */
-
-
-
-.sheet-factions > .sheet-faction, .sheet-factions .repitem{
-display: inline-block;
-width: 49%;
-border-bottom: 1px solid lightgray;
-margin-bottom: 2px;
-}
-
-.sheet-factions > .sheet-faction:nth-child(2),.sheet-factions .repitem:nth-child(odd){
-margin-right: 2%;
-}
-
-.sheet-factions input[type=number]{
-border: none;
-font-weight: 600;
-color: black;
-width: 19%;
-padding: 0 1px 0 0;
-text-align: right;
-box-shadow: none;
--moz-appearance: textfield;
-}
-
-.sheet-factions input[type=number]:hover,.sheet-factions input[type=number]:focus{
--moz-appearance: number-input;
-}
-
-.sheet-factions input[type=text]{
-width: 81%;
-color: black;
-font-size: 90%;
-}
-
-input.sheet-expand{
-width: 8px;
-margin-top: 7px;
-margin-left: -2px;
-height: 8px;
-}
-
-input.sheet-expand + span::before{
-margin-top: 3px;
-margin-left: -2px;
-position: absolute;
-content: "▶";
-font-size: 8px;
-width: 12px;
-height: 12px;
-}
-
-input.sheet-expand:checked + span::before{
-content: "▼";
-}
-
-input.sheet-expand:checked ~ input[type=text]{
-font-weight: 600;
-}
-
-.sheet-faction textarea{
-display: none;
-resize: vertical;
-font-size: 90%;
-height: 35px;
-color: black;
-}
-
-.sheet-faction input.sheet-expand:checked ~ textarea{
-display: block;
 }
 
 
@@ -2773,167 +2668,140 @@ height: 40px;
 
 
 /* FACTIONS PAGE */
-.sheet-type-faction .repcontainer.ui-sortable.editmode + .repcontrol{
+
+.sheet-type-faction .repcontainer.ui-sortable.editmode + .repcontrol
+{
 margin-bottom: 55px;
 }
-
-.sheet-factiontitle{
+.sheet-factiontitle
+{
 margin-bottom: 10px;
 }
-
-.sheet-factiontitle input[type=text]{
-font-size: 200%;
-font-weight: 600;
-width: 60%;
+.sheet-factiontitle input[type=text]
+{
+font-size: 200%;font-weight: 600;width: 60%;
 }
-
-.sheet-factions-header{
-width: 100%;
-height: 24px;
-background: #ccc;
-padding: 5px 0;
+.sheet-factions-header
+{
+width: 100%;height: 24px;background: #ccc;padding: 5px 0;
 }
-
-.sheet-factions-header input[type=text]{
-font-weight: 600;
-padding-left: 3px;
+.sheet-factions-header input[type=text]
+{
+font-weight: 600;padding-left: 3px;
 }
-
-.sheet-factions-header span{
-font-size: 50%;
-display: inline-block;
-text-align: center;
-vertical-align: middle;
+.sheet-factions-header span
+{
+font-size: 50%;display: inline-block;text-align: center;vertical-align: middle;
 }
-
-input.sheet-expand{
-width: 8px;
-margin-top: 7px;
-margin-left: -7px;
-height: 8px;
+input.sheet-expand
+{
+width: 8px;margin-top: 7px;margin-left: -7px;height: 8px;
 }
-
-input.sheet-expand + span::before{
-margin-top: 3px;
-margin-left: -7px;
-position: absolute;
-content: "▶";
-font-size: 8px;
-width: 12px;
-height: 12px;
+input.sheet-expand + span::before
+{
+margin-top: 3px;margin-left: -7px;position: absolute;content: "▶";font-size: 8px;width: 12px;height: 12px;
 }
-
-input.sheet-expand:checked + span::before{
+input.sheet-expand:checked + span::before
+{
 content: "▼";
 }
-
-.sheet-faction{
+.sheet-faction
+{
 border-bottom: 1px solid lightgray;
 }
-
-.sheet-faction textarea{
-display: none;
-border-top: 1px solid lightgray;
-border-radius: 0;
-resize: vertical;
-font-size: 90%;
-height: 40px;
+.sheet-faction textarea
+{
+display: none;border-top: 1px solid lightgray;border-radius: 0;resize: vertical;font-size: 90%;height: 40px;
 }
-
-.sheet-faction input.sheet-expand:checked ~ textarea{
+.sheet-faction input.sheet-expand:checked ~ textarea
+{
 display: block;
 }
-
-.sheet-faction input[type=number]{
-border: none;
-background: transparent;
-padding: 0;
-font-size: 90%;
+.sheet-faction input[type=number]
+{
+border: none;background: transparent;padding: 0;font-size: 90%;
 }
-
-.sheet-faction input[type=text]{
-border-right: 1px solid lightgray;
-border-radius: 0;
-font-size: 90%;
-padding: 2px 1px;
+.sheet-faction input[type=text]
+{
+border-right: 1px solid lightgray;border-radius: 0;font-size: 90%;padding: 2px 1px;
 }
 
 /* Column widths */
-.sheet-faction input[type=text]:nth-child(3),.sheet-factions-header input[type=text]{
+
+.sheet-faction input[type=text]:nth-child(3),.sheet-factions-header input[type=text]
+{
 width: 65%;
 }
-
-.sheet-faction input[type=text]:nth-child(4),.sheet-factions-header span:nth-child(2){
-width: 10%;
-text-align: center;
+.sheet-faction input[type=text]:nth-child(4),.sheet-factions-header span:nth-child(2)
+{
+width: 10%;text-align: center;
 }
-
-.sheet-faction input[type=text]:nth-child(5),.sheet-factions-header span:nth-child(3){
-width: 10%;
-text-align: center;
+.sheet-faction input[type=text]:nth-child(5),.sheet-factions-header span:nth-child(3)
+{
+width: 10%;text-align: center;
 }
-
-.sheet-faction input[type=number],.sheet-factions-header span:nth-child(4){
-width: 15%;
-text-align: center;
+.sheet-faction input[type=number],.sheet-factions-header span:nth-child(4)
+{
+width: 15%;text-align: center;
 }
 
 /* War blurb */
-.sheet-warblurb{
-margin-top: 30px;
-font-size: 90%;
-}
 
-.sheet-warblurb .sheet-label{
-font-size: 120%;
-color: black;
-font-weight: 600;
+.sheet-warblurb
+{
+margin-top: 30px;font-size: 90%;
 }
-
-.sheet-warblurb li{
-margin-bottom: .5em;
-padding-left: 1em;
+.sheet-warblurb .sheet-label
+{
+font-size: 120%;color: black;font-weight: 600;
+}
+.sheet-warblurb li
+{
+margin-bottom: .5em;padding-left: 1em;
 }
 
 /* Generate button */
-div.sheet-faction-generatebutton{
-float: right;
-text-align: right;
+
+div.sheet-faction-generatebutton
+{
+float: right;text-align: right;
+}
+.sheet-faction-generatebutton input
+{
+width: 105px;height: 16px;
+}
+.sheet-faction-generatebutton input + span
+{
+padding: 3px;color: #666;border: 1px solid #666;
+}
+.sheet-faction-generatebutton input:hover + span
+{
+color: red;border-color: red;
+}
+input.sheet-generatebutton
+{
+width: 110px;height: 18px;
+}
+input.sheet-generatebutton + span
+{
+padding: 3px;color: #666;margin: 0 4px;font-size: 80%;border: 1px solid #666;
+}
+input.sheet-generatebutton:hover + span
+{
+color: red;border-color: red;
 }
 
-.sheet-faction-generatebutton input{
-width: 105px;
-height: 16px;
+/* Flexwidth */
+
+.sheet-container
+{
+position: relative;width: 860px;
+}
+input:checked + .sheet-container
+{
+min-width: 860px;width: initial;
 }
 
-.sheet-faction-generatebutton input + span{
-padding: 3px;
-color: #666;
-border: 1px solid #666;
-}
-
-.sheet-faction-generatebutton input:hover + span{
-color: red;
-border-color: red;
-}
-
-input.sheet-generatebutton{
-width: 110px;
-height: 18px;
-}
-
-input.sheet-generatebutton + span{
-padding: 3px;
-color: #666;
-margin: 0 4px;
-font-size: 80%;
-border: 1px solid #666;
-}
-
-input.sheet-generatebutton:hover + span{
-color: red;
-border-color: red;
-}
 
 
 /* ROLL TEMPLATES */
