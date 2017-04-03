@@ -880,6 +880,7 @@ font-weight: 200;
 .sheet-ship-title input[type="text"]{
 letter-spacing: -2px;
 font-size: 274%;
+font-weight: 800;
 color: #81ebfb;
 text-shadow: 0 0 2px white;
 font-weight: 200;
@@ -1238,6 +1239,10 @@ padding: 0;
 input.sheet-stresstooth, input.sheet-xptooth, input.sheet-holdtooth,input.sheet-stresstooth + span, input.sheet-xptooth + span, input.sheet-holdtooth + span{
 height: 25px;
 }
+input.sheet-modtooth, input.sheet-modtooth + span, input.sheet-moddamagetooth, input.sheet-moddamagetooth + span {
+	height: 12px;
+}
+
 
 input.sheet-regulartooth, input.sheet-regulartooth + span{
 height: 14px;
@@ -1288,6 +1293,49 @@ margin-right:1px !important;
     transform: skewX(-20deg);
 }
 
+input.sheet-modtooth + span{
+height:12px;
+width: 7px;
+background-color: #81ebfb;
+border:1px solid white;
+margin-right:1px !important;
+-ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg);
+}
+
+input.sheet-modtooth:checked ~ input.sheet-modtooth + span{
+height:12px;
+width: 7px;
+background-color: white;
+border:1px solid white;
+margin-right:1px !important;
+-ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg);
+}
+
+input.sheet-moddamagetooth + span{
+height:12px;
+width: 7px;
+background-color: #e34a3a;
+border:1px solid white;
+margin-right:1px !important;
+-ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg);
+}
+
+input.sheet-moddamagetooth:checked ~ input.sheet-modtooth + span{
+height:12px;
+width: 7px;
+background-color: white;
+border:1px solid white;
+margin-right:1px !important;
+-ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg);
+}
 
 input.sheet-stresstooth[type="radio"] + span,input.sheet-stresstooth[type="checkbox"]:checked + span,input.sheet-holdtooth:checked + span{
 /* red tooth */;
@@ -1312,6 +1360,8 @@ margin-right:1px !important;
     -webkit-transform: skewX(-20deg); /* Safari */
     transform: skewX(-20deg);
 }
+
+
 
 input.sheet-regulartooth[type="radio"] + span{
 height:14px;
@@ -2543,6 +2593,8 @@ margin-top: 5px;
 	}
 .sheet-ship-size {
 	margin-right: 0px !important;
+}
+.sheet-ship-system {
 }
 
 /* STRICTURES */

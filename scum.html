@@ -590,15 +590,11 @@
             <div class="sheet-col100"><input type="text" name="attr_lair"/><label>Color/Look</label></div>
         </div>
     	
-    <!-- SHIP SYSTEMS -->
     <div class="sheet-col100 sheet-def-margin sheet-ship">
     	<div class="sheet-col100 sheet-ship-toprow">
         	<div class="sheet-col18 sheet-ship-crew">
             	<div class="sheet-col100 sheet-blackheader">
             		<button type="roll" name="roll_crew" class="sheet-rollbutton sheet-crewbutton" value='&{template:bitd}{{charname=@{character_name}}}{{resist=1}}{{short=1}}{{rolltypeimage=http://i.imgur.com/GhRTT2u.png}}{{rolltypetext=Crew Quality}}{{subtitle=Roll their}}{{bonusdice=[[?{Bonus dice|0|1|2|3|4|5|6|-1|-2|-3}]]}}{{roll1=[[[[{@{crew_quality1},@{crew_quality1}+?{Bonus dice}}kl1]]d6]]}}{{roll2=[[[[{@{crew_quality2},@{crew_quality2}+?{Bonus dice}+1}kl1]]d6]]}}{{roll3=[[[[{@{crew_quality3},@{crew_quality3}+?{Bonus dice}+2}kl1]]d6]]}}{{bonus1=[[[[{?{Bonus dice},1}kl1]]d6]]}}{{bonus2=[[[[{?{Bonus dice}-1,1}kl1]]d6]]}}{{bonus3=[[[[{?{Bonus dice}-2,1}kl1]]d6]]}}{{bonus4=[[[[{?{Bonus dice}-3,1}kl1]]d6]]}}{{bonus5=[[[[{?{Bonus dice}-4,1}kl1]]d6]]}}{{bonus6=[[[[{?{Bonus dice}-5,1}kl1]]d6]]}}{{zerodice=[[[[{-@{crew_quality1}-@{crew_quality2}-@{crew_quality3}-(?{Bonus dice})+1,1}kl1]]d6]], [[[[{-@{crew_quality1}-@{crew_quality2}-@{crew_quality3}-(?{Bonus dice})+1,1}kl1]]d6]]}}'>CREW</button>
-               <!--
-                	<input type="radio" value="0" name="attr_playbook_xp" class="sheet-zero" checked/><span></span>
-                    <input type="checkbox" value="0" name="attr_playbook_xp" class="sheet-xptooth sheet-hidden" checked/><input type="radio" value="1" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="2" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="3" name="attr_playbook_xp" class="sheet-tooth sheet-xptooth"/><span></span>  -->
             		<input type="checkbox" class="sheet-tooth sheet-stresstooth" value="1" name="attr_crew_quality1"/><span></span><input type="checkbox" class="sheet-tooth sheet-stresstooth" value="1" name="attr_crew_quality2"/><span></span><input type="checkbox" class="sheet-tooth sheet-stresstooth" value="1" name="attr_crew_quality3"/><span></span> 
                     </div>
             </div>
@@ -618,37 +614,82 @@
                 </div>
             </div>
         </div>
+<!-- SHIP SYSTEMS -->
         <div class="sheet-col100 sheet-ship-systemrow">
-        	<div class="sheet-ship-system"></div>
-            <div class="sheet-ship-expo-cred">
-            	<div class="sheet-ship-expo"></div>
-                <div class="sheet-ship-cred">
-                	<div class="sheet-crewcoin sheet-col52b">
-            			<div class="sheet-col100">
-                			<div class="sheet-blackheader sheet-crewcoin1">
-                    			<div class="sheet-label">cred</div>
-                   		 	</div>
-                   		 	<div class="sheet-greyheader sheet-crewcoin2">
-                    			<div class="sheet-label">debt</div>
-                    		</div>
-                		</div>
-                		<div class="sheet-zeroholder">
-                			<input type="radio" value="0" name="attr_crewcoin" class="sheet-zero" checked/><span></span>
-                		</div>
-                		<div class="sheet-col100">
-                			<input type="checkbox" value="0" name="attr_crewcoin" class="sheet-radiobox sheet-hidden" checked/><input type="radio" value="1"name="attr_crewcoin" class="sheet-radiobox"/><span></span><input type="radio" value="2" name="attr_crewcoin" class="sheet-radiobox"/><span></span><input type="radio" value="3" name="attr_crewcoin" class="sheet-radiobox"/><span></span><input type="radio" value="4" name="attr_crewcoin" class="sheet-radiobox"/><span></span>
-                    		<div class="sheet-crewcoinbar"></div>
-                    		<input type="radio" value="5"name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="6" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="7" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="8" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span>
-                    		<div class="sheet-crewcoinbar"></div>
-                    		<input type="radio" value="9"name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="10" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="11" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="12" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="13"name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="14" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="15" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="16" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span>
-                </div>
-                <div>
-                	<span class="sheet-italic">Upon crew advance, each PC gets +1 Stash (+2 per Tier)</span>
+        <!-- SYSTEM 1 -->
+        	<div class="sheet-ship-system sheet-col30">
+            	<div class="sheet-col100">
+                	<div class="sheet-col100 sheet-blackheader sheet-col30">
+                		<div class="sheet-label">
+                    		<span class="sheet-inherit" name="attr_system1_desc" placeholder="System 1"></span>
+                    	</div>
+                    	<div class="sheet-zeroholder">
+                    	<!-- <input type="radio" value="0" name="attr_sys1_mod" class="sheet-zero" checked/><span></span><br />
+                        <input type="radio" value="0" name="attr_sys1_mod_dam" class="sheet-zero" checked/><span></span> -->
+                    	</div>
+                	</div>
+                	<div class="sheet-blackheader">
+                		<!-- <input type="checkbox" value="0" name="attr_sys1_mod" class="sheet-tooth sheet-modtooth sheet-hidden" checked/><input type="radio" value="1" name="attr_sys1_mod" class="sheet-tooth sheet-modtooth"/><span></span><input type="radio" value="2" name="attr_sys1_mod" class="sheet-tooth sheet-tooth sheet-modtooth"/><span></span><input type="radio" value="3" name="attr_sys1_mod" class="sheet-tooth sheet-tooth sheet-modtooth"/><span></span><input type="radio" value="4" name="attr_sys1_mod" class="sheet-tooth sheet-tooth sheet-modtooth"/><span></span><br />
+                        <input type="checkbox" value="0" name="attr_sys1_mod_dam" class="sheet-tooth sheet-moddamagetooth sheet-hidden" checked/><input type="radio" value="1" name="attr_sys1_mod_dam" class="sheet-tooth sheet-moddamagetooth"/><span></span><input type="radio" value="2" name="attr_sys1_mod_dam" class="sheet-tooth sheet-tooth sheet-moddamagetooth"/><span></span><input type="radio" value="3" name="attr_sys1_mod_dam" class="sheet-tooth sheet-tooth sheet-moddamagetooth"/><span></span><input type="radio" value="4" name="attr_sys1_mod_dam" class="sheet-tooth sheet-tooth sheet-moddamagetooth"/><span></span> -->
+                	</div>
             	</div>
         	</div>
+<!-- EXPOSITION COIN AND DEBT -->
+        <div class="sheet-ship-expo-cred sheet-col50">
+        	<!-- <div class="sheet-ship-expo"></div>
+            <div class="sheet-ship-cred">
+            	<div class="sheet-crewcoin sheet-col52b">
+            		<div class="sheet-col100">
+                		<div class="sheet-blackheader sheet-crewcoin1">
+                    		<div class="sheet-label">cred</div>
+                   	 	</div>
+                   	 	<div class="sheet-greyheader sheet-crewcoin2">
+                    		<div class="sheet-label">vault</div>
+                    	</div>
+                	</div>
+                	<div class="sheet-zeroholder">
+                		<input type="radio" value="0" name="attr_crewcoin" class="sheet-zero" checked/><span></span>
+                	</div>
+                	<div class="sheet-col100">
+                		<input type="checkbox" value="0" name="attr_crewcoin" class="sheet-radiobox sheet-hidden" checked/><input type="radio" value="1"name="attr_crewcoin" class="sheet-radiobox"/><span></span><input type="radio" value="2" name="attr_crewcoin" class="sheet-radiobox"/><span></span><input type="radio" value="3" name="attr_crewcoin" class="sheet-radiobox"/><span></span><input type="radio" value="4" name="attr_crewcoin" class="sheet-radiobox"/><span></span>
+                    	<div class="sheet-crewcoinbar"></div>
+                    	<input type="radio" value="5"name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="6" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="7" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="8" name="attr_crewcoin" class="sheet-radiobox sheet-vaultcoin"/><span></span>
+                	</div>
+                	<div>
+                		<span class="sheet-italic"></span>
+            		</div>
+        		</div>
+                <div class="sheet-crewcoin sheet-col52b">
+            		<div class="sheet-col100">
+                		<div class="sheet-blackheader sheet-crewcoin1">
+                   			<div class="sheet-label">Debt</div>
+                	 	</div>
+                	 	<div class="sheet-greyheader sheet-crewcoin2">
+                   			<div class="sheet-label"></div>
+                   		</div>
+                	</div>
+                	<div class="sheet-zeroholder">
+                		<input type="radio" value="0" name="attr_shipdebt" class="sheet-zero" checked/><span></span>
+                	</div>
+                	<div class="sheet-col100">
+                		<input type="checkbox" value="0" name="attr_shipdebt" class="sheet-radiobox sheet-hidden" checked/><input type="radio" value="1"name="attr_shipdebt" class="sheet-radiobox"/><span></span><input type="radio" value="2" name="attr_shipdebt" class="sheet-radiobox"/><span></span><input type="radio" value="3" name="attr_shipdebt" class="sheet-radiobox"/><span></span><input type="radio" value="4" name="attr_shipdebt" class="sheet-radiobox"/><span></span><input type="radio" value="5"name="attr_shipdebt" class="sheet-radiobox "/><span></span><input type="radio" value="6" name="attr_shipdebt" class="sheet-radiobox "/><span></span><input type="radio" value="7" name="attr_shipdebt" class="sheet-radiobox "/><span></span><input type="radio" value="8" name="attr_shipdebt" class="sheet-radiobox "/><span></span>
+                	</div>
+                	<div>
+                		<span class="sheet-italic"></span>
+            		</div>
+        		</div>
+            </div> -->
+        </div>
+<!-- system 2 -->
+        <div class="sheet-ship-system sheet-col30">
+            <div class="sheet-col100">
+                <div class="sheet-col100 sheet-blackheader sheet-col30">
+                	<div class="sheet-label">
+                    	<span class="sheet-inherit" name="attr_system2_desc" placeholder="System 1"></span>
+                    </div>
                 </div>
-            </div>
-            <div class="sheet-ship-system"></div>
+             </div>
+        </div>
         </div>
         <div class="sheet-col100 sheet-ship-centerrow">
         <input type="checkbox" name="attr_shipschematic_1" class="sheet-hidden sheet-itemhider" checked/><div clas="sheet-ship-background1">
@@ -659,15 +700,29 @@
         </div>
         </div>
         <div class="sheet-ship-bottomrow">
-        	<div class="sheet-ship-system"></div>
+<!-- SYSTEM 3 -->
+        <div class="sheet-ship-system sheet-col30">
+            <div class="sheet-col100">
+                <div class="sheet-col100 sheet-blackheader sheet-col30">
+                	<div class="sheet-label">
+                    	<span class="sheet-inherit" name="attr_system3_desc" placeholder="System 1"></span>
+                    </div>
+                </div>
+             </div>
+        </div>
             <div class="sheet-ship-upkeep-skips">
             	<div class="sheet-ship-upkeep"></div><div class="sheet-ship-gambits"></div>
                 <div class="sheet-ship-skips"></div>
             </div>
-            <div class="sheet-ship-system-shields">
-            	<div class="sheet-ship-systemlite"></div>
-            	<div class="sheet-ship-shields"></div>
-            </div>
+            <div class="sheet-ship-system sheet-col30">
+            <div class="sheet-col100">
+                <div class="sheet-col100 sheet-blackheader sheet-col30">
+                	<div class="sheet-label">
+                    	<span class="sheet-inherit" name="attr_system4_desc" placeholder="System 1"></span>
+                    </div>
+                </div>
+             </div>
+        </div>
         </div>
     </div>
     <!-- END SHIP SYSTEMS -->
@@ -811,8 +866,8 @@
 <script type="text/worker">
 var crewData={
 	stardancer:{
-		abilities:[{
-			name:'The Getaway:',description:'You gain potency when you scramble or helm to avoid capture or run a blockade. When doing a delivery job take +1d to the engagement roll.'},
+		abilities:[
+			{name:'The Getaway:',description:'You gain potency when you scramble or helm to avoid capture or run a blockade. When doing a delivery job take +1d to the engagement roll.'},
 			{name:'Cargo Eye:',description:'Your crew gains +1 cred for smuggling or delivery jobs. Whenever you gather information you can always ask: What is most valuable here?'},
 			{name:'Field Repairs:',description:'You gain potency when repairing your ship while in space. If you spend a gambit on a rig roll you gain +2d (instead of +1d). '},
 			{name:'Leverage:',description:'Your crew knows how to pull strings and cash in favors. When you lay low, instead of rolling you can take -1 status with a faction at Helpful (+1) or better to add 4 ticks to your wanted reduction clock.'},
@@ -826,45 +881,74 @@ var crewData={
 			setting_showupgrade_5:'0',
 			setting_showupgrade_7:'0',
 			ship_designation:'CF-350 Series Scarab-class Freighter',
+			system1_desc:'hull',
+			system2_desc:'engines',
+			system3_desc:'comms',
+			system4_desc:'weapons',
 			upgrade_1_desc:'False Ship Papers',
 			upgrade_2_desc:'Dark Hyperspace Lane Maps',
 			upgrade_3_desc:'Smuggler\'s Rigging (1 carried item is concealed and has no weight)',
 			upgrade_4_desc:'Lucky Charm (+1 gambit)',
 			upgrade_6_desc:'Thrillseekers (+1 stress)',
-		contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
+			contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']
+			}
+		},
 	cerberus:{
-		abilities:[{
-			name:'',description:''},
-			{name:'',description:''},
-			{name:'',description:''},
-			{name:'',description:''},
-			{name:'',description:''},
-			{name:'',description:''}],
+		abilities:[
+			{name:'Licensed: ',description:'Apply -2 to heat to any legitimate bounty hunting job. Your ship can carry particle weapons, and your crew can carry and legally use heavy blasters in the pursuit of a target.'},
+			{name:'On The Trail: ',description:'Your crew gains one free downtime action to work on long term projects that track bounties that have gone to ground.'},
+			{name:'Light Touch: ',description:'You gain potency when tailing a target, or when gathering info at a crime scene.'},
+			{name:'Snatch \'N\' Grab: ',description:'When you use a deception, infiltration  or social plan to execute a kidnapping add +1d to the engagement roll.'},
+			{name:'Loaded for Bear: ',description:'All your crew can carry +1 load. Your crew has distinctive and high quality armor. When you wear armor, it counts as heavy armor (2 uses).'},
+			{name:'Play Both Sides: ',description:'Release a bounty target to make them a crew contact, and add +2 heat.'},
+			{name:'Deadly: ',description:'Each PC may add 1 action rating to command, scrap, or skulk (up to a max of 3).'}],
 		base:{
-			attr_personal:'0',
-			attr_freighter:'0',
-			attr_corvette:'0',
-			attr_frigate:'0',
-			attr_dreadnaught:'0',
-			crew_description:'',
-			crew_xp_condition:'',
-			setting_showupgrade_1:'0',
-			setting_showupgrade_2:'0',
+			freighter:'on',
+			crew_description:'extraction \n specialists and \n bounty hunters',
+			crew_xp_condition:'Execute a successfu extraction operation or capture of a bounty.',
 			setting_showupgrade_3:'0',
-			setting_showupgrade_4:'0',
-			setting_showupgrade_5:'0',
-			setting_showupgrade_6:'0',
 			setting_showupgrade_7:'0',
-			ship_designation:'',
-			upgrade_1_desc:'',
-			upgrade_2_desc:'',
-			upgrade_2_tall:'off',
-			upgrade_3_desc:'',
-			upgrade_3_tall:'off',
-			upgrade_4_desc:'',
-			upgrade_5_desc:'',
-			upgrade_20_check:'off',
-			upgrade_21_check:'off'},
+			ship_designation:'R-29 Firebrand-type Patrol craft',
+			system1_desc:'',
+			system2_desc:'',
+			system3_desc:'',
+			system4_desc:'',
+			upgrade_1_desc:'Tracers',
+			upgrade_2_desc:'Stun Weapons ',
+			upgrade_4_desc:'Personal Vehicles',
+			upgrade_5_desc:'Hard Knocks (+1 gambit)',
+			upgrade_6_desc:'Smooth Criminal (+1 stress)',
+			upgrade_12_check:'on',
+			contacts:['']
+			}
+		},
+	firedrake:{
+		abilities:[
+			{name:'Old Hands: ',description:'When you\'re at War (-3) with a Hegemony faction, all crewmembers get +1d to vice rolls and still get two downtime actions, instead of just one.'},
+			{name:'Forged in Fire: ',description:'Each crewmember has been toughened by cruel experience. You get +1d to all resistance rolls.'},
+			{name:'Sympathisers: ',description:'Your ideaology is especially appealing. When you deal with a crew or faction, the GM will tell you who among them believes in your cause (one, a few, many, or all). '},
+			{name:'Natural Enemies: ',description:'When you run a job against Hegemony Factions take +1d to the engagement roll.'},
+			{name:'Spark of Rebellion: ',description:'If you leave a calling card, or a highly visible sigil of resistance on your job, gain +2 heat. Your crew gaints +1d to vice during the next downtime, and cannot overindulge.'},
+			{name:'Just Cause: ',description:'When your crew does the right thing at cost to themselves they may mark a crew advance.'},
+			{name:'Hearts and Minds: ',description:'Each PC may add 1 action rating to command, consort, or sway (up to a max of 3).'}],
+		base:{
+			corvette:'on',
+			crew_description:'rebels and \n criminals',
+			crew_xp_condition:'Execute a successful job that opposes Hegemonic dominance.',
+			setting_showupgrade_3:'0',
+			setting_showupgrade_5:'0',
+			ship_designation:'Converted Khanjigar class Corvette',
+			system1_desc:'',
+			system2_desc:'',
+			system3_desc:'',
+			system4_desc:'',
+			upgrade_1_desc:'Black Market Contacts',
+			upgrade_2_desc:'Secret Base',
+			upgrade_4_desc:'Way Blessed (+1 gambit)',
+			upgrade_6_desc:'Popular Support',
+			upgrade_7_desc:'Driven (+1 trauma)',
+			upgrade_16_check:'on',
+			upgrade_16_check_b:'on'},
 		contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
 		playbookData={
 			mechanic:{
