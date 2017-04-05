@@ -29,9 +29,6 @@
 	<div class="sheet-col50"><input type="checkbox" name="attr_setting_extra_stress2" class="sheet-checkbox sheet-squarebox"/><span></span><span>Show another stress box</span></div>
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_extra_xp" class="sheet-checkbox sheet-squarebox"/><span></span><span>Show an extra xp condition</span></div>
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_extra_stress3" class="sheet-checkbox sheet-squarebox"/><span></span><span>Show yet another stress box</span></div>
-    <!-- DIETY FIELD 
-    <div class="sheet-col50"><input type="checkbox" name="attr_setting_show_deity" class="sheet-checkbox sheet-squarebox"/><span></span><span>Show deity fields for crew</span></div>
-    -->
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_showitem_0" class="sheet-checkbox sheet-squarebox" checked/><span></span><span>Show playbook item 0</span></div>
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_showitem_1" class="sheet-checkbox sheet-squarebox" checked/><span></span><span>Show playbook item 1</span></div>
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_showitem_2" class="sheet-checkbox sheet-squarebox" checked/><span></span><span>Show playbook item 2</span></div>
@@ -57,31 +54,7 @@
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_showupgrade_5" class="sheet-checkbox sheet-squarebox" checked/><span></span><span>Show Ship Upgrade 5</span></div>
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_showupgrade_6" class="sheet-checkbox sheet-squarebox" checked/><span></span><span>Show Ship Upgrade 6</span></div>
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_showupgrade_7" class="sheet-checkbox sheet-squarebox" checked/><span></span><span>Show Ship Upgrade 7</span></div>
-    <!-- EXTRA CLASS STUFF
-    <div class="sheet-col50"><input type="checkbox" name="attr_setting_vampirexp" class="sheet-checkbox sheet-squarebox"/><span></span><span>Extra xp boxes for vampires</span></div>
-    <div class="sheet-col50"><input type="checkbox" name="attr_setting_show_strictures" class="sheet-checkbox sheet-squarebox"/><span></span><span>Show Vampire Strictures</span></div>
-    <div class="sheet-col50"><input type="checkbox" name="attr_setting_show_frame" class="sheet-checkbox sheet-squarebox"/><span></span><span>Show Frame section (for Hulls)</span></div>
-     -->
     <div class="sheet-col50" style="height:24px"></div><div class="sheet-col50"><input type="text" name="attr_setting_stress_label" value="Stress"/><span></span><span>Label to use for Stress</span></div><div class="sheet-col50"><input type="text" name="attr_setting_trauma_label" value="Trauma"/><span></span><span>Label to use for Trauma</span></div>
-<!-- TRAUMA CHANGES NOT NEEDED CURRENTLY 
-	<div class="sheet-col50">
-    	<select name="attr_setting_traumata_set" title="Traumata">
-        <option value="normal" selected>Normal</option>
-        <option value="ghost">Ghost</option>
-        <option value="hull">Hull</option>
-        </select>
-        <span>Traumata</span>
-    </div>
-    <div class="sheet-col50">
-    	<select name="attr_setting_vice_type" title="Vice">
-        <option value="normal" selected>Normal</option>
-        <option value="ghost">Ghost</option>
-        <option value="hull">Hull</option>
-        <option value="vampire">Vampire</option>
-        </select>
-        <span>Vice</span>
-    </div>
-     -->
 	<div class="sheet-settings-load sheet-col100">
     	<span>Load: </span>
        	<input type="number" name="attr_setting_load_l" value="3"/><span> light</span>
@@ -194,26 +167,6 @@
                         	<input type="checkbox" name="attr_unstable" class="sheet-text-input sheet-traumarow2"/><span>Unstable</span>
                         	<input type="checkbox" name="attr_vicious" class="sheet-text-input sheet-last sheet-traumarow2"/><span>Vicious</span>
                         </div>
-                       <!--ADVANCE CLASS TRAUMA TYPES
-                        <input type="checkbox" class="sheet-hidden sheet-hidediv" name="attr_setting_traumata_set" value="ghost"/>
-                        <div style="letter-spacing: 1px">
-                        	<input type="checkbox" name="attr_chaotic" class="sheet-text-input"/><span>Chaotic</span>
-                            <input type="checkbox" name="attr_destructive" class="sheet-text-input"/><span>Destructive</span>
-                            <input type="checkbox" name="attr_furious" class="sheet-text-input sheet-last"/><span>Furious</span><br/>
-                            <input type="checkbox" name="attr_obsessive" class="sheet-text-input sheet-traumarow2"/><span>Obsessive</span>
-                            <input type="checkbox" name="attr_territorial" class="sheet-text-input sheet-traumarow2"/><span>Territorial</span>
-                            <input type="checkbox" name="attr_savage" class="sheet-text-input sheet-traumarow2 sheet-last"/><span>Savage</span>
-                         </div>
-                         <input type="checkbox" class="sheet-hidden sheet-hidediv" name="attr_setting_traumata_set" value="hull"/>
-                         <div style="letter-spacing: 1px">
-                         	<input type="checkbox" name="attr_clanking" class="sheet-text-input"/><span>Clanking</span>
-                            <input type="checkbox" name="attr_leaking" class="sheet-text-input"/><span>Leaking</span>
-                            <input type="checkbox" name="attr_fixated" class="sheet-text-input sheet-last"/><span>Fixated</span><br/>
-                            <input type="checkbox" name="attr_smoking" class="sheet-text-input sheet-traumarow2"/><span>Smoking</span>
-                            <input type="checkbox" name="attr_sparking" class="sheet-text-input sheet-traumarow2"/><span>Sparking</span>
-                            <input type="checkbox" name="attr_unstable" class="sheet-text-input sheet-last sheet-traumarow2"/><span>Unstable</span>
-                        </div>
-                        -->
                     </div>
                 </div>
                 <div class="sheet-col100 sheet-def-margin">
@@ -430,14 +383,8 @@
                             <div class="sheet-item"><input type="checkbox" name="attr_item_28_check" class="sheet-checkbox sheet-squarebox"/><span></span><input type="text" value="Communicator" name="attr_item_28_desc"/></div>
                             <div class="sheet-item sheet-itemshort sheet-item2box"><input type="checkbox" name="attr_item_29_check" class="sheet-checkbox sheet-squarebox"/><span></span><span class="sheet-floatingbar"></span><input type="checkbox" name="attr_item_29_check_b" class="sheet-checkbox sheet-squarebox"/><span></span><input type="text" value="Armor" name="attr_item_29_desc"/></div>
                             <div class="sheet-item sheet-itemshort sheet-item2box"><input type="checkbox" name="attr_item_30_check" class="sheet-checkbox sheet-squarebox"/><span></span><span class="sheet-floatingbar"></span><input type="checkbox" name="attr_item_30_check_b" class="sheet-checkbox sheet-squarebox"/><span></span><input type="text" value="Spacesuit" name="attr_item_30_desc"/></div>
-<!-- 3 BOX ITEM 
-							<div class="sheet-item sheet-itemshort sheet-item3box"><input type="checkbox" name="attr_item_16_check_c" class="sheet-checkbox sheet-squarebox"/><span></span><span class="sheet-floatingbar"></span><input type="checkbox" name="attr_item_16_check_d" class="sheet-checkbox sheet-squarebox"/><span></span><span class="sheet-floatingbar"></span><input type="checkbox" name="attr_item_16_check_e" class="sheet-checkbox sheet-squarebox"/><span></span><input type="text" value="+Heavy" name="attr_item_16_desc_b"/></div>
--->
                             <fieldset class="repeating_item"><div class="sheet-item sheet-item2box"><input type="checkbox" name="attr_check" class="sheet-checkbox sheet-squarebox"/><span></span><span class="sheet-floatingbar"></span><input type="checkbox" name="attr_check_b" class="sheet-checkbox sheet-squarebox"/><span></span><input type="text" placeholder="Something Else?" name="attr_desc"/></div></fieldset>
                         </div></div>
- <!-- Alchemicals
-                        <div class="sheet-col100 sheet-alchemicals sheet-def-margin"><input type="checkbox" name="attr_show_alchemicals" class="sheet-alchemicals-checkbox"/><span class="sheet-label sheet-plainheader">Alchemicals</span><div class="sheet-alchemicals-content"><div class="sheet-bandolier"><span>Bandolier</span><input type="checkbox" name="attr_bandolier1_check" class="sheet-checkbox sheet-squarebox"/><span></span><span class="sheet-floatingbar"></span><input type="checkbox" name="attr_bandolier1_check_b" class="sheet-checkbox sheet-squarebox"/><span></span><span class="sheet-floatingbar"></span><input type="checkbox" name="attr_bandolier1_check_c" class="sheet-checkbox sheet-squarebox"/><span></span></div><div class="sheet-bandolier"><span>Bandolier</span><input type="checkbox" name="attr_bandolier2_check" class="sheet-checkbox sheet-squarebox"/><span></span><span class="sheet-floatingbar"></span><input type="checkbox" name="attr_bandolier2_check_b" class="sheet-checkbox sheet-squarebox"/><span></span><span class="sheet-floatingbar"></span><input type="checkbox" name="attr_bandolier2_check_c" class="sheet-checkbox sheet-squarebox"/><span></span></div><div><span class="sheet-italic">When you use a bandolier slot, choose an alchemical:</span></div><div><ul><li>Alcahest</li><li>Binding Oil</li><li>Drift Oil</li><li>Drown Powder</li><li>Eyeblind Poison</li><li>Fire Oil</li><li>Grenade</li><li>Quicksilver</li><li>Skullfire Poison</li><li>Smoke Bomb</li><li>Spark (drug)</li><li>Standstill Poison</li><li>Trance Powder</li></ul></div></div></div>
- -->
                         <div class="sheet-planning sheet-col100 sheet-def-margin">
                         	<div class="sheet-plainheader sheet-label">Planning &amp; Load</div>
                             <div class="sheet-planningdesc">
@@ -452,8 +399,6 @@
                             <div class="sheet-teamworkbox"><span class="sheet-bold">Transport:</span><span> Locations / Route</span></div>
                         </div>
                     </div>
-                
-                
 <!-- Attributes columns -->
 <div class="sheet-col50a">
 <div class="sheet-attribute sheet-col100">
@@ -605,10 +550,10 @@
                      	</div>
         	</div>
 <!-- EXPOSITION COIN AND DEBT -->
-        <div class="sheet-ship-expo-cred sheet-col50">
-        	<!-- <div class="sheet-ship-expo"></div>
+        <div class="sheet-ship-expo-cred sheet-col30">
+        	<div class="sheet-ship-expo"></div>
             <div class="sheet-ship-cred">
-            	<div class="sheet-crewcoin sheet-col52b">
+            	<div class="sheet-crewcoin sheet-col100">
             		<div class="sheet-col100">
                 		<div class="sheet-blackheader sheet-crewcoin1">
                     		<div class="sheet-label">cred</div>
@@ -629,7 +574,7 @@
                 		<span class="sheet-italic"></span>
             		</div>
         		</div>
-                <div class="sheet-crewcoin sheet-col52b">
+                <div class="sheet-crewcoin sheet-col100">
             		<div class="sheet-col100">
                 		<div class="sheet-blackheader sheet-crewcoin1">
                    			<div class="sheet-label">Debt</div>
@@ -648,7 +593,7 @@
                 		<span class="sheet-italic"></span>
             		</div>
         		</div>
-            </div> -->
+            </div>
         </div>
 <!-- system 2 -->
         <div class="sheet-ship-system sheet-col30">
