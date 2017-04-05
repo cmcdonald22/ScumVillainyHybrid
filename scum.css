@@ -1326,10 +1326,10 @@ margin-right:1px !important;
     transform: skewX(-20deg);
 }
 
-input.sheet-moddamagetooth:checked ~ input.sheet-modtooth + span{
+input.sheet-moddamagetooth:checked ~ input.sheet-moddamagetooth + span{
 height:12px;
 width: 7px;
-background-color: white;
+background-color: white !important;
 border:1px solid white;
 margin-right:1px !important;
 -ms-transform: skewX(-20deg); /* IE 9 */
@@ -1571,6 +1571,17 @@ float: right;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+.sheet-shipsystemlabel 
+{
+	color: white;
+	font-size: 95%;
+	text-shadow: 0 0 2px #81ebfb;
+	font-weight: 800;
+	margin-right:0 !important;
+	text-transform:uppercase;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 .sheet-armor .sheet-attribute-title
 {
 	width:100%;
@@ -1585,7 +1596,17 @@ text-align: right;
 padding-right: 1px;
 clear:left;
 }
-
+.sheet-module-tick-box{
+float: right;
+text-align: right;
+padding-right: 1px;
+clear:left !important;
+}
+.sheet-modulelist
+{
+	background:transparent;
+	margin-top:10px;
+}
 /* COIN */
 
 
