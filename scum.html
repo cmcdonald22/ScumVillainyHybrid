@@ -54,7 +54,9 @@
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_showupgrade_5" class="sheet-checkbox sheet-squarebox" checked/><span></span><span>Show Ship Upgrade 5</span></div>
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_showupgrade_6" class="sheet-checkbox sheet-squarebox" checked/><span></span><span>Show Ship Upgrade 6</span></div>
     <div class="sheet-col50"><input type="checkbox" name="attr_setting_showupgrade_7" class="sheet-checkbox sheet-squarebox" checked/><span></span><span>Show Ship Upgrade 7</span></div>
-    <div class="sheet-col50" style="height:24px"></div><div class="sheet-col50"><input type="text" name="attr_setting_stress_label" value="Stress"/><span></span><span>Label to use for Stress</span></div><div class="sheet-col50"><input type="text" name="attr_setting_trauma_label" value="Trauma"/><span></span><span>Label to use for Trauma</span></div>
+    <div class="sheet-col100"><input type="text" name="attr_defaultgambit" value="2"/><span></span><span>number of Starting Gambits</span></div>
+    <div class="sheet-col50"><input type="text" name="attr_setting_stress_label" value="Stress"/><span></span><span>Label to use for Stress</span></div>
+    <div class="sheet-col50"><input type="text" name="attr_setting_trauma_label" value="Trauma"/><span></span><span>Label to use for Trauma</span></div>
 	<div class="sheet-settings-load sheet-col100">
     	<span>Load: </span>
        	<input type="number" name="attr_setting_load_l" value="3"/><span> light</span>
@@ -608,12 +610,17 @@
         	</div>
         </div>
         <div class="sheet-col100 sheet-ship-centerrow">
-        <input type="checkbox" name="attr_shipschematic_1" class="sheet-hidden sheet-itemhider" checked/><div clas="sheet-ship-background1">
-        <input type="checkbox" name="attr_shipschematic_2" class="sheet-hidden sheet-itemhider" checked/><div class="sheet-ship-background2">
-        <input type="checkbox" name="attr_shipschematic_3" class="sheet-hidden sheet-itemhider" checked/><div class="sheet-ship-background3">
-        </div>
-        </div>
-        </div>
+        <input type="checkbox" name="attr_shipschematic_1" class="sheet-hidden sheet-itemhider" checked/><div clas="sheet-ship-background1"></div>
+        <input type="checkbox" name="attr_shipschematic_2" class="sheet-hidden sheet-itemhider" checked/><div class="sheet-ship-background2"></div>
+        <input type="checkbox" name="attr_shipschematic_3" class="sheet-hidden sheet-itemhider" checked/><div class="sheet-ship-background3"></div>
+        	<div class="sheet-col30 sheet-ship-gambits">
+            	<div class="sheet-blackheader sheet-col100">
+                    	<div class="sheet-label">Gambits</div>
+                 </div>
+                 <div class="sheet-ship-gambitexpo sheet-col100">
+                 <span style="white-space:pre-wrap">Reset to <span class="sheet-label sheet-bold" placeholder="2" name="attr_defaultgambit"></span> gambits at  the  start  of every job</span>
+                 </div>
+            </div>
         </div>
         <div class="sheet-ship-bottomrow">
 <!-- SYSTEM 3 -->
@@ -786,7 +793,89 @@
             </div><br clear="all" /></div>
     
 <!-- FACTIONS -->
-   <input type="checkbox" name="attr_sheet_type" class="sheet-hidediv sheet-hidden" value="faction"/><div class="sheet-type-faction"><div class="sheet-factiontitle sheet-col100"><input class="sheet-label" type="text" name="attr_factions_title" value="Factions of Doskvol"/><div class="sheet-faction-generatebutton"><input type="checkbox" name="attr_generate_factions"/><span>Generate Factions</span></div></div><div class="sheet-col100"><div class="sheet-col24b sheet-white-repcontrol"><div class="sheet-factions-header sheet-label"><input class="sheet-label" type="text" name="attr_factions1_header" value="Underworld"/><span>Tier</span><span>Hold</span><span>Status</span></div><fieldset class="repeating_factions1"><div class="sheet-faction"><input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span><input type="text" name="attr_name"/><input type="text" name="attr_tier"/><input type="text" name="attr_hold"/><input type="number" name="attr_status"/><textarea name="attr_notes" placeholder="Faction notes"></textarea></div></fieldset></div><div class="sheet-col24b sheet-white-repcontrol"><div class="sheet-factions-header sheet-label"><input class="sheet-label" type="text" name="attr_factions2_header" value="Institutions"/><span>Tier</span><span>Hold</span><span>Status</span></div><fieldset class="repeating_factions2"><div class="sheet-faction"><input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span><input type="text" name="attr_name"/><input type="text" name="attr_tier"/><input type="text" name="attr_hold"/><input type="number" name="attr_status"/><textarea name="attr_notes" placeholder="Faction notes"></textarea></div></fieldset></div><div class="sheet-col24b sheet-white-repcontrol"><div class="sheet-factions-header sheet-label"><input class="sheet-label" type="text" name="attr_factions3_header" value="Labor &amp; Trade"/><span>Tier</span><span>Hold</span><span>Status</span></div><fieldset class="repeating_factions3"><div class="sheet-faction"><input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span><input type="text" name="attr_name"/><input type="text" name="attr_tier"/><input type="text" name="attr_hold"/><input type="number" name="attr_status"/><textarea name="attr_notes" placeholder="Faction notes"></textarea></div></fieldset><div class="sheet-factions-header sheet-label sheet-def-margin"><input class="sheet-label" type="text" name="attr_factions4_header" value="The Fringe"/><span>Tier</span><span>Hold</span><span>Status</span></div><fieldset class="repeating_factions4"><div class="sheet-faction"><input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span><input type="text" name="attr_name"/><input type="text" name="attr_tier"/><input type="text" name="attr_hold"/><input type="number" name="attr_status"/><textarea name="attr_notes" placeholder="Faction notes"></textarea></div></fieldset></div><div class="sheet-col24b sheet-white-repcontrol"><div class="sheet-factions-header sheet-label"><input class="sheet-label" type="text" name="attr_factions5_header" value="Citizenry"/><span>Tier</span><span>Hold</span><span>Status</span></div><fieldset class="repeating_factions5"><div class="sheet-faction"><input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span><input type="text" name="attr_name"/><input type="text" name="attr_tier"/><input type="text" name="attr_hold"/><input type="number" name="attr_status"/><textarea name="attr_notes" placeholder="Faction notes"></textarea></div></fieldset><div class="sheet-warblurb"><div class="sheet-label">War</div><ul><li class="sheet-nondot">When you're at war with any number of factions (status -3), the following penalties apply:</li><li>Lose 1 hold (temporarily, while the war persists). This may knock you down a Tier.</li><li>PCs get only one free downtime action instead of two.</li><li>Take +1 heat from each score.</li><li>Your claims which generate coin (vice dens, fighting pits, fences, etc.) produce only half their normal income (round down).</li></ul></div></div></div><div class="sheet-col50 sheet-def-margin"><textarea name="attr_faction_notes"></textarea></div></div></div>
+   <input type="checkbox" name="attr_sheet_type" class="sheet-hidediv sheet-hidden" value="faction"/>
+<div class="sheet-type-faction">
+	<div class="sheet-factiontitle sheet-col100">
+    	<input class="sheet-label" type="text" name="attr_factions_title" value="Factions of Doskvol"/>
+        <div class="sheet-faction-generatebutton"><input type="checkbox" name="attr_generate_factions"/><span>Generate Factions</span></div>
+    </div>
+    <div class="sheet-col100">
+    	<div class="sheet-col24b sheet-white-repcontrol">
+        	<div class="sheet-factions-header sheet-label"><input class="sheet-label" type="text" name="attr_factions1_header" value="Underworld"/><span>Tier</span><span>Status</span><span>Jobs</span></div>
+            <fieldset class="repeating_factions1">
+            <div class="sheet-faction">
+            	<input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span>
+                <input type="text" name="attr_name"/>
+                <input type="text" name="attr_tier"/>
+                <input type="number" name="attr_status"/>
+                <textarea name="attr_notes" placeholder="Faction notes"></textarea>
+            </div>
+            </fieldset>
+        </div>
+        
+        <div class="sheet-col24b sheet-white-repcontrol">
+        	<div class="sheet-factions-header sheet-label"><input class="sheet-label" type="text" name="attr_factions2_header" value="Institutions"/><span>Tier</span><span>Hold</span><span>Status</span></div>
+            <fieldset class="repeating_factions2">
+            <div class="sheet-faction">
+            	<input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span>
+                <input type="text" name="attr_name"/>
+                <input type="text" name="attr_tier"/>
+                <input type="text" name="attr_hold"/>
+                <input type="number" name="attr_status"/>
+                <textarea name="attr_notes" placeholder="Faction notes"></textarea>
+            </div>
+            </fieldset>
+        </div>
+        <div class="sheet-col24b sheet-white-repcontrol">
+        	<div class="sheet-factions-header sheet-label"><input class="sheet-label" type="text" name="attr_factions3_header" value="Labor &amp; Trade"/><span>Tier</span><span>Hold</span><span>Status</span></div>
+            <fieldset class="repeating_factions3">
+            <div class="sheet-faction">
+            	<input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span>
+                <input type="text" name="attr_name"/>
+                <input type="text" name="attr_tier"/>
+                <input type="text" name="attr_hold"/>
+                <input type="number" name="attr_status"/><input type="radio" value="0" name="attr_sys3_mod" class="sheet-zero" checked/><span></span><input type="checkbox" value="0" name="attr_sys3_mod" class="sheet-hidden sheet-modtooth" checked/><input type="radio" value="1" name="attr_sys3_mod" class="sheet-tooth sheet-modtooth"/><span></span><input type="radio" value="2" name="attr_sys3_mod" class="sheet-tooth sheet-modtooth"/><span></span><input type="radio" value="3" name="attr_sys3_mod" class="sheet-tooth sheet-modtooth"/><span></span><br />
+                <textarea name="attr_notes" placeholder="Faction notes"></textarea>
+            </div>
+            </fieldset>
+            <div class="sheet-factions-header sheet-label sheet-def-margin"><input class="sheet-label" type="text" name="attr_factions4_header" value="The Fringe"/><span>Tier</span><span>Hold</span><span>Status</span></div>
+            <fieldset class="repeating_factions4">
+            <div class="sheet-faction">
+            	<input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span>
+                <input type="text" name="attr_name"/>
+                <input type="text" name="attr_tier"/>
+                <input type="text" name="attr_hold"/>
+                <input type="number" name="attr_status"/>
+                <textarea name="attr_notes" placeholder="Faction notes"></textarea>
+            </div>
+            </fieldset>
+        </div>
+        <div class="sheet-col24b sheet-white-repcontrol">
+        	<div class="sheet-factions-header sheet-label"><input class="sheet-label" type="text" name="attr_factions5_header" value="Citizenry"/><span>Tier</span><span>Hold</span><span>Status</span></div>
+            <fieldset class="repeating_factions5">
+            <div class="sheet-faction">
+            	<input type="checkbox" name="attr_expand" class="sheet-expand"/><span></span>
+                <input type="text" name="attr_name"/>
+                <input type="text" name="attr_tier"/>
+                <input type="text" name="attr_hold"/>
+                <input type="number" name="attr_status"/>
+                <textarea name="attr_notes" placeholder="Faction notes"></textarea>
+            </div>
+            </fieldset>
+            <div class="sheet-warblurb">
+            	<div class="sheet-label">War</div>
+            	<ul>
+            		<li class="sheet-nondot">When you're at war with any number of factions (status -3), the following penalties apply:</li>
+            		<li>Lose 1 hold (temporarily, while the war persists). This may knock you down a Tier.</li><li>PCs get only one free downtime action instead of two.</li>
+            		<li>Take +1 heat from each score.</li><li>Your claims which generate coin (vice dens, fighting pits, fences, etc.) produce only half their normal income (round down).</li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+    <div class="sheet-col50 sheet-def-margin"><textarea name="attr_faction_notes"></textarea></div>
+</div>
+
+</div>
  
 <rolltemplate class="sheet-rolltemplate-bitd">
 <div class="sheet-roll-holder{{#action}} sheet-roll-action{{/action}}{{#resist}} sheet-roll-resist{{/resist}}{{#vice}} sheet-roll-vice{{/vice}}{{#fortune}} sheet-roll-fortune{{/fortune}}{{#short}} sheet-roll-short{{/short}}">
@@ -839,9 +928,7 @@ var crewData={
 			upgrade_3_desc:'Smuggler\'s Rigging (1 carried item is concealed and has no weight)',
 			upgrade_4_desc:'Lucky Charm (+1 gambit)',
 			upgrade_6_desc:'Thrillseekers (+1 stress)',
-			contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']
-			}
-		},
+			contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
 	cerberus:{
 		abilities:[
 			{name:'Licensed: ',description:'Apply -2 to heat to any legitimate bounty hunting job. Your ship can carry particle weapons, and your crew can carry and legally use heavy blasters in the pursuit of a target.'},
@@ -879,9 +966,7 @@ var crewData={
 			upgrade_5_desc:'Hard Knocks (+1 gambit)',
 			upgrade_6_desc:'Smooth Criminal (+1 stress)',
 			upgrade_12_check:'on',
-			contacts:['']
-			}
-		},
+			contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
 	firedrake:{
 		abilities:[
 			{name:'Old Hands: ',description:'When you\'re at War (-3) with a Hegemony faction, all crewmembers get +1d to vice rolls and still get two downtime actions, instead of just one.'},
@@ -923,7 +1008,7 @@ var crewData={
 			upgrade_7_desc:'Driven (+1 trauma)',
 			upgrade_16_check:'on',
 			upgrade_16_check_b:'on'},
-		contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
+			contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
 		playbookData={
 			mechanic:{
 				abilities:[
