@@ -1236,7 +1236,7 @@ padding: 0;
 
 
 
-input.sheet-stresstooth, input.sheet-xptooth, input.sheet-holdtooth,input.sheet-stresstooth + span, input.sheet-xptooth + span, input.sheet-holdtooth + span{
+input.sheet-stresstooth, input.sheet-xptooth, input.sheet-skiptooth, input.sheet-holdtooth,input.sheet-stresstooth + span, input.sheet-xptooth + span, input.sheet-skiptooth + span, input.sheet-holdtooth + span{
 height: 25px;
 }
 input.sheet-modtooth, input.sheet-modtooth + span, input.sheet-moddamagetooth, input.sheet-moddamagetooth + span {
@@ -1292,7 +1292,27 @@ margin-right:1px !important;
     -webkit-transform: skewX(-20deg); /* Safari */
     transform: skewX(-20deg);
 }
+input.sheet-skiptooth + span{
+height:25px;
+width: 7px;
+background-color: #e34a3a;
+border:1px solid white;
+margin-right:1px !important;
+-ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg);
+}
 
+input.sheet-skiptooth:checked ~ input.sheet-skiptooth + span{
+height:25px;
+width: 7px;
+background-color: white;
+border:1px solid white;
+margin-right:1px !important;
+-ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg);
+}
 .sheet-sysdamteeth {
 	padding-right:6px;
 }
@@ -2180,6 +2200,27 @@ filter: alpha(opacity=70);
 opacity: 0.7;
 }
 
+/* Gambit Boxes  */
+.sheet-gambitcheckholder{
+display: inline-block;
+font-family:  Helvetica, "Trebuchet MS", Arial, sans-serif;
+text-transform: lowercase;
+font-style: italic;
+font-size: 104%;
+font-weight: 500;
+}
+
+.sheet-gambitcheckholder .sheet-bold{
+font-size: 105%;
+margin-left: -2px;
+}
+.sheet-ship-gambits input.sheet-radiobox{
+transform: rotate(45deg) !important;
+display: inline-block;
+
+}
+
+
 
 /* ROLL BUTTONS */
 
@@ -2656,20 +2697,35 @@ clear:left !important;
 
 .sheet-ship-upkeep-skips {
 	margin:0 15px 0 15px;
+	height:100% !important;
 }
 
 .sheet-ship-gambits {
 	float:right;
+	margin-right:10px;
 }
 .sheet-ship-gambitexpo {
 	background:transparent !important;
+		text-align:center !important;
+	width:100% !important;
 	
 }
 .sheet-ship-gambitexpo span {
 	color:white;
 	font-style: italic;
 	font-size: 80%;
-	line-height: 8px;
+}
+
+.sheet-ship-upkeepexpo {
+	text-align:center !important;
+	width:100% !important;
+}
+.sheet-ship-upkeepexpo span {
+	color:white;
+	font-style: italic;
+	font-size: 80%;
+	text-align:center !important;
+	width:100% !important;
 }
 /* STRICTURES */
 

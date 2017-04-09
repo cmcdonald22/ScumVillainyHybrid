@@ -618,7 +618,11 @@
                     	<div class="sheet-label">Gambits</div>
                  </div>
                  <div class="sheet-ship-gambitexpo sheet-col100">
-                 <span style="white-space:pre-wrap">Reset to <span class="sheet-label sheet-bold" placeholder="2" name="attr_defaultgambit"></span> gambits at  the  start  of every job</span>
+                 	<span style="white-space:pre-wrap">Reset to <span class="sheet-label sheet-bold" placeholder="2" name="attr_defaultgambit"></span> gambits at  the  start  of every job</span>
+                 	<br />
+                 	<div class="sheet-col100 sheet-crewcoin">
+                    	<input type="checkbox" value="0" name="attr_gambits" class="sheet-zero" checked/><span></span><input type="checkbox" value="0" name="attr_gambits" class="sheet-radiobox sheet-hidden" checked/><input type="radio" value="1"name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="2" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="3" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="4" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="5"name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="6" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="7" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span><input type="radio" value="8" name="attr_gambits" class="sheet-radiobox sheet-vaultcoin"/><span></span>
+                    </div>
                  </div>
             </div>
         </div>
@@ -635,19 +639,23 @@
                             <!-- REGULAR ONE SLOT --><input type="checkbox" name="attr_sys3_mod_3" class="sheet-hidden sheet-itemhider" checked/><div class="sheet-item"><input type="checkbox" name="attr_sys3_mod_3check" class="sheet-checkbox sheet-squarebox"/><span></span><input type="text" placeholder="_____________________" name="attr_sys3_mod_3_desc"/></div>
                         </div>
         	</div>
+<!-- SHIP UPKEEP AND SKIPS -->
             <div class="sheet-ship-upkeep-skips sheet-col30">
             	<div class="sheet-ship-upkeep">
                 	<div class="sheet-blackheader sheet-col100">
                     	<div class="sheet-label">Upkeep</div>
+                        <div class="sheet-ship-upkeepexpo sheet-col100">
+                        <input type="text" class="sheet-ship-upkeepexpo" name="attr_upkeep" placeholder="_______"></span>
+                        <span>(Systems+Crew)/4 </span>
+                        <span>paid  at  the  start  of every downtime.</span></div>
                    	 </div>
-                 </div><br clear="all" />
-                        <div class="sheet-ship-gambits"></div><br clear="all" />
-                <div class="sheet-ship-skips">
+                </div><br /><br /><br /><br />
+  				<div class="sheet-ship-skips" clear="all">	
                 	<div class="sheet-col00 sheet-blackheader">
            				<div class="sheet-shipsystemlabel">
-                    		<span class="sheet-label">Skips</span><div class="sheet-module-tick-box"><input type="radio" value="0" name="attr_sys_skips" class="sheet-zero" checked/><span></span><input type="checkbox" value="0" name="attr_sys_skips" class="sheet-hidden sheet-xptooth" checked/><input type="radio" value="1" name="attr_sys_skips" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="2" name="attr_sys_skips" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="3" name="attr_sys_skips" class="sheet-tooth sheet-xptooth"/><span></span><input type="radio" value="4" name="attr_sys_skips" class="sheet-tooth sheet-xptooth"/><span></span></div>
-                    </div>
-                </div>
+                    		<span class="sheet-label">Skips</span><div class="sheet-module-tick-box"><input type="radio" value="0" name="attr_sys_skips" class="sheet-zero" checked/><span></span><input type="checkbox" value="0" name="attr_sys_skips" class="sheet-hidden sheet-skiptooth" checked/><input type="radio" value="1" name="attr_sys_skips" class="sheet-tooth sheet-skiptooth"/><span></span><input type="radio" value="2" name="attr_sys_skips" class="sheet-tooth sheet-skiptooth"/><span></span><input type="radio" value="3" name="attr_sys_skips" class="sheet-tooth sheet-skiptooth"/><span></span><input type="radio" value="4" name="attr_sys_skips" class="sheet-tooth sheet-skiptooth"/><span></span></div>
+                    	</div>
+                	</div>
                 </div>
             </div>
 <!-- SYSTEM 4-->
@@ -664,7 +672,7 @@
                 </div><br clear="all" />
                 <div class="sheet-col00 sheet-blackheader">
            			<div class="sheet-shipsystemlabel">
-                    	<span class="sheet-label">Shields</span><div class="sheet-armor-tick-box"><input type="radio" value="0" name="attr_sys_shield" class="sheet-zero" checked/><span></span><input type="checkbox" value="0" name="attr_sys_shield" class="sheet-hidden sheet-xptooth" checked/><input type="radio" value="1" name="attr_sys_shield" class="sheet-tooth sheet-xptooth"/><span></span></div>
+                    	<span class="sheet-label">Shields</span><div class="sheet-module-tick-box"><input type="radio" value="0" name="attr_sys_shield" class="sheet-zero" checked/><span></span><input type="checkbox" value="0" name="attr_sys_shield" class="sheet-hidden sheet-xptooth" checked/><input type="radio" value="1" name="attr_sys_shield" class="sheet-tooth sheet-xptooth"/><span></span></div>
                     </div>
                 </div>
         	</div>
@@ -753,9 +761,7 @@
             	<div class="sheet-specialheader sheet-col100 sheet-label">Contacts</div>
                 <div class="sheet-greyholder sheet-col100">
                 	<fieldset class="repeating_contact">
-                	<div class="sheet-contact sheet-rep-block">
-                    	<input type="checkbox" name="attr_check" class="sheet-checkbox"/><span></span>
-                        <input type="text" placeholder="Contact name" name="attr_name"/></div>
+                	<div class="sheet-contact sheet-rep-block"><input type="checkbox" name="attr_check" class="sheet-checkbox"/><span></span><input type="text" placeholder="Contact name" name="attr_name"/></div>
                     </fieldset>
                 </div>
             </div>
@@ -927,8 +933,8 @@ var crewData={
 			upgrade_2_desc:'Dark Hyperspace Lane Maps',
 			upgrade_3_desc:'Smuggler\'s Rigging (1 carried item is concealed and has no weight)',
 			upgrade_4_desc:'Lucky Charm (+1 gambit)',
-			upgrade_6_desc:'Thrillseekers (+1 stress)',
-			contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
+			upgrade_6_desc:'Thrillseekers (+1 stress)'},
+			contacts:['T\'kafa, a dockmaster','Alor, a keen-eared barkeep','Heani, a tugboat captain','Rakka, a diplomat','Citani, a reclusive info broker']},
 	cerberus:{
 		abilities:[
 			{name:'Licensed: ',description:'Apply -2 to heat to any legitimate bounty hunting job. Your ship can carry particle weapons, and your crew can carry and legally use heavy blasters in the pursuit of a target.'},
@@ -965,8 +971,8 @@ var crewData={
 			upgrade_4_desc:'Personal Vehicles',
 			upgrade_5_desc:'Hard Knocks (+1 gambit)',
 			upgrade_6_desc:'Smooth Criminal (+1 stress)',
-			upgrade_12_check:'on',
-			contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
+			upgrade_12_check:'on'},
+			contacts:['Stacy Weathers, ace reporter','Arlox, an Ashen Knives Pasha','Ishi, a weapons dealer','Lix, a Xeno tracker','Jezri, a ﬁxer']},
 	firedrake:{
 		abilities:[
 			{name:'Old Hands: ',description:'When you\'re at War (-3) with a Hegemony faction, all crewmembers get +1d to vice rolls and still get two downtime actions, instead of just one.'},
@@ -1008,7 +1014,7 @@ var crewData={
 			upgrade_7_desc:'Driven (+1 trauma)',
 			upgrade_16_check:'on',
 			upgrade_16_check_b:'on'},
-			contacts:['Trev, a gang boss','Lydra, a deal broker','Irimina, a vicious noble','Karlos, a bounty hunter','Exeter, a spirit warden','Sevoy, a merchant lord']}},
+			contacts:['Garin, Guild weapons engineer','Tyura, a legendary assassin','Ada Black, popular performer','Tiko Lux, a hotshot pilot','Ibo-one, an ancient cult mystic']}},
 		playbookData={
 			mechanic:{
 				abilities:[
