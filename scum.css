@@ -18,9 +18,13 @@ background:white;
 	text-shadow: 0 0 2px white;
 	height:100%;
 	clear:both;
+	padding-right:5px;
+	padding-left:5px;
 }
 .sheet-type-crew {
 	background-image: url("http://i.imgur.com/JgP5ZZy.png") !important;
+	padding-right:5px;
+	padding-left:5px;
 }
 input.sheet-settings-checkbox{
 width: 20px;
@@ -332,12 +336,12 @@ padding-left: 2px;
 }
 
 .sheet-blackheader{
-background-color: #02579a;
+background-color: #102536;
 color: white;
 }
 
 .sheet-black-on-grey, .sheet-greyheader{
-background-color: #02579a;
+background-color: #102536;
 color: white;
 }
 
@@ -362,7 +366,7 @@ line-height: 22px;
 }
 
 .sheet-specialheader{
-background-color: #02579a;
+background-color: #102536;
 height: 20px;
 color: white;
 font-size: 74%;
@@ -373,7 +377,7 @@ font-weight: 600;
 line-height: 0px;
 }
 .sheet-friendheader{
-background-color: #02579a;
+background-color: #102536;
 height: 20px;
 color: white;
 font-size: 88%;
@@ -393,7 +397,7 @@ margin-top: 15px;
 }
 
 .sheet-blackborder{
-border-top: 3px solid #02579a;
+border-top: 3px solid #102536;
 }
 
 .sheet-tier{
@@ -711,7 +715,7 @@ line-height: 50px;
 
 
 .sheet-loadheader, .sheet-loadheader2{
-background-color: #02579a;
+background-color: #102536;
 height: 20px;
 line-height: 0px;
 color: white;
@@ -1212,12 +1216,22 @@ color: white;
 
 input.sheet-text-input:checked + span{
 color: #e34a3a;
-text-shadow: 0 0 2px red !important;
+text-shadow: 0 0 2px red ;
 }
 
 input.sheet-text-input:checked:hover + span{
 color: #e34a3a;
-text-shadow: 0 0 2px red !important;
+text-shadow: 0 0 2px red;
+}
+
+input.sheet-ship-text-input:checked + span{
+color: #81ebfb !important;
+text-shadow: 0 0 2px white !important;
+}
+
+input.sheet-ship-text-input:checked:hover + span{
+color: #81ebfb !important;
+text-shadow: 0 0 2px white !important;
 }
 
 input.sheet-text-input + span::after{
@@ -1285,7 +1299,7 @@ margin-right:1px !important;
 input.sheet-xptooth:checked ~ input.sheet-xptooth + span{
 height:25px;
 width: 7px;
-background-color: white;
+background-color: #102536;
 border:1px solid white;
 margin-right:1px !important;
 -ms-transform: skewX(-20deg); /* IE 9 */
@@ -1306,7 +1320,7 @@ margin-right:1px !important;
 input.sheet-skiptooth:checked ~ input.sheet-skiptooth + span{
 height:25px;
 width: 7px;
-background-color: white;
+background-color: #102536;
 border:1px solid white;
 margin-right:1px !important;
 -ms-transform: skewX(-20deg); /* IE 9 */
@@ -1330,7 +1344,7 @@ margin-right:1px !important;
 input.sheet-modtooth:checked ~ input.sheet-modtooth + span{
 height:14px;
 width: 7px;
-background-color: white;
+background-color: #102536;
 border:1px solid white;
 margin-right:1px !important;
 -ms-transform: skewX(-20deg); /* IE 9 */
@@ -1352,7 +1366,7 @@ margin-right:1px !important;
 input.sheet-moddamagetooth:checked ~ input.sheet-moddamagetooth + span{
 height:14px;
 width: 7px;
-background-color: white !important;
+background-color: #102536 !important;
 border:1px solid white;
 margin-right:1px !important;
 -ms-transform: skewX(-20deg); /* IE 9 */
@@ -1376,7 +1390,7 @@ input.sheet-stresstooth[type="checkbox"] + span,input.sheet-stresstooth:checked 
 /* white tooth */
 height:25px;
 width: 7px;
-background-color: white;
+background-color: #102536;
 border:1px solid white;
 margin-right:1px !important;
 -ms-transform: skewX(-20deg); /* IE 9 */
@@ -1400,7 +1414,7 @@ margin-right:1px !important;
 input.sheet-regulartooth:checked ~ input.sheet-regulartooth[type="radio"] + span{
 height:13px;
 width: 7px;
-background-color: white;
+background-color: #102536;
 border:1px solid white;
 margin-right:1px !important;
 -ms-transform: skewX(-20deg); /* IE 9 */
@@ -1742,8 +1756,8 @@ opacity: 0.7;
 }
 
 .sheet-coin input.sheet-radiobox:checked ~ input.sheet-radiobox + span,.sheet-crewcoin input.sheet-radiobox:checked ~ input.sheet-radiobox + span{
-background-color: white;
-border: 1px solid black;
+background-color: #102536;
+border: 1px solid white;
 }
 
 .sheet-coin input.sheet-radiobox + span,.sheet-crewcoin input.sheet-radiobox + span{
@@ -1753,7 +1767,7 @@ border: 1px solid white;
 
 .sheet-stash input.sheet-radiobox:checked ~ input.sheet-radiobox + span{
 background-color: #102536;
-border: 1px solid black;
+border: 1px solid white;
 }
 
 .sheet-stash input.sheet-radiobox + span{
@@ -1770,7 +1784,7 @@ height: 13px;
 .sheet-stash input.sheet-radiobox.sheet-endbox + span{
 width: 10px;
 height: 10px;
-border: 1px solid black !important;
+border: 1px solid white !important;
 }
 input.sheet-debtbox{
 width: 12px;
@@ -1791,13 +1805,13 @@ opacity: 0.7;
 }
 
 .sheet-coin input.sheet-debtbox:checked ~ input.sheet-debtbox + span,.sheet-crewcoin input.sheet-debtbox:checked ~ input.sheet-debtbox + span{
-background-color: transparent;
+background-color: #102536;
 border: 1px solid white;
 }
 
 .sheet-coin input.sheet-debtbox + span,.sheet-crewcoin input.sheet-debtbox + span{
 background-color: #e34a3a;
-border: 1px solid black;
+border: 1px solid white;
 }
 
 
@@ -1847,7 +1861,7 @@ height: 100%;
 .sheet-bonusdie .sheet-bonusdieplus{
 width: 10%;
 float: left;
-background-color: #02579a;
+background-color: #102536;
 color: white;
 text-shadow: 0 0 2px #81ebfb;
 font-weight: 800;
@@ -1855,7 +1869,7 @@ height:100%;
 }
 
 .sheet-bonusdie .sheet-bonusdietext{
-background-color: #102536;
+background-color: transparent;
 width: 90%;
 float: left;
 padding: 5px;
@@ -1872,7 +1886,7 @@ box-sizing:border-box;
 }
 .sheet-bonusdie .sheet-bonusdietext .sheet-pushtext{
 	height:49px !important;
-	background-color: #102536;
+	background-color: transparent;
 width: 90%;
 float: left;
 padding: 5px;
@@ -1916,7 +1930,7 @@ line-height: 122%;
 .sheet-gambitexpoplus{
 		box-sizing:border-box;
     width:10%;
-    background-color:#02579a;
+    background-color:#102536;
     color:white;
         display: inline-block;
         padding: 34px 4px 33px 4px;
@@ -1926,7 +1940,7 @@ line-height: 122%;
 }
 .sheet-bonusdie .sheet-bonusdietext .sheet-gambitexpotext{
 	height: 100%; !important
-	background-color: #102536;
+	background-color: transparent;
 width: 90%;
 float: left;
 padding: 5px;
@@ -2188,7 +2202,7 @@ display: inline-block;
 border: 1px solid #81ebfb;
 width: 8px;
 height: 8px;
-background-color: white;
+background-color: #102536;
 }
 
 input.sheet-loadbox[type="checkbox"]:checked + span{
@@ -2545,7 +2559,7 @@ margin-bottom: 14px;
 .sheet-attribute-title, .sheet-cohort-title{
 float: left;
 height: 21px;
-background-color: #02579a;
+background-color: #102536;
 padding-left: 7px;
 }
 
@@ -2590,7 +2604,7 @@ float: left;
 }
 
 .sheet-action > div:first-child{
-border-right: 1px solid #02579a;
+border-right: 1px solid #81ebfb;
 height: 22px;
 width: 17px;
 margin-right: 6px;
@@ -2666,7 +2680,13 @@ border-bottom: 1px solid lightgray;
 
 /* SHIP SYSTEMS */
 
-
+.sheet-ship
+{
+	/* background-image:url("http://i.imgur.com/BKn5HAh.png");
+	background-position:center;
+	background-repeat:no-repeat; */
+}
+	
 .sheet-ship-toprow {
 	margin-bottom:15px;
 }
@@ -2699,7 +2719,9 @@ clear:left !important;
 	margin:0 15px 0 15px;
 	height:100% !important;
 }
-
+.sheet-ship-upkeepexpo input[type=text] {
+	color:white !important;
+}
 .sheet-ship-gambits {
 	float:right;
 	margin-right:10px;
