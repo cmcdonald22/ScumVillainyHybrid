@@ -872,9 +872,9 @@ var crewData={
 			{name:'Cargo Eye:',description:'Your crew gains +1 cred for smuggling or delivery jobs. Whenever you gather information you can always ask: What is most valuable here?'},
 			{name:'Field Repairs:',description:'You gain potency when repairing your ship while in space. If you spend a gambit on a rig roll you gain +2d (instead of +1d). '},
 			{name:'Leverage:',description:'Your crew knows how to pull strings and cash in favors. When you lay low, instead of rolling you can take -1 status with a faction at Helpful (+1) or better to add 4 ticks to your wanted reduction clock.'},
-			{name:'Just Passing Through:',description:'During downtime, take -1 heat. When your heat is 4 or less, you get +1d to deceive people when you pass yourselves off as ordinary citizens, and you still gain a 2nd action if you\'re at War (-3) with any faction as they have trouble locating you.'},
-			{name:'Home Cooking:',description:'Your whole crew gains Home Cooking as a vice. Right after a job in space, you may spend 1 cred and a downtime action to cook for everyone, allowing the whole crew present to make a vice roll. If anyone overindulges, a fight erupts, and everyone gains 1 stress after the vice roll).'},
-			{name:'Problem Solvers:',description:'Each PC may add 1 action rating to helm, rig, or scramble (up to a max of 3).'}],
+			{name:'Just Passing Through:',description:'During payoff, take -1 heat. When your heat is 4 or less, you get +1d to deceive people when you pass yourselves off as ordinary citizens, and you still have 2 downtime activities even if you\'re at War (-3) with any faction as they have trouble locating you.'},
+			{name:'Home Cooking:',description:'Your whole crew gains Home Cooking as a vice. Right after a job, you may spend 1 cred and a downtime activities to cook for everyone, allowing the whole crew present to make a vice roll. If anyone overindulges, a fight erupts, and everyone gains 1 stress after the vice roll. Requires a galley module.'},
+			{name:'Problem Solvers:',description:'Each crew member may add 1 action rating to helm, rig, or scramble (up to a max of 3).'}],
 		base:{
 			freighter:'on',
 			crew_description:'illicit merchants \nand blockade \nrunners',
@@ -890,6 +890,7 @@ var crewData={
 			sys2_mod:'1',
 			sys2_mod_1_check:'on',
 			sys2_mod_1_desc:'Jump Drive',
+			sys2_mod_2_desc:'Afterburners',
 			sys3_mod_1_desc:'Fake Transponder',
 			sys3_mod_2_desc:'Quantum Encryptor',
 			system1_desc:'hull',
@@ -900,21 +901,23 @@ var crewData={
 			upgrade_2_desc:'Dark Hyperspace Lane Maps',
 			upgrade_3_desc:'Smuggler\'s Rigging (1 carried item is concealed and has no weight)',
 			upgrade_4_desc:'Lucky Charm (+1 gambit)',
-			upgrade_6_desc:'Thrillseekers (+1 stress)'},
+			upgrade_6_desc:'Thrillseekers (+1 stress)',
+			upgrade_14_check:'on'},
 			contacts:['T\'kafa, a dockmaster','Alor, a keen-eared barkeep','Heani, a tugboat captain','Rakka, a diplomat','Citani, a reclusive info broker']},
 	cerberus:{
 		abilities:[
-			{name:'Licensed: ',description:'Apply -2 to heat to any legitimate bounty hunting job. Your ship can carry particle weapons, and your crew can carry and legally use heavy blasters in the pursuit of a target.'},
-			{name:'On The Trail: ',description:'Your crew gains one free downtime action to work on long term projects that track bounties that have gone to ground.'},
-			{name:'Light Touch: ',description:'You gain potency when tailing a target, or when gathering info at a crime scene.'},
-			{name:'Snatch \'N\' Grab: ',description:'When you use a deception, infiltration  or social plan to execute a kidnapping add +1d to the engagement roll.'},
-			{name:'Loaded for Bear: ',description:'All your crew can carry +1 load. Your crew has distinctive and high quality armor. When you wear armor, it counts as heavy armor (2 uses).'},
-			{name:'Play Both Sides: ',description:'Release a bounty target to make them a crew contact, and add +2 heat.'},
-			{name:'Deadly: ',description:'Each PC may add 1 action rating to command, scrap, or skulk (up to a max of 3).'}],
+			{name:'Licensed: ',description:'Take -2 heat on any legitimate bounty hunting job. Your ship can carry particle weapons, and your crew can carry and legally use heavy blasters in the pursuit of a target.'},
+			{name:'On The Trail: ',description:' Your crew gains an extra downtime activity to work on long term projects that track bounties that have gone to ground.'},
+			{name:'Light Touch: ',description:' You gain potency when tailing a target, or when gathering info at a target\'s previous location. '},
+			{name:'Snatch \'N\' Grab: ',description:' When you use a deception, infiltration, or social plan to execute a kidnapping, add +1d to the engagement roll.'},
+			{name:'Loaded for Bear: ',description:'Your crew can carry +1 load. They have distinctive and high quality armor. When you wear armor, it counts as heavy armor (2 uses).'},
+			{name:'Play Both Sides: ',description:'When you release a bounty target, make them a crew contact and add +2 heat.'},
+			{name:'Deadly: ',description:'Each crew member may add 1 action rating to command, scrap, or skulk (up to a max of 3).'}],
 		base:{
 			freighter:'on',
 			crew_description:'extraction \n specialists and \n bounty hunters',
-			crew_xp_condition:'Execute a successfu extraction operation or capture of a bounty.',
+			crew_xp_condition:'Execute a successful extraction operation or capture of a bounty.',
+			defaultgambit:'1',
 			setting_showupgrade_3:'0',
 			setting_showupgrade_7:'0',
 			ship_designation:'R-29 Firebrand-type Patrol craft',
@@ -942,13 +945,13 @@ var crewData={
 			contacts:['Stacy Weathers, ace reporter','Arlox, an Ashen Knives Pasha','Ishi, a weapons dealer','Lix, a Xeno tracker','Jezri, a ﬁxer']},
 	firedrake:{
 		abilities:[
-			{name:'Old Hands: ',description:'When you\'re at War (-3) with a Hegemony faction, all crewmembers get +1d to vice rolls and still get two downtime actions, instead of just one.'},
-			{name:'Forged in Fire: ',description:'Each crewmember has been toughened by cruel experience. You get +1d to all resistance rolls.'},
-			{name:'Sympathisers: ',description:'Your ideaology is especially appealing. When you deal with a crew or faction, the GM will tell you who among them believes in your cause (one, a few, many, or all). '},
+			{name:'Old Hands: ',description:'When you\'re at War (-3) with a Hegemony faction, all crewmembers get +1d to vice rolls and still get 2 downtime activities, instead of just 1. '},
+			{name:'Forged in Fire: ',description:'Your crew has been toughened by cruel experience. You each get +1d to all resistance rolls.'},
+			{name:'Sympathisers: ',description:'Your ideology is especially appealing. When you deal with a crew or faction, the GM will tell you who among them believes in your cause (one, a few, many, or all). '},
 			{name:'Natural Enemies: ',description:'When you run a job against Hegemony Factions take +1d to the engagement roll.'},
-			{name:'Spark of Rebellion: ',description:'If you leave a calling card, or a highly visible sigil of resistance on your job, gain +2 heat. Your crew gaints +1d to vice during the next downtime, and cannot overindulge.'},
+			{name:'Spark of Rebellion: ',description:' If you leave a calling card or a highly visible symbol of resistance on your job, gain +2 heat. Your crew gains +1d to vice during the next downtime, and cannot overindulge.'},
 			{name:'Just Cause: ',description:'When your crew does the right thing at cost to themselves they may mark a crew advance.'},
-			{name:'Hearts and Minds: ',description:'Each PC may add 1 action rating to command, consort, or sway (up to a max of 3).'}],
+			{name:'Hearts and Minds: ',description:'Each crew member may add 1 action rating to command, consort, or sway (up to a max of 3).'}],
 		base:{
 			corvette:'on',
 			crew_description:'rebels and \n criminals',
@@ -980,23 +983,24 @@ var crewData={
 			upgrade_6_desc:'Popular Support',
 			upgrade_7_desc:'Driven (+1 trauma)',
 			upgrade_16_check:'on',
-			upgrade_16_check_b:'on'},
+			upgrade_16_check_b:'on',
+			upgrade_17_check:'on'},
 			contacts:['Garin, Guild weapons engineer','Tyura, a legendary assassin','Ada Black, popular performer','Tiko Lux, a hotshot pilot','Ibo-one, an ancient cult mystic']}},
 		playbookData={
 			mechanic:{
 				abilities:[
-					{name:'Bailing Wire and Twine',description:'The repair downtime action costs you 0 cred.'},
-					{name:'Construct Speaker',description:'Machines speak to you when you study them. When you roll a critical while ﬁxing or building a machine, you may add a feature to it.'},
+					{name:'Bailing Wire and Twine',description:'During downtime the repair action costs you 0 cred'},
+					{name:'Construct Speaker',description:'Machines speak to you when you study them. The first time you roll a critical while fixing or building a particular machine, you may add a simple modification to it (see Crafting).'},
 					{name:'Junkyard  Hunter',description:'When  you  acquire  parts  or  equipment  during downtime, you may either gain 2 assets, or gain +1 effect level on the roll.'},
 					{name:'Fixed',description:'You may expend your special armor to resist a consequence from machines breaking or being damaged, or to push yourself when repairing or building a machine. '},
 					{name:'Hacker',description:'You  may  expend  your  special  armor  to  resist  the consequences of hacking, or to push yourself when hacking or gathering info electronically.'},
 					{name:'Mechanic\'s Heart',description:'When you speak from your heart, your words can reach even the most hardened criminal, and you gain potency.'},
-					{name:'Overclock',description:' When you spend a gambit on a rig roll to repair or upgrade, treat the system you worked on as one quality higher for the remainder of the job.'},
-					{name:'Analyst',description:'When you hack a system, you may also ask a question about the location or owner of the system as though you had rolled a 6 on gather info. When you resist the consequences of hacking, roll +1d.'}],
+					{name:'Overclock',description:' When you spend a gambit on a rig roll to repair or upgrade, treat the system you worked on as 1 quality higher for the remainder of the job.'},
+					{name:'Analyst',description:'When you hack a system, you may also ask a question about the owner or location of the system as though you had rolled a 6 on gather info. When you resist the consequences of hacking, roll +1d.'}],
 				base:
 					{
 					ability0_name:'Tinker',
-					ability0_description:'When you work on a clock with rig or hack, or study a schematic, ﬁll +1 segment.',
+					ability0_description:'When you work on a clock with rig or hack, or when you study a schematic, ﬁll +1 segment.',
 					friend_adjective:'Colorful Friends',
 					gatherinfo1:'What\'s their intention?',
 					gatherinfo2:'What might I suspect about this? What can I prove?',
@@ -1034,13 +1038,13 @@ var crewData={
 					friends:['Slice, a junkyard owner','Nisa, a previous employer','Stev, a gambler of ill repute','Len, a black market dealer','Kenn, a family member']},
 			muscle:{
 				abilities:[
-					{name:'Wrecking Crew',description:'Your strength and ferocity are infamous. When striking in melee, you gain +1d. Whenever you spend a gambit in combat, you also gain potency to your action.'},
-					{name:'Flesh Wound',description:' If you\'re wounded at the beginning of downtime, mark +3 segments on your healing clock. When you push yourself to ignore wound penalties you take only 1 stress (not 2).'},
+					{name:'Wrecking Crew',description:'Your strength and ferocity are infamous. When striking in melee, you gain +1d. Whenever you spend a gambit in combat, you also gain potency on that action.'},
+					{name:'Flesh Wound',description:'If you\'re wounded at the beginning of downtime, mark +3 segments on your healing clock. When you push yourself to ignore wound penalties you take only 1 stress (not 2).'},
 					{name:'Backup',description:'An ally\'s push costs 1 stress on any action you set up or assist.'},
 					{name:'Battleborn',description:'You may expend your special armor to reduce harm from an attack in combat, or to push yourself during a ﬁght.'},
 					{name:'Ready for Anything',description:' When being ambushed, you gain potency to all actions during ﬂashbacks, and your ﬁrst ﬂashback costs 0 stress.'},
-					{name:'Predator',description:' Take +1d to rolls against weakened or vulnerable targets. Whenever you gather information on a weakness or vulnerability, the worst you can get is a standard (4-5) result.'},
-					{name:'Scary',description:'You have an air of menace and danger obvious to even the most  unobservant.  You  gain  potency  when  trying  to  intimidate someone. If done immediately after a show of force, also take +1d.'},
+					{name:'Predator',description:' Take +1d to rolls against weakened or vulnerable targets. Whenever you gather information on a weakness or vulnerability, the worst you can get is a 4-5 result.'},
+					{name:'Scary',description:'You have an air of menace and danger obvious to even the most unobservant. You gain potency when trying to intimidate someone. If done immediately after a show of force, also take +1d.'},
 					{name:'Bodyguard',description:' When you protect a crewmate, resist with +1d. When you take harm, clear 1 stress.'}],
 				base:
 					{
@@ -1083,12 +1087,12 @@ var crewData={
 			mystic:{
 				abilities:[
 					{name:'Kinetics',description:'You can push yourself to do one of the following: use the Way to throw a table-sized object with dangerous force - propel yourself brieﬂy with superhuman speed.'},
-					{name:'Psy Blade',description:'You can focus Galactic Ley Line energy into your melee weapon. While charged, the weapon can cut through non-shielded materials with ease, and you gain potency on your attacks. '},
-					{name:'Center',description:'You gain Meditation as a vice. When you indulge this vice clear +1 stress and add Dark Visions as an overindulgence.'},
-					{name:'In Balance',description:'You can block blaster bolts with the Way. When you resist with prowess, you get +1d. If you resist a blaster attack, you may spend 1 stress to redirect fire and make an attack of your own with it.'},
+					{name:'Psy Blade',description:'You can focus Way energy into your melee weapon. While charged, the weapon can cut through non-shielded materials with ease, and you gain potency on your attacks. '},
+					{name:'Center',description:' You gain Meditation as a vice. When you indulge this vice clear +1 stress and add Dark Visions as an overindulgence.'},
+					{name:'Way Shield',description:'You can block blaster bolts with the Way (resist with resolve). If you resist a blaster attack, you may spend 1 stress to redirect fire and make an attack of your own with it.'},
 					{name:'Warded',description:'You  may  expend  your  special  armor  to  resist  the consequences of a Way attack or Artifact use, or push yourself when using mystic powers.'},
-					{name:'Psy-Dancing',description:'Spend 2 stress to cloud a target\'s mind and sway them in the face of contradictory evidence. "You must do as I say. I am the ambassador." Spend 1 stress for each additional feature: They have only vague memories of the event — It works on a small group.'},
-					{name:'Visions',description:'Spend 1 stress to remotely view a distant place or person tied to you in some intimate way. Spend 1 stress for each extra feature: It lasts for a minute rather than a moment — Your target can also see and hear you — You may see something only familiar to you, not intimate.'},
+					{name:'Psy-Dancing',description:'You may push yourself to cloud a target\'s mind and sway them in the face of contradictory evidence. You must do as I say. I am the ambassador. Spend 1 stress for each additional feature: they have only vague memories of the event — it works on a small group.'},
+					{name:'Visions',description:'Spend 1 stress to remotely view a distant place or person tied to you in some intimate way. Spend 1 stress for each extra feature: It lasts for a minute rather than a moment — your target can also see and hear you — you may see something only familiar to you, not intimate.'},
 					{name:'Sundering',description:'You may push yourself to attune to the Way and twist it, causing psychic harm to anyone in the area who cannot withstand your assault. You may spend 1 stress for each additional feature: it damages instead of stuns — the area includes a few targets instead of one — you are not included in the effect.'}],
 				base:
 					{
@@ -1131,12 +1135,12 @@ var crewData={
 			pilot:{
 				abilities:[
 					{name:'Keen Eye',description:'You have sharp eyes and notice small details many might overlook. Gain +1d when firing ship guns or making trick shots.'},
-					{name:'Side Job',description:'You may spend a downtime action in port doing odd jobs. Gain 1 cred. If there are rumors floating about, the GM will tell you of them.'},
-					{name:'Exceed Specs',description:'While onboard a ship you may damage a ship system you have access to in order to gain +1d to a roll, or a level of effect.'},
-					{name:'Leaf on the Wind:',description:'When you push yourself, you may spend +1 stress (so 3 stress total) to gain both +1 effect and +1d instead of one or the other.'},
-					{name:'Hedonist',description:' When you indulge your vice, you may adjust the outcome by +/-2. An ally who joins in your vice may do the same.'},
-					{name:'Commander',description:'Whenever you lead a group action, gain scale. If you command a crew in combat, you may count multiple 6\'s from different rolls as a critical.'},
-					{name:'Traveller',description:'You’re comfortable around unusual cultures and Xenos. You gain potency when attempting to sway or consort with them.'},
+					{name:'Side Job',description:'You may spend a downtime activity in port doing odd jobs. Gain 1 cred. If there are rumors floating about, the GM will tell you of them.'},
+					{name:'Exceed Specs',description:'While onboard a ship you may damage a ship system you have access to in order to gain +1d or +1 effect to a roll.'},
+					{name:'Leaf on the Wind:',description:'When you push yourself, you may spend +1  stress (so 3 stress total) to gain both +1 effect and +1d instead of one or the other.'},
+					{name:'Hedonist',description:'When you indulge your vice, you may adjust the dice outcome by +/-2. An ally who joins you may do the same.'},
+					{name:'Commander',description:'Whenever you lead a group action, gain +1 scale (for example: a small group counts as a medium group). If you lead a group action in combat, you may count multiple 6\'s from different rolls as a critical.'},
+					{name:'Traveller',description:'You’re comfortable around unusual cultures and xenos. You gain potency when attempting to consort with or sway them.'},
 					{name:'Punch It!',description:'When you spend a gambit on a desperate roll, it counts as risky instead.'}],
 				base:
 					{
@@ -1178,12 +1182,12 @@ var crewData={
 					scoundrel:{
 				abilities:[
 					{name:'Never Tell Me the Odds',description:'You also generate gambits on desperate rolls. You may also generate gambits even if you spent a gambit.'},
-					{name:'I Know a Guy',description:'When you first dock at a port after being away, pick one and ask the the GM about a job: it\'s not deadly -- it pays well enough -- it\'s not a rush job -- it comes from a faction you trust -- it targets an enemy you have. You may spend 1 cred per each additional feature. '},
+					{name:'I Know a Guy',description:' When you first dock at a port after being away, pick one and ask the the GM about a job: it\'s not deadly -- it pays well enough -- it\'s not a rush job -- it comes from a faction you trust -- it targets an enemy you have. You may spend 1 cred per additional feature. '},
 					{name:'Tenacious',description:'Penalties from harm are one level less severe (though level 4 harm is still fatal). '},
-					{name:'Devil\'s Own Luck ',description:'You may expend your special armor to resist the consequences of blaster ﬁre, or push yourself when running from or talking your way out of trouble.'},
-					{name:'Shoot First',description:'When you attack from hiding or spring a trap, take +1d.  When there\'s a question about who acts  first, the answer is you (two characters with Shoot First act simultaneously). '},
-					{name:'Daredevil',description:'When you make a desperate roll you may take +1d. If you do so do not mark an xp in that action\'s attribute.'},
-					{name:'Ask Questions Later',description:'When you consort to gather information, you gain potency and can always ask: Who might this benefit?'},
+					{name:'Devil\'s Own Luck ',description:'You may expend your special armor to resist the consequences of blaster fire, or to push yourself when talking your way out of or running from trouble.'},
+					{name:'Shoot First',description:'When you attack from hiding or spring a trap, take +1d.  When there\'s a question about who acts first, the answer is you (two characters with Shoot First act simultaneously).'},
+					{name:'Daredevil',description:'When you make a desperate roll you may take +1d. If you do so, do not mark xp in that action\'s attribute.'},
+					{name:'Ask Questions Later',description:'When you consort to gather info, you gain potency and can in addition ask: Who might this benefit?'},
 					{name:'When the Chips are Down',description:'You gain a second use of special armor on each job.'}],
 				base:
 					{
@@ -1274,7 +1278,7 @@ var crewData={
 					friends:['Arryn, a noble','Manda, a guild member','Kerry, a doctor','Je-zee, a diplomat','Old Friend (see ability)']},
 			stitch:{
 				abilities:[
-					{name:'Physicker',description:'You may study a malady or corpse, and gather information from a crime scene. Also, your crew gets +1d to recovery rolls.'},
+					{name:'Physicker',description:'You may study a malady or corpse, and gather information from a crime scene or corpse. Also, your crew gets +1d to recovery rolls.'},
 					{name:'Patch',description:'You may doctor someone during a job to allow them to ignore the effects of a harm penalty.'},
 					{name:'Welcome Anywhere',description:'While wearing your medic garb you are welcome even in dangerous places. Gain +1d to consort and sway when offering tending to anyone who is in need, or has family/friends in need.'},
 					{name:'Combat Medic',description:'You may expend your special armor to resist any consequence while tending to a patient. When you doctor someone in combat, clear 1 stress.'},
